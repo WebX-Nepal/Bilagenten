@@ -146,6 +146,84 @@ html {
 }
 
 
+.submit_btn {
+  margin-top: 3rem;
+  background: var(--gradient);
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  color: white;
+}
+
+ /* <!-- Contact sec starts from here  -->  */
+
+
+ .contact-title h1{
+  text-align: center;
+  font-size: 3.4em;
+  padding-bottom: 3em;
+ }
+
+ .contact-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10em;
+ }
+ .contact-flex .inputs{
+  width: 30%;
+ }
+ .contact-flex .input-field{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+ .contact-flex .input-field input{
+  padding: 1em;
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
+  font-size: 1.2em;
+ }
+ .contact-flex .input-field textarea{
+  padding: 1em;
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
+  font-size: 1.2em;
+ }
+
+ .contact-details img{
+  width: 200px;
+ }
+ .contact-details h4{
+  margin-top: 10px;
+  font-size: 1.9em;
+  font-weight: 600;
+ }
+ .contact-details h4 span{
+  margin-top: 10px;
+  font-size: 1em;
+  color: #f4793d;
+ }
+ .contact-details .details{
+  margin-top: 25px;
+
+ }
+
+ .questions{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+ .questions strong{
+  font-weight: 600;
+  font-size: 2em;
+ }
+
+/* .......................... */
+
+
 
 /*----------------------------------
 ====================================

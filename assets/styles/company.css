@@ -40,12 +40,10 @@ html {
 .navbar {
   background-color: var(--white);
   overflow: hidden;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.6rem 12rem;
-
   width: 100%;
   position: fixed;
   z-index: 999;
@@ -158,7 +156,7 @@ html {
 .content {
   font-size: 2em;
   padding-top: 6em;
-  padding-left: 1.5em;
+  padding-left: 4em;
 }
 .content h2 {
   width: 42%;
@@ -247,6 +245,7 @@ html {
   padding-bottom: 3em;
 }
 .bilagenten h1{
+  text-align: center;
   font-size: 1em;
 }
 
@@ -271,7 +270,7 @@ Blog Card Carousel Styles Start from here:
 
 .user-card-item {
   width: 30rem;
-  height: 57vh;
+  height: 64vh;
   object-fit: cover;
   padding: 0.8rem;
   border: 1px solid white;
@@ -280,12 +279,13 @@ Blog Card Carousel Styles Start from here:
 }
 
 .user-image {
-  height: 200px;
+  /* height: 200px; */
   width: 100%;
   object-fit: cover;
   border-radius: 30px;
-  
+  object-position: top;
 }
+
 
 .user-card-content {
   text-align: center;
