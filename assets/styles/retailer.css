@@ -144,10 +144,7 @@ html {
 .google_review_font {
   font-size: 1.6rem;
 }
-
-
 .submit_btn {
-  margin-top: 3rem;
   background: var(--gradient);
   border: none;
   cursor: pointer;
@@ -157,73 +154,162 @@ html {
   color: white;
 }
 
- /* <!-- Contact sec starts from here  -->  */
+/* herosec of retailers starts from here  */
+.retailer-mainContainer {
+  padding: 10em 12em;
+  display: flex;
+  align-items: center;
+}
+.retailer-mainContainer .retailer1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.retailer-mainContainer .retailer1 h1 {
+  font-size: 4em;
+  line-height: 1.2em;
+}
+.retailer-mainContainer .retailer1 .heading p {
+  width: 90%;
+  margin-top: 20px;
+  font-size: 1.4em;
+  color: #888;
+}
+.retailer-mainContainer .retailer2 {
+  width: 60%;
+}
 
+.retailer-mainContainer .retailer1 .tick .item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+.retailer-mainContainer .retailer1 .tick .item p{
+font-size: 1.4em;
+font-weight: 600;
+}
+.retailer-mainContainer .retailer1 .tick .item img{
+ object-fit: contain;
 
- .contact-title h1{
+}
+
+.buttons{
+  display: flex;
+  gap: 10px;
+}
+
+/* ===============================================
+Blog Card Carousel Styles Start from here: 
+==================================================*/
+
+.user-persona {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 0 0 5em 0;
+  margin: 4rem 0;
+}
+
+.user-card-item {
+  width: 30rem;
+  object-fit: cover;
+  padding: 0.8rem;
+  border: 1px solid white;
+  border-radius: 3rem;
+  background: var(--gradientGray);
+}
+
+.user-image {
+  /* height: 200px; */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  object-position: top;
+}
+
+.user-card-content {
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.user-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.user-persona-para {
+  color: #888;
+  font-size: 1.4rem;
+  padding: 1.4rem 0;
+}
+
+/* herosec of retailers ends here  */
+
+/* <!-- Contact sec starts from here  -->  */
+.contact-title h1 {
   text-align: center;
   font-size: 3.4em;
   padding-bottom: 3em;
- }
+}
 
- .contact-flex {
+.contact-flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 10em;
- }
- .contact-flex .inputs{
+}
+.contact-flex .inputs {
   width: 30%;
- }
- .contact-flex .input-field{
+}
+.contact-flex .input-field {
   display: flex;
   flex-direction: column;
   gap: 10px;
- }
- .contact-flex .input-field input{
+}
+.contact-flex .input-field input {
   padding: 1em;
-  border: 1px solid #F1F1F1;
+  border: 1px solid #f1f1f1;
   border-radius: 10px;
   font-size: 1.2em;
- }
- .contact-flex .input-field textarea{
+}
+.contact-flex .input-field textarea {
   padding: 1em;
-  border: 1px solid #F1F1F1;
+  border: 1px solid #f1f1f1;
   border-radius: 10px;
   font-size: 1.2em;
- }
+}
 
- .contact-details img{
+.contact-details img {
   width: 200px;
- }
- .contact-details h4{
+}
+.contact-details h4 {
   margin-top: 10px;
   font-size: 1.9em;
   font-weight: 600;
- }
- .contact-details h4 span{
+}
+.contact-details h4 span {
   margin-top: 10px;
   font-size: 1em;
   color: #f4793d;
- }
- .contact-details .details{
+}
+.contact-details .details {
   margin-top: 25px;
+}
 
- }
-
- .questions{
+.questions {
   display: flex;
   flex-direction: column;
   gap: 10px;
- }
- .questions strong{
+}
+.questions strong {
   font-weight: 600;
   font-size: 2em;
- }
+}
 
 /* .......................... */
-
-
 
 /*----------------------------------
 ====================================
@@ -244,7 +330,6 @@ Footer Area CSS Part Starts
 }
 
 .footer_container {
-  
 }
 
 .footer_container .footer_content .footer_details {
@@ -362,5 +447,3 @@ Footer Area CSS Part Starts
 .webx:hover {
   text-decoration: underline;
 }
-
-
