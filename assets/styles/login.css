@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,900;1,500;1,600;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Preahvihear&family=Titillium+Web:ital,wght@0,600;1,400&display=swap');
+
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  /* overflow-x: hidden; */
+}
+
+body {
+  /* overflow-x: hidden; */
+}
+
+.title-color {
+  color: orange;
+  font-size: 4rem;
+}
+
+:root{
+  --primary_color: orange;
+  --secondary_color: #000;
+  --light_gray: #a1a1a1;
+  --white: #fff;
+  --black: #000;
+  --gradient: linear-gradient(107deg, rgba(241, 29, 40, 0.80) -20.5%, rgba(255, 135, 44, 0.80) 50.01%, rgba(254, 97, 44, 0.80) 92.29%, rgba(253, 58, 45, 0.80) 120.9%);
+  --gradientGray: linear-gradient(0deg, #E3E3E3 0%, rgba(227, 227, 227, 0.00) 100%);
+
+
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.login-heading {
+  font-size: 4rem;
+}
+
+.login-subtitle {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+#email{
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: 2px solid #888;
+  font-size: 1.4rem;
+  outline-color: orange;
+  width: 90%;
+}
+#password{
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: 2px solid #888;
+  font-size: 1.4rem;
+  width: 90%;
+  outline-color: orange;
+} 
+#conf-password{
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: 2px solid #888;
+  font-size: 1.4rem;
+  width: 90%;
+  outline-color: orange;
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  font-size: 1.2rem;
+}
+
+.login-validations {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3.2rem 0;
+}
+
+.terms {
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 89%;
+}
+
+#registerBtn{
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
+  width: 90%;
+  cursor: pointer;
+  background: var(--gradient);
+  color: white;
+} 
+
+#registerBtn:hover {
+  color: #000;
+}
