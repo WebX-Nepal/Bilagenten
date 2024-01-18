@@ -147,6 +147,229 @@ html {
   font-size: 1.6rem;
 }
 
+.car-bg {
+  height: 80vh;
+  width: 100%;
+  background-image: url(../images/carBg.png);
+  background-repeat: no-repeat;
+  background-position: bottom bottom;
+  background-size: cover;
+}
+.content {
+  font-size: 2em;
+  padding-top: 6em;
+  padding-left: 1.5em;
+}
+.content h2 {
+  width: 42%;
+  font-size: 2em;
+  color: white;
+}
+.content p {
+  margin-top: 3rem;
+  width: 30%;
+  font-size: 0.6em;
+  color: #e3e3e3;
+}
+
+.text .span {
+  font-size: 1em;
+  color: #f4793d;
+}
+
+.submit_btn {
+  margin-top: 3rem;
+  background: var(--gradient);
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  color: white;
+}
+
+.flex-container {
+  background: #c7c7c733;
+}
+
+.car-brand {
+  padding: 4em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.car-brand .size {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1em;
+  height: 70px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container-flex{
+  padding: 7em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.container-flex .item{
+  border: 2px solid #F1F1F1;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+  padding: 1.5em 1.5em;
+}
+.container-flex .item img{
+  height: 40px;
+  width: 60px;
+}
+.container-flex .details span{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.container-flex .details p{
+  margin-top: 10px;
+  color: #6C6C6C;
+  font-size: 1.2em;
+}
+
+.bilagenten{
+  font-size: 3.2em;
+  width: 38%;
+  margin: auto;
+  padding-bottom: 3em;
+}
+.bilagenten h1{
+  font-size: 1em;
+}
+
+.bilagenten span{
+  font-size: 1em;
+  color: #FF872C;
+}
+
+
+/* ===============================================
+Blog Card Carousel Styles Start from here: 
+==================================================*/
+
+.user-persona {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 0 0 5em 0;
+  margin: 4rem 0;
+}
+
+.user-card-item {
+  width: 30rem;
+  height: 57vh;
+  object-fit: cover;
+  padding: 0.8rem;
+  border: 1px solid white;
+  border-radius: 3rem;
+  background: var(--gradientGray);
+}
+
+.user-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  
+}
+
+.user-card-content {
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.user-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.user-persona-para {
+  color: #888;
+  font-size: 1.4rem;
+  padding: 1.4rem 0;
+}
+
+
+ /* <!-- Contact sec starts from here  -->  */
+
+
+ .contact-title h1{
+  text-align: center;
+  font-size: 3.4em;
+  padding-bottom: 3em;
+ }
+
+ .contact-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10em;
+ }
+ .contact-flex .inputs{
+  width: 30%;
+ }
+ .contact-flex .input-field{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+ .contact-flex .input-field input{
+  padding: 1em;
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
+  font-size: 1.2em;
+ }
+ .contact-flex .input-field textarea{
+  padding: 1em;
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
+  font-size: 1.2em;
+ }
+
+ .contact-details img{
+  width: 200px;
+ }
+ .contact-details h4{
+  margin-top: 10px;
+  font-size: 1.9em;
+  font-weight: 600;
+ }
+ .contact-details h4 span{
+  margin-top: 10px;
+  font-size: 1em;
+  color: #f4793d;
+ }
+ .contact-details .details{
+  margin-top: 25px;
+
+ }
+
+ .questions{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
+ .questions strong{
+  font-weight: 600;
+  font-size: 2em;
+ }
+
+/* .......................... */
+
 /*----------------------------------
 ====================================
 Footer Area CSS Part Starts
