@@ -510,6 +510,89 @@ Footer Area CSS Part Starts
 ==================================================*/
 
 @media (max-width: 560px) {
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+ .responsive_navbar_btn {
+    display: block;
+    z-index: 999;
+  }
+  .nav_list,
+  .nav_buttons {
+    display: none;
+  }
+
+  .responsive_menu_popup {
+    background: orange;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #000;
+
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .active_res_nav {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .res_nav_list,
+  .res_nav_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .res_nav_list_item {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .res_navbar_btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-menu"] {
+    display: block;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-cross"] {
+    display: none;
+  }
+
+
   .car-bg {
     height: 70vh;
     width: 100%;
@@ -521,7 +604,7 @@ Footer Area CSS Part Starts
   .content {
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 1em;
-    padding-top: 17em;
+    padding-top: 13em;
     padding-left: 1em;
     height: 100%;
     width: 100%;
@@ -583,6 +666,15 @@ Footer Area CSS Part Starts
     margin: auto;
     padding-bottom: 3em;
   }
+  .user-card-item {
+    width: 30rem;
+    height: 100%;
+    object-fit: cover;
+    padding: 0.8rem;
+    border: 1px solid white;
+    border-radius: 3rem;
+    background: var(--gradientGray);
+}
   .user-persona {
     display: flex;
     justify-content: center;
@@ -628,4 +720,36 @@ Footer Area CSS Part Starts
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 1rem 0 1rem;
+    margin: 0 auto;
+}
+
+.footer_container .footer_content .footer_details {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 6.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 6.4rem;
+    width: 100%;
+}
+
 }
