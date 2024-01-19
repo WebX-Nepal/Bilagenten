@@ -587,9 +587,9 @@ Footer Area CSS Part Starts
   .responsive_menu_popup {
     background: orange;
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -599,10 +599,16 @@ Footer Area CSS Part Starts
     color: #000;
     transform: translateX(100%);
     transition: all 0.5s linear;
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
     pointer-events: none;
   }
+
+  .active {
+  margin: 0;
+  padding-bottom: 2em;
+  border-bottom: 2px solid black;
+}
 
   .active_res_nav {
     transform: translateX(0);
@@ -669,7 +675,12 @@ Footer Area CSS Part Starts
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: auto;
 }
+/* .retailer-mainContainer .retailer1 .buttons .signin{
+  width: 100%;
+  margin: auto;
+} */
 .retailer-mainContainer .retailer2 {
     width: 100%;
 }
@@ -734,6 +745,8 @@ Footer Area CSS Part Starts
   }
   .contact-flex .inputs .submit_btn {
     margin-top: 2em;
+    width: 50%;
+  
   }
   .contact-details {
     margin: auto;
