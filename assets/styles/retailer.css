@@ -185,7 +185,6 @@ html {
   margin-top: 2em;
   font-size: 1.5em;
   color: #51585A;
-;
 }
 .retailer-mainContainer .retailer2 {
   width: 60%;
@@ -554,4 +553,255 @@ Footer Area CSS Part Starts
 
 .webx:hover {
   text-decoration: underline;
+}
+
+
+/* ================================================
+...................................................
+             Media Query Starts from here
+..................................................
+==================================================*/
+
+@media (max-width: 560px) {
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .responsive_navbar_btn {
+    display: block;
+    z-index: 999;
+  }
+  .nav_list,
+  .nav_buttons {
+    display: none;
+  }
+
+  .responsive_menu_popup {
+    background: orange;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #000;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .active_res_nav {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .res_nav_list,
+  .res_nav_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .res_nav_list_item {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .res_navbar_btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-menu"] {
+    display: block;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-cross"] {
+    display: none;
+  }
+
+
+  .retailer-mainContainer {
+    padding: 15em 2em 0 2em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 9em;
+}
+.retailer-mainContainer .retailer1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+.retailer1 .heading {
+  width: 100%;
+ text-align: center;
+}
+.retailer-mainContainer .retailer1 .heading p {
+  width: 100%;
+}
+.retailer-mainContainer .retailer1 .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.retailer-mainContainer .retailer2 {
+    width: 100%;
+}
+.user-persona {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7em;
+    padding: 0 0 5em 0;
+    margin: 4rem 0;
+}
+
+.users-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 3em;
+    padding-bottom: 7em;
+}
+
+.moreCars .container {
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    width: 90%;
+    margin: auto auto 3em;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* contact sec  */
+
+.contact-title h1 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 3em;
+  }
+
+  .contact-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10em;
+    flex-wrap: wrap;
+    gap: 5em;
+  }
+  .questions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact-flex .inputs {
+    width: 90%;
+    margin: auto;
+  }
+  .contact-flex .inputs .submit_btn {
+    margin-top: 2em;
+  }
+  .contact-details {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .moreCars-container .buttom {
+    padding: 0 2em;
+    text-align: center;
+}
+
+.moreCars-container {
+    padding-bottom: 7em;
+}
+
+.moreCars-container .buttom .submit_btn {
+    background: var(--gradient);
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    color: white;
+}
+
+  
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 6.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+}
 }
