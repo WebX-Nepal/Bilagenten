@@ -32,6 +32,116 @@ body {
 
 }
 
+/* nav css start  */
+.navbar {
+  background-color: var(--white);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 12rem;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.nav_list .nav_list_item {
+  width: 50vw;
+  /* font-size: 3vw; */
+  font-size: 1.6em;
+  text-decoration: none;
+  margin: 1rem 1.6rem;
+  color: #000;
+}
+
+.nav_list .nav_list_item:hover {
+  color: var(--primary_color);
+}
+
+.nav_buttons .navbar_btn {
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
+.main_button {
+  background: #000;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  color: white;
+}
+
+.main_button:hover {
+  background: var(--primary_color);
+  transition-duration: 0.3s;
+}
+
+.button_outline:hover {
+  border: 2px solid var(--primary_color);
+  transition-duration: 0.3s;
+}
+
+.button_outline {
+  border: 2px solid #000;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  color: #000;
+  margin-left: 1rem;
+}
+
+.active {
+  height: 3px;
+  width: 3rem;
+  margin: auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary_color);
+}
+
+/* Responsive icon setups */
+
+.responsive_navbar_btn {
+  display: none;
+  cursor: pointer;
+}
+
+.menu_icon {
+  font-size: 1.6rem;
+}
+
+.menu_icon[name="maki-cross"] {
+  display: none;
+}
+
+.review_container {
+}
+
+.review_title {
+  text-align: center;
+  font-size: 4rem;
+}
+.review_title .title_discolor {
+  color: var(--primary_color);
+  font-size: 4rem;
+}
+
+.review_holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.google_review {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.google_review_font {
+  font-size: 1.6rem;
+}
+/* nav css end  */
+
 .login {
   display: flex;
   justify-content: center;
@@ -397,6 +507,103 @@ Footer Area CSS Part Starts
 
 
 @media (max-width: 560px) {
+ /* nav res start  */
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .responsive_navbar_btn {
+    display: block;
+    z-index: 999;
+  }
+  .nav_list,
+  .nav_buttons {
+    display: none;
+  }
+
+  .responsive_menu_popup {
+    background: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #000;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 1;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .active {
+  margin: 0;
+  padding-bottom: 2em;
+  border-bottom: 2px solid black;
+}
+
+  .active_res_nav {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .res_nav_list,
+  .res_nav_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .res_nav_list_item {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .res_navbar_btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-menu"] {
+    display: block;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-cross"] {
+    display: none;
+  }
+
+  /* nav res ends  */
+
+
+.login-heading {
+    font-size: 3rem;
+}
+
+  .terms {
+    font-size: 1.3em;
+}
   /* footer responsive  */
 
   .footer_container {

@@ -711,6 +711,7 @@ Footer Area CSS Part Starts
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    gap: 2em;
 }
 
 
