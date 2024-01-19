@@ -153,10 +153,20 @@ html {
   border-radius: 3rem;
   color: white;
 }
+.submit {
+  background: var(--gradient);
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  color: white;
+  margin-top: 2em;
+}
 
 /* herosec of retailers starts from here  */
 .retailer-mainContainer {
-  padding: 10em 12em;
+  padding: 15em 12em;
   display: flex;
   align-items: center;
 }
@@ -164,7 +174,7 @@ html {
   width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 5em;
 }
 .retailer-mainContainer .retailer1 h1 {
   font-size: 4em;
@@ -172,9 +182,10 @@ html {
 }
 .retailer-mainContainer .retailer1 .heading p {
   width: 90%;
-  margin-top: 20px;
-  font-size: 1.4em;
-  color: #888;
+  margin-top: 2em;
+  font-size: 1.5em;
+  color: #51585A;
+;
 }
 .retailer-mainContainer .retailer2 {
   width: 60%;
@@ -310,6 +321,103 @@ Blog Card Carousel Styles Start from here:
 }
 
 /* .......................... */
+
+
+/* .......................... */
+.users-container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 10em;
+}
+.users-container .item img{
+  height: 70px;
+}
+.users-container .item p{
+  font-size: 1.7rem;
+  color: #51585A;
+}
+.users-container .item h2{
+  font-weight: bold;
+  font-size: 4rem;
+  color: #51585A;
+}
+
+/* .......................... */
+
+.moreCars-container {
+   padding-bottom: 10em;
+}
+.moreCars-container .title{
+   text-align: center;
+   font-size: 3.5rem;
+   color: #f4793d;
+   padding-bottom: 2em;
+}
+
+.moreCars .container{
+  border: 2px solid #CFCFCF;
+  border-radius: 20px;
+  padding: 2em;
+  display: flex;
+  width: 55%;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 3em;
+}
+.moreCars .container .imgsec img{
+  height: 200px;
+  object-fit: cover;
+}
+.moreCars .container .car-details h3{
+  font-weight: bold;
+  font-size: 1.7em;
+  margin-top: 1em;
+}
+
+.moreCars .container .car-details .features p{
+  color: #555555;
+  font-size: 1.3em;
+}
+
+.moreCars .container .car-details h5{
+    margin-top: 1.4em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.moreCars .container .bid h2{
+   color: #FF872C;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   height: 70%;
+   font-size: 1.6rem;
+   font-weight: bold;
+}
+
+.car-details .features{
+  margin-top: 1.4em;
+  display: flex;
+  gap: 4em;
+}
+
+.moreCars-container .buttom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding-top: 1em;
+}
+.moreCars-container .buttom p{
+ font-size: 1.5em;
+ color: #4C4C4C;
+}
+
+
+
 
 /*----------------------------------
 ====================================

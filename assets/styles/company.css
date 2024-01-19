@@ -207,7 +207,7 @@ html {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.container-flex{
+.container-flex {
   padding: 7em 0;
   display: flex;
   justify-content: space-between;
@@ -215,8 +215,8 @@ html {
   width: 80%;
   margin: auto;
 }
-.container-flex .item{
-  border: 2px solid #F1F1F1;
+.container-flex .item {
+  border: 2px solid #f1f1f1;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -224,36 +224,35 @@ html {
   width: 30%;
   padding: 1.5em 1.5em;
 }
-.container-flex .item img{
+.container-flex .item img {
   height: 40px;
   width: 60px;
 }
-.container-flex .details span{
+.container-flex .details span {
   font-weight: bold;
   font-size: 1.5em;
 }
-.container-flex .details p{
+.container-flex .details p {
   margin-top: 10px;
-  color: #6C6C6C;
+  color: #6c6c6c;
   font-size: 1.2em;
 }
 
-.bilagenten{
+.bilagenten {
   font-size: 3.2em;
   width: 38%;
   margin: auto;
   padding-bottom: 3em;
 }
-.bilagenten h1{
+.bilagenten h1 {
   text-align: center;
   font-size: 1em;
 }
 
-.bilagenten span{
+.bilagenten span {
   font-size: 1em;
-  color: #FF872C;
+  color: #ff872c;
 }
-
 
 /* ===============================================
 Blog Card Carousel Styles Start from here: 
@@ -286,7 +285,6 @@ Blog Card Carousel Styles Start from here:
   object-position: top;
 }
 
-
 .user-card-content {
   text-align: center;
   padding: 0.8rem;
@@ -303,70 +301,67 @@ Blog Card Carousel Styles Start from here:
   padding: 1.4rem 0;
 }
 
+/* <!-- Contact sec starts from here  -->  */
 
- /* <!-- Contact sec starts from here  -->  */
-
-
- .contact-title h1{
+.contact-title h1 {
   text-align: center;
   font-size: 3.4em;
   padding-bottom: 3em;
- }
+}
 
- .contact-flex {
+.contact-flex {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 10em;
- }
- .contact-flex .inputs{
+}
+.contact-flex .inputs {
   width: 30%;
- }
- .contact-flex .input-field{
+}
+.contact-flex .input-field {
   display: flex;
   flex-direction: column;
   gap: 10px;
- }
- .contact-flex .input-field input{
+}
+.contact-flex .input-field input {
   padding: 1em;
-  border: 1px solid #F1F1F1;
+  border: 1px solid #f1f1f1;
   border-radius: 10px;
   font-size: 1.2em;
- }
- .contact-flex .input-field textarea{
+}
+.contact-flex .input-field textarea {
   padding: 1em;
-  border: 1px solid #F1F1F1;
+  border: 1px solid #f1f1f1;
   border-radius: 10px;
   font-size: 1.2em;
- }
+}
 
- .contact-details img{
+.contact-details img {
   width: 200px;
- }
- .contact-details h4{
+}
+.contact-details h4 {
   margin-top: 10px;
   font-size: 1.9em;
   font-weight: 600;
- }
- .contact-details h4 span{
+}
+.contact-details h4 span {
   margin-top: 10px;
   font-size: 1em;
   color: #f4793d;
- }
- .contact-details .details{
+}
+.contact-details .details {
   margin-top: 25px;
+}
 
- }
-
- .questions{
+.questions {
   display: flex;
   flex-direction: column;
   gap: 10px;
- }
- .questions strong{
+}
+.questions strong {
   font-weight: 600;
   font-size: 2em;
- }
+}
 
 /* .......................... */
 
@@ -506,4 +501,131 @@ Footer Area CSS Part Starts
 
 .webx:hover {
   text-decoration: underline;
+}
+
+/* ================================================
+...................................................
+             Media Query Starts from here
+..................................................
+==================================================*/
+
+@media (max-width: 560px) {
+  .car-bg {
+    height: 70vh;
+    width: 100%;
+    background-image: url(../images/carBg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100% 50%;
+    background-position: center;
+  }
+  .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+    padding-top: 17em;
+    padding-left: 1em;
+    height: 100%;
+    width: 100%;
+  }
+  .content h2 {
+    width: 90%;
+    margin: auto;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+  }
+  .content p {
+    margin-top: 3rem;
+    width: 90%;
+    margin: 2em auto;
+    font-size: 1.3em;
+    color: #e3e3e3;
+    text-align: center;
+  }
+  .submit_btn {
+    margin: auto;
+    display: flex;
+  }
+
+  .car-brand {
+    padding: 4em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .container-flex {
+    padding: 7em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  .container-flex .item {
+    border: 2px solid #f1f1f1;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 1.5em 1.5em;
+  }
+
+  .bilagenten {
+    font-size: 2rem;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 3em;
+  }
+  .user-persona {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 0 0 5em 0;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+  }
+  .contact-title h1 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 3em;
+  }
+
+  .contact-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10em;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+.questions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.contact-flex .inputs {
+    width: 90%;
+    margin: auto;
+}
+.contact-flex .inputs .submit_btn {
+    margin-top: 2em;
+}
+.contact-details {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
