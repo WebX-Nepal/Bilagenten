@@ -402,7 +402,7 @@ Blog Card Carousel Styles Start from here:
   gap: 4em;
 }
 
-.moreCars-container .buttom{
+.container .buttom{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -410,10 +410,7 @@ Blog Card Carousel Styles Start from here:
   gap: 2em;
   padding-top: 1em;
 }
-.moreCars-container .buttom p{
- font-size: 1.5em;
- color: #4C4C4C;
-}
+
 
 
 

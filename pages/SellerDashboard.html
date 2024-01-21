@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/sellerDashboard.css" />
+    <title>Seller Login</title>
+  </head>
+  <body>
+    <!-- Navigation bar ---------------------------------------->
+    <nav class="navbar">
+      <div class="brand_logo">
+        <a href="./pages/seller.html">
+          <img src="/assets/images/logo.png" alt="logo" height="40" />
+        </a>
+      </div>
+
+      <div class="nav_list">
+        <a href="/#" class="nav_list_item">Sell the Car</a>
+        <a href="/pages/company.html" class="nav_list_item">Company</a>
+        <a href="/pages/retailer.html" class="nav_list_item">Retailer</a>
+      </div>
+      <div class="nav_buttons">
+        <a href="../pages/login.html" class="navbar_btn main_button">My Page</a>
+        <a href="#login" class="navbar_btn button_outline">Dealer Portal</a>
+      </div>
+      <!-- Responsive Navbar start from here --------------------->
+      <div class="responsive_navbar_btn">
+        <iconify-icon
+          icon="pepicons-pop:menu"
+          name="maki-menu"
+          class="menu_icon"
+        ></iconify-icon>
+        <iconify-icon
+          icon="maki:cross"
+          name="maki-cross"
+          class="menu_icon"
+        ></iconify-icon>
+      </div>
+    </nav>
+    <div class="responsive_menu_popup">
+      <div class="res_nav_list">
+        <a href="/#" class="res_nav_list_item">Sell the Car</a>
+        <a href="/pages/company.html" class="res_nav_list_item active"
+          >Company</a
+        >
+        <a href="/pages/retailer.html" class="res_nav_list_item">Retailer</a>
+      </div>
+      <div class="res_nav_buttons">
+        <a href="/pages/login.html" class="res_navbar_btn main_button"
+          >My Page</a
+        >
+        <a href="#login" class="res_navbar_btn button_outline">Dealer Portal</a>
+      </div>
+    </div>
+    <!--************* Responsive Navbar close here *********--------------------->
+    <div class="sellDash-container">
+      <div class="head">
+        <h2>Seller Dashboard</h2>
+      </div>
+      <div class="menu-container">
+        <div class="menu">
+          <div class="menu-list">
+            <a href="#" onclick="showContent('my-cars')">My Cars</a>
+            <a href="#" onclick="showContent('current-biddings')"
+              >Current Biddings</a
+            >
+            <a href="#" onclick="showContent('my-sold-cars')">My Sold Cars</a>
+          </div>
+          <div class="logout">
+            <a href="/index.html" class="logout">Logout</a>
+            <img src="/assets/images/logOuticon.png" alt="" />
+          </div>
+        </div>
+        <div class="details">
+          <div id="my-cars" class="content">
+            <div class="container">
+              <div class="imgsec">
+                <img src="/assets/images/car4.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Mercedies Benz</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <h2>Highest Bid</h2>
+              </div>
+            </div>
+            <div class="container">
+              <div class="imgsec">
+                <img src="/assets/images/car2.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Mercedies Benz</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <h2>Highest Bid</h2>
+              </div>
+            </div>
+            <div class="container">
+              <div class="imgsec">
+                <img src="/assets/images/blue.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Mercedies Benz</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <h2>Highest Bid</h2>
+              </div>
+            </div>
+            <div class="container">
+              <div class="imgsec">
+                <img src="/assets/images/mercedes.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Mercedies Benz</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <h2>Highest Bid</h2>
+              </div>
+            </div>
+          </div>
+          <div id="current-biddings" class="content">
+            <div class="container-bid">
+              <div class="imgsec">
+                <div class="details">
+                  <img src="/assets/images/mercedes.png" alt="imgErr" />
+                  <div class="car-details-container">
+                    <div class="car-details">
+                      <h3>Mercedies Benz</h3>
+                      <div class="features">
+                        <div class="left">
+                          <p>Leather</p>
+                          <p>ACC</p>
+                          <p>Navi</p>
+                          <p>R.Cam</p>
+                        </div>
+                        <div class="right">
+                          <p>DAB</p>
+                          <p>Active Info Display</p>
+                          <p>V.Pump</p>
+                        </div>
+                      </div>
+                      <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+                    </div>
+                    <div class="prize">
+                      <strong>$150,000</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="biddingDate">
+                <div class="timer">
+                  <h2 id="timer-display">16</h2>
+                  <button id="start-button">+</button>
+                </div>
+                <div class="bid">
+                  <h2>Highest Bidding Price</h2>
+                  <strong class="bidPrice">$89.000</strong>
+
+                  <h3 class="start">Bidding Starting Date</h3>
+                  <p class="startDate">30/01/2024</p>
+                  <h3>Bidding End Date</h3>
+                  <p class="endDate">29/2/2024</p>
+                </div>
+              </div>
+              <div class="status">
+                <h2 class="status-state">Status</h2>
+                <h2 class="active-state">Inactive</h2>
+              </div>
+            </div>
+            <div class="bidders-list-container">
+              <h1>Bidders List</h1>
+              <div class="bidders-list">
+                <div class="bidder">
+                  <div class="names">
+                  <h3>Ramesh Dai</h3>
+                </div>
+                <div class="amount">
+                  <p>$55,000</p>
+                </div>
+                </div>
+                <div class="bidder">
+                  <div class="names">
+                  <h3>Ramesh Dai</h3>
+                </div>
+                <div class="amount">
+                  <p>$55,000</p>
+                </div>
+                </div>
+                <div class="bidder">
+                  <div class="names">
+                  <h3>Ramesh Dai</h3>
+                </div>
+                <div class="amount">
+                  <p>$55,000</p>
+                </div>
+                </div>
+                <div class="bidder">
+                  <div class="names">
+                  <h3>Ramesh Dai</h3>
+                </div>
+                <div class="amount">
+                  <p>$55,000</p>
+                </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div id="my-sold-cars" class="content">
+             <div class="container">
+              <div class="imgsec">
+                <img src="/assets/images/car4.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Mercedies Benz</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <h2>Highest Bid</h2>
+              </div>
+            </div>
+            <div class="container">
+              <div class="imgsec">
+                <img src="/assets/images/car2.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Mercedies Benz</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <h2>Highest Bid</h2>
+              </div>
+            </div>
+            <div class="container">
+              <div class="imgsec">
+                <img src="/assets/images/blue.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Mercedies Benz</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <h2>Highest Bid</h2>
+              </div>
+            </div>
+            <div class="container">
+              <div class="imgsec">
+                <img src="/assets/images/mercedes.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Mercedies Benz</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <h2>Highest Bid</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Area starts fron this line: Please explore it. -->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_content">
+          <div class="footer_details">
+            <div class="footer_company_details">
+              <img src="/assets/images/whiteLogo.png" alt="footerLogo" />
+              <p class="footer_para">
+                We collect all the cars, evaluate the valuations. Making them
+                ready so everyone can buy it in reasonable costs.
+              </p>
+              <p class="footer_timing_para">
+                You can call us <span class="timing_color">Mon - Fri</span> at
+                <span class="timing_color">08-20</span>
+                <span class="timing_color">Sat - Sun</span>and at
+                <span class="timing_color">10-16</span>
+              </p>
+            </div>
+            <div class="footer_fast_travel">
+              <h1 class="fast_t_title">Fast Travel</h1>
+              <div class="fast_t_list_item">
+                <a href="#" class="fast_travel_links">Car Tips</a
+                ><a href="#" class="fast_travel_links">Question and answers</a
+                ><a href="#" class="fast_travel_links">About Us</a
+                ><a href="#" class="fast_travel_links">Valuation</a
+                ><a href="#" class="fast_travel_links">Career with us</a
+                ><a href="#" class="fast_travel_links">For dealer</a>
+              </div>
+            </div>
+            <div class="footer_fast_travel">
+              <h1 class="fast_t_title">Terms</h1>
+              <div class="fast_t_list_item">
+                <a href="#" class="fast_travel_links">Privacy Statement</a
+                ><a href="#" class="fast_travel_links">Question and answers</a
+                ><a href="#" class="fast_travel_links">Cookies</a
+                ><a href="#" class="fast_travel_links">The Transparency Act</a>
+              </div>
+            </div>
+            <div class="footer_fast_travel">
+              <h1 class="fast_t_title">Get in touch</h1>
+              <div class="fast_t_list_item">
+                <div class="social_media_icons">
+                  <a href="facebook.com" target="_blank"
+                    ><iconify-icon
+                      icon="ri:facebook-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                  <a href="instagram.com" target="_blank"
+                    ><iconify-icon
+                      icon="ri:instagram-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                  <a href="linkedin.com" target="_blank"
+                    ><iconify-icon
+                      icon="mingcute:linkedin-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                  <a href="twitter.com" target="_blank"
+                    ><iconify-icon
+                      icon="akar-icons:x-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                </div>
+                <a href="#" class="fast_travel_links">956 35 566</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_copyright">
+            <p class="copyright_para">
+              &copy;Copyright2024 | All Right Reserved | Designed By
+              <a href="https://webxnep.com" target="_blank" class="webx"
+                >WebX</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/main.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script>
+      function showContent(id) {
+        var contents = document.getElementsByClassName("content");
+        for (var i = 0; i < contents.length; i++) {
+          contents[i].classList.remove("active");
+        }
+        document.getElementById(id).classList.add("active");
+      }
+      // Call the function with 'my-cars' as argument to make it active on page load
+      showContent("my-cars");
+
+      // Get the timer display element
+      const timerDisplay = document.getElementById("timer-display");
+
+      // Get the start button element
+      const startButton = document.getElementById("start-button");
+
+      // Set the initial time to 16 seconds
+      let time = 16;
+
+      // Function to update the timer display
+      function updateTimer() {
+        timerDisplay.textContent = time;
+      }
+
+      // Function to start the timer
+      function startTimer() {
+        // Update the timer display initially
+        updateTimer();
+
+        // Decrease the time by 1 every second
+        const timerInterval = setInterval(() => {
+          time--;
+
+          // Stop the timer when it reaches 0
+          if (time <= 0) {
+            clearInterval(timerInterval);
+            time = 0; // Ensure time doesn't go negative
+          }
+
+          updateTimer();
+        }, 1000);
+      }
+
+      // Add event listener to the start button
+      startButton.addEventListener("click", startTimer);
+    </script>
+  </body>
+</html>
