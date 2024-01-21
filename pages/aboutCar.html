@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/styles/login.css" />
+    <link rel="stylesheet" href="../assets/styles/contactInfo.css" />
     <title>Seller Login</title>
   </head>
   <body>
@@ -52,75 +52,35 @@
     <!--************* Responsive Navbar close here *********--------------------->
 
 
-    <div class="login">
-      <div class="login-container">
-        <h1 class="login-heading">Create an account</h1>
-        <p class="login-subtitle">
-          Enter your email address and create a password
+    <div class="contact">
+      <div class="contact-container">
+        <h1 class="contact-heading">About Your Car</h1>
+        <p class="contact-subtitle">
+          Enter your car details
         </p>
-        <img src="../assets/images/login.png" alt="login" />
-        <input type=" email" name="email" placeholder="email" id="email" />
+        <img src="../assets/images/aboutCar.png" alt="login" />
+        <input type="fname" name="fname" placeholder="First name" id="name" />
+        <input type="lname" name="lname" placeholder="Last name" id="name" />
         <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="password"
+          type="phone"
+          name="phone"
+          id="phone"
+          placeholder="+977 98X-XXX-XXXX"
         />
         <input
-          type="password"
-          name="conf-password"
-          id="conf-password"
-          placeholder="confirm password"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
         />
-        <div class="login-validations">
-          <div class="radio">
-            <iconify-icon
-              icon="octicon:dot-24"
-              style="font-size: 24px"
-            ></iconify-icon
-            >At least 12 characters
-          </div>
-          <div class="radio">
-            <iconify-icon
-              icon="octicon:dot-24"
-              style="font-size: 24px"
-            ></iconify-icon
-            >Medium or strong password
-          </div>
-          <div class="radio">
-            <iconify-icon
-              icon="mdi:tick-circle-outline"
-              style="color: orange; font-size: 24px"
-            ></iconify-icon
-            >At least 1 lowercase letter
-          </div>
-          <div class="radio">
-            <iconify-icon
-              icon="octicon:dot-24"
-              style="font-size: 24px"
-            ></iconify-icon
-            >At least 1 number
-          </div>
-          <div class="radio">
-            <iconify-icon
-              icon="octicon:dot-24"
-              style="font-size: 24px"
-            ></iconify-icon
-            >At least 1 symbol (!“#$%&'()*+,-./:;<=>?@[]^_`{|}~)
-          </div>
-          <div class="radio">
-            <iconify-icon
-              icon="octicon:dot-24"
-              style="font-size: 24px"
-            ></iconify-icon
-            >Medium or strong password
-          </div>
-        </div>
         <label for="terms" class="terms">
           <input type="radio" name="term" id="term" />
           I accept the terms of use of the service
         </label>
-        <button type="button" id="registerBtn">Register now</button>
+       <div class="button">
+         <button type="button" id="backBtn">Back</button>
+         <button type="button" id="nextBtn">Next</button>
+       </div>
       </div>
     </div>
 

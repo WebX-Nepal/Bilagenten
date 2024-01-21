@@ -142,29 +142,41 @@ body {
 }
 /* nav css end  */
 
-.login {
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10rem 0;
+
 }
 
-.login-container {
+.contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.6rem;
+    border: 2px solid #ECECEC;
+    padding: 4em 6em;
+    border-radius: 3em;
 }
 
-.login-heading {
+.contact-heading {
   font-size: 4rem;
 }
 
-.login-subtitle {
-  font-size: 1.4rem;
+.contact-subtitle {
+  font-size: 1.5rem;
   color: #666;
 }
 
+#name{
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: 2px solid #888;
+  font-size: 1.4rem;
+  outline-color: orange;
+  width: 90%;
+}
 #email{
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -173,7 +185,7 @@ body {
   outline-color: orange;
   width: 90%;
 }
-#password{
+#phone{
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: 2px solid #888;
@@ -181,48 +193,75 @@ body {
   width: 90%;
   outline-color: orange;
 } 
-#conf-password{
-  padding: 1.2rem 1.6rem;
-  border-radius: 3.2rem;
-  border: 2px solid #888;
-  font-size: 1.4rem;
-  width: 90%;
-  outline-color: orange;
-}
 
-.radio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .8rem;
-  font-size: 1.2rem;
-}
 
-.login-validations {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 3.2rem 0;
-}
 
 .terms {
   display: flex;
   gap: .8rem;
   align-items: center;
   justify-content: flex-start;
+  font-size: 1.3em;
   cursor: pointer;
   width: 89%;
+  margin-top: 1em;
+}
+.button{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
 }
 
-#registerBtn{
+#nextBtn{
+  margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: none;
   font-size: 1.4rem;
-  width: 90%;
+  cursor: pointer;
+  background: transparent;
+  width: 60%;
+  border: 2px solid var(--primary_color);
+  color: var(--primary_color);
+} 
+
+#nextBtn:hover{
+  margin-top: 1em;
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
   cursor: pointer;
   background: var(--gradient);
+  border: 2px solid var(--primary_color);
   color: white;
+  width: 60%;
+} 
+
+#backBtn{
+  margin-top: 1em;
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: transparent;
+  width: 30%;
+  border: 2px solid var(--primary_color);
+  color: var(--primary_color);
+
+} 
+#backBtn:hover{
+  margin-top: 1em;
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: var(--gradient);
+  border: 2px solid var(--primary_color);
+  color: white;
+  width: 30%;
 } 
 
 #registerBtn:hover {
@@ -475,6 +514,7 @@ Footer Area CSS Part Starts
   background: orange;
   color: white;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -527,7 +567,6 @@ Footer Area CSS Part Starts
   .nav_buttons {
     display: none;
   }
-
 
   .responsive_menu_popup {
     background: orange;

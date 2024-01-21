@@ -155,6 +155,13 @@ body {
   padding: 1.5rem 3rem;
   border-radius: 3rem;
   color: white;
+  text-decoration: none;
+}
+
+.getStarted{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Responsive icon setups */

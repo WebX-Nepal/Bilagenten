@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/styles/login.css" />
+    <link rel="stylesheet" href="../assets/styles/contactInfo.css" />
     <title>Seller Login</title>
   </head>
   <body>
-     <!-- Navigation bar ---------------------------------------->
+    <!-- Navigation bar ---------------------------------------->
     <nav class="navbar">
       <div class="brand_logo">
         <a href="./pages/seller.html">
@@ -16,8 +16,8 @@
       </div>
 
       <div class="nav_list">
-        <a href="/#" class="nav_list_item ">Sell the Car</a>
-        <a href="/pages/company.html" class="nav_list_item ">Company</a>
+        <a href="/#" class="nav_list_item">Sell the Car</a>
+        <a href="/pages/company.html" class="nav_list_item">Company</a>
         <a href="/pages/retailer.html" class="nav_list_item">Retailer</a>
       </div>
       <div class="nav_buttons">
@@ -41,91 +41,59 @@
     <div class="responsive_menu_popup">
       <div class="res_nav_list">
         <a href="/#" class="res_nav_list_item">Sell the Car</a>
-        <a href="/pages/company.html" class="res_nav_list_item active">Company</a>
+        <a href="/pages/company.html" class="res_nav_list_item active"
+          >Company</a
+        >
         <a href="/pages/retailer.html" class="res_nav_list_item">Retailer</a>
       </div>
       <div class="res_nav_buttons">
-        <a href="/pages/login.html" class="res_navbar_btn main_button">My Page</a>
+        <a href="/pages/login.html" class="res_navbar_btn main_button"
+          >My Page</a
+        >
         <a href="#login" class="res_navbar_btn button_outline">Dealer Portal</a>
       </div>
     </div>
     <!--************* Responsive Navbar close here *********--------------------->
 
-
-    <div class="login">
-      <div class="login-container">
-        <h1 class="login-heading">Create an account</h1>
-        <p class="login-subtitle">
-          Enter your email address and create a password
-        </p>
-        <img src="../assets/images/login.png" alt="login" />
-        <input type=" email" name="email" placeholder="email" id="email" />
+    <div class="contact">
+      <div class="contact-container">
+        <h1 class="contact-heading">Contact Information</h1>
+        <p class="contact-subtitle">Enter your car details</p>
+        <img src="../assets/images/contactInfo.png" alt="login" />
+        <input type="fname" name="fname" placeholder="First name" id="name" />
+        <input type="lname" name="lname" placeholder="Last name" id="name" />
         <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="password"
+          type="phone"
+          name="phone"
+          id="phone"
+          placeholder="+977 98X-XXX-XXXX"
         />
-        <input
-          type="password"
-          name="conf-password"
-          id="conf-password"
-          placeholder="confirm password"
-        />
-        <div class="login-validations">
-          <div class="radio">
-            <iconify-icon
-              icon="octicon:dot-24"
-              style="font-size: 24px"
-            ></iconify-icon
-            >At least 12 characters
-          </div>
-          <div class="radio">
-            <iconify-icon
-              icon="octicon:dot-24"
-              style="font-size: 24px"
-            ></iconify-icon
-            >Medium or strong password
-          </div>
-          <div class="radio">
-            <iconify-icon
-              icon="mdi:tick-circle-outline"
-              style="color: orange; font-size: 24px"
-            ></iconify-icon
-            >At least 1 lowercase letter
-          </div>
-          <div class="radio">
-            <iconify-icon
-              icon="octicon:dot-24"
-              style="font-size: 24px"
-            ></iconify-icon
-            >At least 1 number
-          </div>
-          <div class="radio">
-            <iconify-icon
-              icon="octicon:dot-24"
-              style="font-size: 24px"
-            ></iconify-icon
-            >At least 1 symbol (!“#$%&'()*+,-./:;<=>?@[]^_`{|}~)
-          </div>
-          <div class="radio">
-            <iconify-icon
-              icon="octicon:dot-24"
-              style="font-size: 24px"
-            ></iconify-icon
-            >Medium or strong password
-          </div>
-        </div>
+        <input type="email" name="email" id="email" placeholder="Email" />
         <label for="terms" class="terms">
           <input type="radio" name="term" id="term" />
           I accept the terms of use of the service
         </label>
-        <button type="button" id="registerBtn">Register now</button>
+        <div class="button">
+          <button
+            type="button"
+            id="backBtn"
+            onclick="window.location.href='/index.html'"
+          >
+            Back
+          </button>
+          <button
+            type="button"
+            id="nextBtn"
+            onclick="window.location.href='/pages/aboutCar.html'"
+          >
+            Next
+          </button>
+        </div>
       </div>
     </div>
 
     <!-- Footer Area starts fron this line: Please explore it. -->
-   <footer>
+    <footer>
       <div class="footer_container">
         <div class="footer_content">
           <div class="footer_details">
