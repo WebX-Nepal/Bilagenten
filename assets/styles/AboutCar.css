@@ -111,13 +111,12 @@ body {
   display: none;
 }
 
-.review_container {
-}
 
 .review_title {
   text-align: center;
   font-size: 4rem;
 }
+
 .review_title .title_discolor {
   color: var(--primary_color);
   font-size: 4rem;
@@ -142,229 +141,126 @@ body {
 }
 /* nav css end  */
 
-.login {
+.aboutCar {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10rem 0;
+
 }
 
-.login-container {
+.aboutCar-container {
+    width: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.6rem;
+  border: 2px solid #ECECEC;
+  padding: 7em 17em;
+  border-radius: 3em;
 }
 
-.login-heading {
+.aboutCar-heading {
   font-size: 4rem;
 }
 
-.login-subtitle {
-  font-size: 1.4rem;
+.aboutCar-subtitle {
+  font-size: 1.5rem;
   color: #666;
 }
 
-#email{
-  padding: 1.2rem 1.6rem;
-  border-radius: 3.2rem;
-  border: 2px solid #888;
-  font-size: 1.4rem;
-  outline-color: orange;
-  width: 90%;
-}
-#password{
-  padding: 1.2rem 1.6rem;
-  border-radius: 3.2rem;
-  border: 2px solid #888;
-  font-size: 1.4rem;
-  width: 90%;
-  outline-color: orange;
-} 
-#conf-password{
-  padding: 1.2rem 1.6rem;
-  border-radius: 3.2rem;
-  border: 2px solid #888;
-  font-size: 1.4rem;
-  width: 90%;
-  outline-color: orange;
-}
-
-.radio {
+.button{
+    margin-top: 1em;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .8rem;
-  font-size: 1.2rem;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.login-validations {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 3.2rem 0;
-}
-
-.terms {
-  display: flex;
-  gap: .8rem;
-  align-items: center;
-  justify-content: flex-start;
-  cursor: pointer;
-  width: 89%;
-}
-
-#registerBtn{
+#nextBtn{
+  margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: none;
   font-size: 1.4rem;
-  width: 90%;
+  cursor: pointer;
+  background: transparent;
+  width: 60%;
+  border: 2px solid var(--primary_color);
+  color: var(--primary_color);
+} 
+
+#nextBtn:hover{
+  margin-top: 1em;
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
   cursor: pointer;
   background: var(--gradient);
+  border: 2px solid var(--primary_color);
   color: white;
+  width: 60%;
+} 
+
+#backBtn{
+  margin-top: 1em;
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: transparent;
+  width: 35%;
+  border: 2px solid var(--primary_color);
+  color: var(--primary_color);
+
+} 
+#backBtn:hover{
+  margin-top: 1em;
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: var(--gradient);
+  border: 2px solid var(--primary_color);
+  color: white;
+  width: 35%;
 } 
 
 #registerBtn:hover {
   color: #000;
 }
 
-
-/* ====================================
-Footer Area CSS Part Starts
-==================================== */
-
-.footer_container {
-  height: 80vh;
-  width: 100%;
-  /* background: url(/assets/images/dark-car.gif); */
-  background: url(../images/dark-car.gif);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  padding: 6.4rem 12rem;
-  margin: 0 auto;
+.question h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: .7em;
 }
 
-.footer_container {
+.question-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 
-.footer_container .footer_content .footer_details {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 6.4rem;
+.answer{
+    display: flex;
+    justify-content: space-around;
 }
-
-.footer_container .footer_content .footer_details .fast_t_list_item {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
+.answer label{
+   font-size: 1.5em;
+   color: #656565;
 }
-
-.footer_details .fast_t_list_item .fast_travel_links {
-  font-size: 1.6rem;
+.yes{
+    display: flex;
+    align-items: center;
+    gap: 1em;    
 }
-
-.footer_container .footer_content .footer_details .footer_company_details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 3.2rem;
-
-  padding-bottom: 6.4rem;
-  width: 23%;
-}
-
-.footer_container .footer_content .footer_para,
-.footer_timing_para {
-  color: white;
-  font-size: 1.6rem;
-}
-
-.footer_container .footer_content .copyright_para {
-  color: white;
-}
-
-.footer_fast_travel {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
-}
-
-.footer_fast_travel .fast_t_title {
-  color: white;
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-
-.timing_color {
-  color: orange;
-  font-size: 1.6rem;
-}
-
-.footer_container
-  .footer_content
-  .footer_details
-  .fast_t_list_item
-  .fast_travel_links {
-  text-decoration: none;
-  color: white;
-  font-weight: 400;
-}
-
-.footer_container
-  .footer_content
-  .footer_details
-  .fast_t_list_item
-  .fast_travel_links:hover {
-  color: orange;
-}
-
-.social_media_icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.social_media_icons .social_icons {
-  height: 4rem;
-  width: 4rem;
-  font-size: 2.4rem;
-  background: orange;
-  color: white;
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social_media_icons .social_icons:hover {
-  background: var(--white);
-  color: orange;
-}
-
-.footer_copyright {
-  padding: 4rem 0;
-}
-
-.footer_copyright .copyright_para {
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-.webx {
-  color: orange;
-  font-size: 1.6rem;
-  text-decoration: none;
-}
-
-.webx:hover {
-  text-decoration: underline;
+.no{
+     display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 
@@ -475,6 +371,7 @@ Footer Area CSS Part Starts
   background: orange;
   color: white;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -527,7 +424,6 @@ Footer Area CSS Part Starts
   .nav_buttons {
     display: none;
   }
-
 
   .responsive_menu_popup {
     background: orange;

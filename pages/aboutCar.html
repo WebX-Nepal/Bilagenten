@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/AboutCar.css" />
+    <title>Seller Login</title>
+  </head>
+  <body>
+     <!-- Navigation bar ---------------------------------------->
+    <nav class="navbar">
+      <div class="brand_logo">
+        <a href="./pages/seller.html">
+          <img src="/assets/images/logo.png" alt="logo" height="40" />
+        </a>
+      </div>
+
+      <div class="nav_list">
+        <a href="/#" class="nav_list_item ">Sell the Car</a>
+        <a href="/pages/company.html" class="nav_list_item ">Company</a>
+        <a href="/pages/retailer.html" class="nav_list_item">Retailer</a>
+      </div>
+      <div class="nav_buttons">
+        <a href="../pages/login.html" class="navbar_btn main_button">My Page</a>
+        <a href="#login" class="navbar_btn button_outline">Dealer Portal</a>
+      </div>
+      <!-- Responsive Navbar start from here --------------------->
+      <div class="responsive_navbar_btn">
+        <iconify-icon
+          icon="pepicons-pop:menu"
+          name="maki-menu"
+          class="menu_icon"
+        ></iconify-icon>
+        <iconify-icon
+          icon="maki:cross"
+          name="maki-cross"
+          class="menu_icon"
+        ></iconify-icon>
+      </div>
+    </nav>
+    <div class="responsive_menu_popup">
+      <div class="res_nav_list">
+        <a href="/#" class="res_nav_list_item">Sell the Car</a>
+        <a href="/pages/company.html" class="res_nav_list_item active">Company</a>
+        <a href="/pages/retailer.html" class="res_nav_list_item">Retailer</a>
+      </div>
+      <div class="res_nav_buttons">
+        <a href="/pages/login.html" class="res_navbar_btn main_button">My Page</a>
+        <a href="#login" class="res_navbar_btn button_outline">Dealer Portal</a>
+      </div>
+    </div>
+    <!--************* Responsive Navbar close here *********--------------------->
+
+
+    <div class="aboutCar">
+      <div class="aboutCar-container">
+        <h1 class="aboutCar-heading">About Your Car</h1>
+        <p class="aboutCar-subtitle">
+          Enter your car details
+        </p>
+        <img src="../assets/images/aboutCar.png" alt="login" />
+       
+       <div class="question-container">
+        <div class="question">
+            <h2>Question number one?</h2>
+            <div class="answer">
+            <div class="yes">
+                <img src="/assets/images/check.png" alt="imgErr">
+            <label for="yesCheckbox">Yes</label>
+            </div>
+
+          <div class="no">
+            <img src="/assets/images/check.png" alt="imgErr">
+            <label for="noCheckbox">No</label></div>
+            </div>
+        </div>
+        <div class="question">
+            <h2>Question number two?</h2>
+            <div class="answer">
+            <div class="yes">
+                <img src="/assets/images/unCheck.png" alt="imgErr">
+            <label for="yesCheckbox">Yes</label>
+            </div>
+
+          <div class="no">
+            <img src="/assets/images/check.png" alt="imgErr">
+            <label for="noCheckbox">No</label></div>
+            </div>
+        </div>
+        <div class="question">
+            <h2>Question number three?</h2>
+            <div class="answer">
+            <div class="yes">
+                <img src="/assets/images/check.png" alt="imgErr">
+            <label for="yesCheckbox">Yes</label>
+            </div>
+
+          <div class="no">
+            <img src="/assets/images/unCheck.png" alt="imgErr">
+            <label for="noCheckbox">No</label></div>
+            </div>
+        </div>
+       </div>
+       <div class="button">
+         <button type="button" id="backBtn"  onclick="window.location.href='/pages/contactInfo.html'">Back</button>
+         <button type="button" id="nextBtn" onclick="window.location.href='/pages/sellerDashboard.html'">Finish</button>
+       </div>
+      </div>
+    </div>
+
+    <!-- Footer Area starts fron this line: Please explore it. -->
+   <footer>
+      <div class="footer_container">
+        <div class="footer_content">
+          <div class="footer_details">
+            <div class="footer_company_details">
+              <img src="/assets/images/whiteLogo.png" alt="footerLogo" />
+              <p class="footer_para">
+                We collect all the cars, evaluate the valuations. Making them
+                ready so everyone can buy it in reasonable costs.
+              </p>
+              <p class="footer_timing_para">
+                You can call us <span class="timing_color">Mon - Fri</span> at
+                <span class="timing_color">08-20</span>
+                <span class="timing_color">Sat - Sun</span>and at
+                <span class="timing_color">10-16</span>
+              </p>
+            </div>
+            <div class="footer_fast_travel">
+              <h1 class="fast_t_title">Fast Travel</h1>
+              <div class="fast_t_list_item">
+                <a href="#" class="fast_travel_links">Car Tips</a
+                ><a href="#" class="fast_travel_links">Question and answers</a
+                ><a href="#" class="fast_travel_links">About Us</a
+                ><a href="#" class="fast_travel_links">Valuation</a
+                ><a href="#" class="fast_travel_links">Career with us</a
+                ><a href="#" class="fast_travel_links">For dealer</a>
+              </div>
+            </div>
+            <div class="footer_fast_travel">
+              <h1 class="fast_t_title">Terms</h1>
+              <div class="fast_t_list_item">
+                <a href="#" class="fast_travel_links">Privacy Statement</a
+                ><a href="#" class="fast_travel_links">Question and answers</a
+                ><a href="#" class="fast_travel_links">Cookies</a
+                ><a href="#" class="fast_travel_links">The Transparency Act</a>
+              </div>
+            </div>
+            <div class="footer_fast_travel">
+              <h1 class="fast_t_title">Get in touch</h1>
+              <div class="fast_t_list_item">
+                <div class="social_media_icons">
+                  <a href="facebook.com" target="_blank"
+                    ><iconify-icon
+                      icon="ri:facebook-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                  <a href="instagram.com" target="_blank"
+                    ><iconify-icon
+                      icon="ri:instagram-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                  <a href="linkedin.com" target="_blank"
+                    ><iconify-icon
+                      icon="mingcute:linkedin-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                  <a href="twitter.com" target="_blank"
+                    ><iconify-icon
+                      icon="akar-icons:x-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                </div>
+                <a href="#" class="fast_travel_links">956 35 566</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_copyright">
+            <p class="copyright_para">
+              &copy;Copyright2024 | All Right Reserved | Designed By
+              <a href="https://webxnep.com" target="_blank" class="webx"
+                >WebX</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/main.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>
