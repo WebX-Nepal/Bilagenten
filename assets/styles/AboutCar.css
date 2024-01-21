@@ -111,13 +111,12 @@ body {
   display: none;
 }
 
-.review_container {
-}
 
 .review_title {
   text-align: center;
   font-size: 4rem;
 }
+
 .review_title .title_discolor {
   color: var(--primary_color);
   font-size: 4rem;
@@ -142,7 +141,7 @@ body {
 }
 /* nav css end  */
 
-.contact {
+.aboutCar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,65 +149,28 @@ body {
 
 }
 
-.contact-container {
+.aboutCar-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.6rem;
-    border: 2px solid #ECECEC;
-    padding: 4em 6em;
-    border-radius: 3em;
+  border: 2px solid #ECECEC;
+  padding: 4em 14em;
+  border-radius: 3em;
 }
 
-.contact-heading {
+.aboutCar-heading {
   font-size: 4rem;
 }
 
-.contact-subtitle {
+.aboutCar-subtitle {
   font-size: 1.5rem;
   color: #666;
 }
 
-#name{
-  padding: 1.2rem 1.6rem;
-  border-radius: 3.2rem;
-  border: 2px solid #888;
-  font-size: 1.4rem;
-  outline-color: orange;
-  width: 90%;
-}
-#email{
-  padding: 1.2rem 1.6rem;
-  border-radius: 3.2rem;
-  border: 2px solid #888;
-  font-size: 1.4rem;
-  outline-color: orange;
-  width: 90%;
-}
-#phone{
-  padding: 1.2rem 1.6rem;
-  border-radius: 3.2rem;
-  border: 2px solid #888;
-  font-size: 1.4rem;
-  width: 90%;
-  outline-color: orange;
-} 
-
-
-
-.terms {
-  display: flex;
-  gap: .8rem;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 1.3em;
-  cursor: pointer;
-  width: 89%;
-  margin-top: 1em;
-}
 .button{
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -246,7 +208,7 @@ body {
   font-size: 1.4rem;
   cursor: pointer;
   background: transparent;
-  width: 30%;
+  width: 35%;
   border: 2px solid var(--primary_color);
   color: var(--primary_color);
 
@@ -261,11 +223,42 @@ body {
   background: var(--gradient);
   border: 2px solid var(--primary_color);
   color: white;
-  width: 30%;
+  width: 35%;
 } 
 
 #registerBtn:hover {
   color: #000;
+}
+
+.question h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: .7em;
+}
+
+.question-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.answer{
+    display: flex;
+    justify-content: space-around;
+}
+.answer label{
+   font-size: 1.5em;
+   color: #656565;
+}
+.yes{
+    display: flex;
+    align-items: center;
+    gap: 1em;    
+}
+.no{
+     display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 
@@ -281,7 +274,6 @@ Footer Area CSS Part Starts
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-
   padding: 6.4rem 12rem;
   margin: 0 auto;
 }
@@ -312,7 +304,6 @@ Footer Area CSS Part Starts
   align-items: flex-start;
   justify-content: center;
   gap: 3.2rem;
-
   padding-bottom: 6.4rem;
   width: 23%;
 }
@@ -376,7 +367,6 @@ Footer Area CSS Part Starts
   background: orange;
   color: white;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
