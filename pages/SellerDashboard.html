@@ -96,7 +96,7 @@
                 <img src="/assets/images/car4.png" alt="" />
               </div>
               <div class="car-details">
-                <h3>Mercedies Benz</h3>
+                <h3>Maybach S 650 Sedan</h3>
                 <div class="features">
                   <div class="left">
                     <p>Leather</p>
@@ -118,17 +118,17 @@
                   <p class="amount">$50,000</p>
                 </div>
                 <div class="view-flex">
-                  <div class="view">
+                  <div class="view" style="cursor: pointer;">
                     <img
                       src="./../assets/images/icons/viewIcon.png"
-                      alt="imgErr"
+                      alt="imgErr" style="object-fit: contain;"
                     />
                     <h5 style="font-size: 1.2em">view</h5>
                   </div>
-                  <div class="edit">
+                  <div class="edit" style="cursor: pointer;">
                     <img
                       src="./../assets/images/icons/editIcon.png"
-                      alt="imgErr"
+                      alt="imgErr" style="object-fit: contain;"
                     />
                     <h5 style="font-size: 1.2em">edit</h5>
                   </div>
@@ -140,7 +140,7 @@
                 <img src="/assets/images/car2.png" alt="" />
               </div>
               <div class="car-details">
-                <h3>Mercedies Benz</h3>
+                <h3>Orange Audi Q3</h3>
                 <div class="features">
                   <div class="left">
                     <p>Leather</p>
@@ -162,17 +162,17 @@
                   <p class="amount">$50,000</p>
                 </div>
                 <div class="view-flex">
-                  <div class="view">
+                  <div class="view" style="cursor: pointer;">
                     <img
                       src="./../assets/images/icons/viewIcon.png"
-                      alt="imgErr"
+                      alt="imgErr" style="object-fit: contain;"
                     />
                     <h5 style="font-size: 1.2em">view</h5>
                   </div>
-                  <div class="edit">
+                  <div class="edit" style="cursor: pointer;">
                     <img
                       src="./../assets/images/icons/editIcon.png"
-                      alt="imgErr"
+                      alt="imgErr" style="object-fit: contain;"
                     />
                     <h5 style="font-size: 1.2em">edit</h5>
                   </div>
@@ -184,7 +184,7 @@
                 <img src="/assets/images/blue.png" alt="" />
               </div>
               <div class="car-details">
-                <h3>Mercedies Benz</h3>
+                <h3>2017 Ford Mustang EcoBoost</h3>
                 <div class="features">
                   <div class="left">
                     <p>Leather</p>
@@ -206,17 +206,17 @@
                   <p class="amount">$50,000</p>
                 </div>
                 <div class="view-flex">
-                  <div class="view">
+                  <div class="view" style="cursor: pointer;">
                     <img
                       src="./../assets/images/icons/viewIcon.png"
-                      alt="imgErr"
+                      alt="imgErr" style="object-fit: contain;"
                     />
                     <h5 style="font-size: 1.2em">view</h5>
                   </div>
-                  <div class="edit">
+                  <div class="edit" style="cursor: pointer;">
                     <img
                       src="./../assets/images/icons/editIcon.png"
-                      alt="imgErr"
+                      alt="imgErr" style="object-fit: contain;"
                     />
                     <h5 style="font-size: 1.2em">edit</h5>
                   </div>
@@ -228,7 +228,7 @@
                 <img src="/assets/images/mercedes.png" alt="" />
               </div>
               <div class="car-details">
-                <h3>Mercedies Benz</h3>
+                <h3>Mercedies Benz GLE</h3>
                 <div class="features">
                   <div class="left">
                     <p>Leather</p>
@@ -250,17 +250,17 @@
                   <p class="amount">$50,000</p>
                 </div>
                 <div class="view-flex">
-                  <div class="view">
+                  <div class="view" style="cursor: pointer;">
                     <img
                       src="./../assets/images/icons/viewIcon.png"
-                      alt="imgErr"
+                      alt="imgErr" style="object-fit: contain;"
                     />
                     <h5 style="font-size: 1.2em">view</h5>
                   </div>
-                  <div class="edit">
+                  <div class="edit" style="cursor: pointer;">
                     <img
                       src="./../assets/images/icons/editIcon.png"
-                      alt="imgErr"
+                      alt="imgErr" style="object-fit: contain;"
                     />
                     <h5 style="font-size: 1.2em">edit</h5>
                   </div>
@@ -269,7 +269,7 @@
             </div>
           </div>
 
-          <!-- side bar starts from here  -->
+          <!--view side bar starts from here  -->
 
           <div
             id="myContainer"
@@ -523,7 +523,263 @@
             </div>
           </div>
 
-          <!-- side bar ends from here  -->
+          <!--view side bar ends from here  -->
+
+          <!--edit side bar starts from here  -->
+
+          <div
+            id="myContainer2"
+            style="
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              right: 0;
+              background-color: white;
+              overflow-x: hidden;
+              transition: 0.5s;
+            "
+          >
+            <a
+              href="javascript:void(0)"
+              id="closebtn2"
+              style="
+                position: absolute;
+                top: 100px;
+                left: 15px;
+                font-size: 36px;
+                color: #f4793d;
+              "
+              >&times;</a
+            >
+            <div style="padding-top: 13em">
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  flex-direction: column;
+                  padding: 2em 10em;
+                  gap: 2em;
+                  white-space: nowrap;
+                "
+                class="view-content"
+              >
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">Car Name:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Car name"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">
+                    Registration Number:
+                  </h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="12XXXXXXXXXX"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">Kilometer:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="100XXXXXXXXX"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">Fuel type:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Gas"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">Wheel drive:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Front"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">
+                    Uses-imported no:
+                  </h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="NO"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">Color</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Orange"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">Types:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Auto/Manual (drop down)"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">Next EU Control:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="30/05/2024"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">Price:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="26,000"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; font-size: 1.7em">Description:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="There jnfsdn fgksndf"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; color: #000; font-size: 1.7em">
+                    Brand:
+                  </h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Mercedies Benz"
+                  />
+                </div>
+                <div class="importImg">
+                  <img src="./../assets/images/importImage.png" alt="" />
+                </div>
+               <div class="sendbtn" style="display: flex; justify-content: center; margin-left: 7em;">
+                 <button
+                  type="button"
+                  id="saveBtn"
+                  onclick="window.location.href='/index.html'"
+                >
+                  Send
+                </button>
+               </div>
+              </div>
+            </div>
+          </div>
+
+          <!--edit side bar ends here  -->
 
           <div id="current-biddings" class="content">
             <div class="container-bid">
@@ -622,7 +878,7 @@
                 <img src="/assets/images/car4.png" alt="" />
               </div>
               <div class="car-details">
-                <h3>Mercedies Benz</h3>
+                <h3>Maybach S 650 Sedan</h3>
                 <div class="features">
                   <div class="left">
                     <p>Leather</p>
@@ -648,7 +904,7 @@
                 <img src="/assets/images/car2.png" alt="" />
               </div>
               <div class="car-details">
-                <h3>Mercedies Benz</h3>
+                <h3>Orange Audi Q3</h3>
                 <div class="features">
                   <div class="left">
                     <p>Leather</p>
@@ -674,7 +930,7 @@
                 <img src="/assets/images/blue.png" alt="" />
               </div>
               <div class="car-details">
-                <h3>Mercedies Benz</h3>
+                <h3>2017 Ford Mustang EcoBoost</h3>
                 <div class="features">
                   <div class="left">
                     <p>Leather</p>
@@ -700,7 +956,7 @@
                 <img src="/assets/images/mercedes.png" alt="" />
               </div>
               <div class="car-details">
-                <h3>Mercedies Benz</h3>
+                <h3>Mercedies Benz GLE</h3>
                 <div class="features">
                   <div class="left">
                     <p>Leather</p>
@@ -809,75 +1065,5 @@
     </footer>
     <script src="/scripts/main.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-    <script>
-      // Get all items
-      var items = document.querySelectorAll(".view-flex h5");
-
-      // Loop through all items
-      for (var i = 0; i < items.length; i++) {
-        // Add click event listener
-        items[i].addEventListener("click", function (e) {
-          // Open the container
-          document.getElementById("myContainer").style.width = "50%";
-        });
-      }
-
-      // Get the close button
-      var closebtn = document.getElementById("closebtn");
-
-      // Add click event listener to the close button
-      closebtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        // Close the container
-        document.getElementById("myContainer").style.width = "0";
-      });
-
-      function showContent(id) {
-        var contents = document.getElementsByClassName("content");
-        for (var i = 0; i < contents.length; i++) {
-          contents[i].classList.remove("active");
-        }
-        document.getElementById(id).classList.add("active");
-      }
-      // Call the function with 'my-cars' as argument to make it active on page load
-      showContent("my-cars");
-
-      // Get the timer display element
-      const timerDisplay = document.getElementById("timer-display");
-
-      // Get the start button element
-      const startButton = document.getElementById("start-button");
-
-      // Set the initial time to 16 seconds
-      let time = 16;
-
-      // Function to update the timer display
-      function updateTimer() {
-        timerDisplay.textContent = time;
-      }
-
-      // Function to start the timer
-      function startTimer() {
-        // Update the timer display initially
-        updateTimer();
-
-        // Decrease the time by 1 every second
-        const timerInterval = setInterval(() => {
-          time--;
-
-          // Stop the timer when it reaches 0
-          if (time <= 0) {
-            clearInterval(timerInterval);
-            time = 0; // Ensure time doesn't go negative
-          }
-
-          updateTimer();
-        }, 1000);
-      }
-
-      // Add event listener to the start button
-      startButton.addEventListener("click", startTimer);
-    </script>
   </body>
 </html>

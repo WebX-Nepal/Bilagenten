@@ -35,6 +35,11 @@ html {
     #e3e3e3 0%,
     rgba(227, 227, 227, 0) 100%
   );
+  --gradientGrey: linear-gradient(
+    0deg,
+    rgba(227, 227, 227, 0) 100%
+    #e3e3e3 0%,
+  );
 }
 
 .navbar {

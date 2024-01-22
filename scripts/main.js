@@ -45,3 +45,102 @@ function toggle() {
     questionHolder.style.border = "1px solid transparent";
   }
 }
+
+
+// Seller Dashboard 
+
+// sidebar for view 
+
+      var items = document.querySelectorAll(".view h5");
+
+    
+      for (var i = 0; i < items.length; i++) {
+    
+        items[i].addEventListener("click", function (e) {
+     
+          document.getElementById("myContainer").style.width = "50%";
+        });
+      }
+
+    
+      var closebtn = document.getElementById("closebtn");
+
+ 
+      closebtn.addEventListener("click", function (e) {
+        e.preventDefault();
+   
+        document.getElementById("myContainer").style.width = "0";
+      });
+
+
+
+ // sidebar for edit 
+      var items = document.querySelectorAll(".edit h5");
+
+
+      for (var i = 0; i < items.length; i++) {
+   
+        items[i].addEventListener("click", function (e) {
+     
+          document.getElementById("myContainer2").style.width = "50%";
+        });
+      }
+
+  
+      var closebtn = document.getElementById("closebtn2");
+
+
+      closebtn.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.getElementById("myContainer2").style.width = "0";
+      });
+
+
+      // seller dashboard menus 
+      
+      function showContent(id) {
+        var contents = document.getElementsByClassName("content");
+        for (var i = 0; i < contents.length; i++) {
+          contents[i].classList.remove("active");
+        }
+        document.getElementById(id).classList.add("active");
+      }
+      // Call the function with 'my-cars' as argument to make it active on page load
+      showContent("my-cars");
+
+      // Get the timer display element
+      const timerDisplay = document.getElementById("timer-display");
+
+      // Get the start button element
+      const startButton = document.getElementById("start-button");
+
+      // Set the initial time to 16 seconds
+      let time = 16;
+
+      // Function to update the timer display
+      function updateTimer() {
+        timerDisplay.textContent = time;
+      }
+
+      // Function to start the timer
+      function startTimer() {
+        // Update the timer display initially
+        updateTimer();
+
+        // Decrease the time by 1 every second
+        const timerInterval = setInterval(() => {
+          time--;
+
+          // Stop the timer when it reaches 0
+          if (time <= 0) {
+            clearInterval(timerInterval);
+            time = 0; // Ensure time doesn't go negative
+          }
+
+          updateTimer();
+        }, 1000);
+      }
+
+      // Add event listener to the start button
+      startButton.addEventListener("click", startTimer);
