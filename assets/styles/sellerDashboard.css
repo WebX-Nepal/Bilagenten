@@ -157,30 +157,30 @@ body {
   /* padding-top: 3em; */
   color: #909090;
 }
-.sellDash-container .head{
+.sellDash-container .head {
   display: flex;
   justify-content: space-between;
   padding-top: 10em;
 }
-.sellDash-container .head .left{
+.sellDash-container .head .left {
   width: 25%;
 }
-.sellDash-container .head .mid{
-  border-bottom: 2px solid #cfcfcf;
+.sellDash-container .head .mid {
+  border-bottom: 1px solid #cfcfcf;
   width: 70%;
   margin-bottom: 2em;
 }
-.sellDash-container .head .right{
+.sellDash-container .head .right {
   width: 15%;
   display: flex;
   gap: 2em;
   align-items: center;
 }
-.sellDash-container .head .right img{
+.sellDash-container .head .right img {
   object-fit: contain;
   /* padding-top: 5em; */
 }
-.sellDash-container .head .right h2{
+.sellDash-container .head .right h2 {
   font-size: 2em;
   color: #000;
 }
@@ -196,7 +196,7 @@ body {
 }
 .menu-container .menu {
   padding: 2em;
-  width: 20%;
+  width: 17%;
   height: 40em;
 }
 .menu-list {
@@ -209,7 +209,7 @@ body {
   justify-content: space-around;
   flex-direction: column;
   gap: 10em;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 4em;
 }
 .menu a {
@@ -228,19 +228,19 @@ body {
 }
 
 .content .container {
-  border: 2px solid #0FA958;
+  border: 1px solid #0fa958;
   border-radius: 20px;
   display: flex;
-  width: 95%;
+  width: 100%;
   margin: 0 0 3em 4.5em;
   justify-content: space-between;
   align-items: center;
 }
 .content .container-sold {
-  border: 2px solid red;
+  border: 1px solid red;
   border-radius: 20px;
   display: flex;
-    width: 95%;
+  width: 100%;
   margin: 0 0 3em 4.5em;
   justify-content: space-between;
   align-items: center;
@@ -255,23 +255,48 @@ body {
   padding-bottom: 2em;
 }
 
-#my-cars .addcars{
+#saveBtn {
+  margin-top: 1em;
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid var(--primary_color);
+  color: var(--primary_color);
+   width: 25%;
+   margin: auto;
+}
+#saveBtn:hover {
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: var(--gradient);
+  border: 2px solid var(--primary_color);
+  color: white;
+  width: 25%;
+}
+
+#my-cars .addcars {
   padding-left: 5.3em;
   padding-bottom: 3em;
   display: flex;
   align-items: center;
   gap: 1em;
 }
-.border{
+.border {
   width: 90%;
   margin: auto;
-  border-bottom: 2px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
   margin-bottom: 3em;
 }
-#my-cars .addcars h1{
+#my-cars .addcars h1 {
   font-size: 2em;
 }
-.soldcars h1{
+.soldcars h1 {
   font-size: 2em;
   color: #8a8a8a;
   padding-left: 2.5em;
@@ -291,26 +316,24 @@ body {
   margin-bottom: 3em;
 }
 .container .imgsec img {
-  height: 130px;
+  height: 160px;
   object-fit: cover;
 }
-.container .imgsec  {
+.container .imgsec {
   width: 40%;
   display: flex;
   justify-content: center;
-
 }
-.container .car-details  {
+.container .car-details {
   width: 40%;
 }
-.container .bid  {
+.container .bid {
   width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3em;
   padding-top: 1em;
-  
 }
 .container .car-details h3 {
   font-weight: bold;
@@ -324,7 +347,7 @@ body {
 }
 
 .container .car-details h5 {
-  margin-top: .8em;
+  margin-top: 0.8em;
   font-weight: bold;
   font-size: 1.4em;
 }
@@ -338,22 +361,22 @@ body {
   font-weight: bold;
 }
 .container .bid .amount {
-font-size: 2em
+  font-size: 2em;
 }
 .container .bid .view-flex {
   display: flex;
   gap: 2em;
   margin-top: 3em;
 }
-.container .bid .view-flex .view{
+.container .bid .view-flex .view {
   display: flex;
-  gap: .5em;
-  color: #8A8A8A;
+  gap: 0.5em;
+  color: #8a8a8a;
 }
-.container .bid .view-flex .edit{ 
+.container .bid .view-flex .edit {
   display: flex;
-  gap: .5em;
-  color: #8A8A8A;
+  gap: 0.5em;
+  color: #8a8a8a;
 }
 
 .car-details .features {
@@ -361,8 +384,6 @@ font-size: 2em
   display: flex;
   gap: 4em;
 }
-
-
 
 .container .buttom {
   display: flex;
@@ -389,7 +410,7 @@ font-size: 2em
   background-color: #f5f5f5;
   color: #f4793d;
   font-weight: 600;
-   border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 .biddingDate {
@@ -448,22 +469,19 @@ font-size: 2em
   margin-top: 0.6em;
 }
 
-.status{
+.status {
   width: 20%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding-top: 3em;
-
- 
 }
-.status h2{
+.status h2 {
   font-size: 1.7em;
   font-weight: 600;
 }
-.status-state{
+.status-state {
   color: #f4793d;
-  
 }
 
 #current-biddings .container-bid .imgsec img {
@@ -471,13 +489,14 @@ font-size: 2em
   object-fit: cover;
 }
 #current-biddings .container-bid {
-  border: 2px solid #cfcfcf;
+  border: 1px solid #cfcfcf;
   border-radius: 20px;
   padding: 2em;
   display: flex;
   width: 100%;
   margin: auto;
   margin-bottom: 3em;
+  margin-left: 4.6em;
 }
 
 .car-details-container {
@@ -506,24 +525,33 @@ font-size: 2em
   margin-top: 1em;
 }
 
-.bidders-list-container{
-  border: 2px solid #cfcfcf;
+.bidders-list-container {
+  width: 100%;
+  border: 1px solid #cfcfcf;
   padding: 4em 0;
   border-radius: 3em;
   margin-bottom: 10em;
+  margin-left: 4.6em;
 }
-.bidders-list-container h1{
- text-align: center;
- font-weight: 600;
- font-size: 2.6em;
- padding-bottom: 1em;
+.bidders-list-container h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.6em;
+  padding-bottom: 1em;
 }
 
-.bidders-list{
+.bidders-list {
   padding-bottom: 2em;
 }
 
-.bidders-list .bidder{
+.details-view h3 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 2em;
+}
+
+.bidders-list .bidder {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -532,20 +560,17 @@ font-size: 2em
   margin: auto;
   border-bottom: 1px solid #cfcfcf;
 }
-.bidders-list .bidder .names h3{
+.bidders-list .bidder .names h3 {
   font-size: 1.5em;
   margin-top: 0.4em;
   font-weight: 600;
 }
-.bidders-list .bidder .amount p{
+.bidders-list .bidder .amount p {
   font-size: 1.5em;
   font-weight: 600;
   color: #f4793d;
   margin-top: 0.4em;
 }
-
-
-
 
 /* ====================================
 Footer Area CSS Part Starts
