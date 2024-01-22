@@ -402,13 +402,16 @@ Blog Card Carousel Styles Start from here:
   gap: 4em;
 }
 
-.container .buttom{
+ .buttom-retail{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2em;
   padding-top: 1em;
+}
+ .buttom-retail p{
+ font-size: 1.5em;
 }
 
 

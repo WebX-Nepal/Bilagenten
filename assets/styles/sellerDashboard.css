@@ -102,7 +102,6 @@ body {
   width: 3rem;
   margin: auto;
   padding-bottom: 0.5rem;
-  /* border-bottom: 2px solid var(--primary_color); */
 }
 
 /* Responsive icon setups */
@@ -154,9 +153,36 @@ body {
 }
 
 .head h2 {
-  font-size: 3em;
-  padding-top: 3em;
+  font-size: 2.5em;
+  /* padding-top: 3em; */
   color: #909090;
+}
+.sellDash-container .head{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10em;
+}
+.sellDash-container .head .left{
+  width: 25%;
+}
+.sellDash-container .head .mid{
+  border-bottom: 2px solid #cfcfcf;
+  width: 70%;
+  margin-bottom: 2em;
+}
+.sellDash-container .head .right{
+  width: 15%;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+.sellDash-container .head .right img{
+  object-fit: contain;
+  /* padding-top: 5em; */
+}
+.sellDash-container .head .right h2{
+  font-size: 2em;
+  color: #000;
 }
 
 .menu-container {
@@ -205,8 +231,8 @@ body {
   border: 2px solid #0FA958;
   border-radius: 20px;
   display: flex;
-  width: 90%;
-  margin: auto auto 3em;
+  width: 95%;
+  margin: 0 0 3em 4.5em;
   justify-content: space-between;
   align-items: center;
 }
@@ -214,8 +240,8 @@ body {
   border: 2px solid red;
   border-radius: 20px;
   display: flex;
-  width: 90%;
-  margin: auto auto 3em;
+    width: 95%;
+  margin: 0 0 3em 4.5em;
   justify-content: space-between;
   align-items: center;
 }
@@ -270,15 +296,20 @@ body {
 }
 .container .imgsec  {
   width: 40%;
+  display: flex;
+  justify-content: center;
+
 }
 .container .car-details  {
-  width: 30%;
+  width: 40%;
 }
 .container .bid  {
   width: 20%;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
+  gap: 3em;
+  padding-top: 1em;
   
 }
 .container .car-details h3 {
@@ -293,9 +324,9 @@ body {
 }
 
 .container .car-details h5 {
-  margin-top: 1.4em;
+  margin-top: .8em;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .container .bid h2 {
   color: #ff872c;
@@ -306,12 +337,32 @@ body {
   font-size: 1.6rem;
   font-weight: bold;
 }
+.container .bid .amount {
+font-size: 2em
+}
+.container .bid .view-flex {
+  display: flex;
+  gap: 2em;
+  margin-top: 3em;
+}
+.container .bid .view-flex .view{
+  display: flex;
+  gap: .5em;
+  color: #8A8A8A;
+}
+.container .bid .view-flex .edit{ 
+  display: flex;
+  gap: .5em;
+  color: #8A8A8A;
+}
 
 .car-details .features {
   margin-top: 1.4em;
   display: flex;
   gap: 4em;
 }
+
+
 
 .container .buttom {
   display: flex;
@@ -492,6 +543,9 @@ body {
   color: #f4793d;
   margin-top: 0.4em;
 }
+
+
+
 
 /* ====================================
 Footer Area CSS Part Starts
