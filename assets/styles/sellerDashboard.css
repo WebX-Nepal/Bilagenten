@@ -97,11 +97,8 @@ body {
   margin-left: 1rem;
 }
 
-.active {
-  height: 3px;
-  width: 3rem;
-  margin: auto;
-  padding-bottom: 0.5rem;
+.menu-link.active {
+ color: #f4793d;
 }
 
 /* Responsive icon setups */
@@ -227,6 +224,7 @@ body {
   display: block;
 }
 
+
 .content .container {
   border: 1px solid #0fa958;
   border-radius: 20px;
@@ -238,7 +236,7 @@ body {
   padding: 4em 0;
 }
 .content .container-sold {
-  border: 1px solid red;
+  border: 1px solid rgb(255, 208, 208);
   border-radius: 20px;
   display: flex;
   width: 100%;

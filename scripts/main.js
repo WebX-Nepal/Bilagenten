@@ -49,7 +49,7 @@ function toggle() {
 
 // Seller Dashboard 
 
-// sidebar for view 
+//1. sidebar for view 
 
       var items = document.querySelectorAll(".view h5");
 
@@ -74,7 +74,7 @@ function toggle() {
 
 
 
- // sidebar for edit 
+ // 1. sidebar for edit 
       var items = document.querySelectorAll(".edit h5");
 
 
@@ -97,7 +97,7 @@ function toggle() {
       });
 
 
-      // seller dashboard menus 
+      //2 . seller dashboard menus 
       
       function showContent(id) {
         var contents = document.getElementsByClassName("content");
@@ -109,13 +109,17 @@ function toggle() {
       // Call the function with 'my-cars' as argument to make it active on page load
       showContent("my-cars");
 
-      // Get the timer display element
+
+      
+      //**** */  Get the timer display element
       const timerDisplay = document.getElementById("timer-display");
 
       // Get the start button element
       const startButton = document.getElementById("start-button");
 
-      // Set the initial time to 16 seconds
+
+
+      //Set the initial time to 16 seconds
       let time = 16;
 
       // Function to update the timer display
@@ -144,3 +148,28 @@ function toggle() {
 
       // Add event listener to the start button
       startButton.addEventListener("click", startTimer);
+
+
+
+      // 3 .sellerdashboard menus active 
+        document.addEventListener("DOMContentLoaded", function () {
+          var links = document.querySelectorAll(".menu-link");
+
+          for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function (e) {
+              // Prevent the default action
+              e.preventDefault();
+
+              // Remove the "active" class from all links
+              for (var j = 0; j < links.length; j++) {
+                links[j].classList.remove("active");
+              }
+
+              // Add the "active" class to the clicked link
+              this.classList.add("active");
+
+              // Call the showContent function
+              showContent(this.dataset.content);
+            });
+          }
+        });

@@ -35,11 +35,7 @@ html {
     #e3e3e3 0%,
     rgba(227, 227, 227, 0) 100%
   );
-  --gradientGrey: linear-gradient(
-    0deg,
-    rgba(227, 227, 227, 0) 100%
-    #e3e3e3 0%,
-  );
+  --gradientGrey: linear-gradient(0deg, rgba(227, 227, 227, 0) 100% #e3e3e3 0%);
 }
 
 .navbar {
@@ -150,6 +146,16 @@ html {
   font-size: 1.6rem;
 }
 .submit_btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  color: var(--primary_color);
+  border: 2px solid var(--primary_color);
+}
+.submit_btn:hover {
   background: var(--gradient);
   border: none;
   cursor: pointer;
@@ -157,8 +163,19 @@ html {
   padding: 1.5rem 3rem;
   border-radius: 3rem;
   color: white;
+  border: 2px solid var(--primary_color);
 }
 .submit {
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  margin-top: 2em;
+  color: var(--primary_color);
+  border: 2px solid var(--primary_color);
+}
+.submit:hover {
   background: var(--gradient);
   border: none;
   cursor: pointer;
@@ -167,6 +184,7 @@ html {
   border-radius: 3rem;
   color: white;
   margin-top: 2em;
+    border: 2px solid var(--primary_color);
 }
 
 /* herosec of retailers starts from here  */
@@ -189,7 +207,7 @@ html {
   width: 90%;
   margin-top: 2em;
   font-size: 1.5em;
-  color: #51585A;
+  color: #51585a;
 }
 .retailer-mainContainer .retailer2 {
   width: 60%;
@@ -201,16 +219,15 @@ html {
   align-items: center;
   margin-top: 10px;
 }
-.retailer-mainContainer .retailer1 .tick .item p{
-font-size: 1.4em;
-font-weight: 600;
+.retailer-mainContainer .retailer1 .tick .item p {
+  font-size: 1.4em;
+  font-weight: 600;
 }
-.retailer-mainContainer .retailer1 .tick .item img{
- object-fit: contain;
-
+.retailer-mainContainer .retailer1 .tick .item img {
+  object-fit: contain;
 }
 
-.buttons{
+.buttons {
   display: flex;
   gap: 10px;
 }
@@ -326,9 +343,8 @@ Blog Card Carousel Styles Start from here:
 
 /* .......................... */
 
-
 /* .......................... */
-.users-container{
+.users-container {
   width: 80%;
   margin: auto;
   display: flex;
@@ -336,33 +352,33 @@ Blog Card Carousel Styles Start from here:
   text-align: center;
   padding-bottom: 10em;
 }
-.users-container .item img{
+.users-container .item img {
   height: 70px;
 }
-.users-container .item p{
+.users-container .item p {
   font-size: 1.7rem;
-  color: #51585A;
+  color: #51585a;
 }
-.users-container .item h2{
+.users-container .item h2 {
   font-weight: bold;
   font-size: 4rem;
-  color: #51585A;
+  color: #51585a;
 }
 
 /* .......................... */
 
 .moreCars-container {
-   padding-bottom: 10em;
+  padding-bottom: 10em;
 }
-.moreCars-container .title{
-   text-align: center;
-   font-size: 3.5rem;
-   color: #f4793d;
-   padding-bottom: 2em;
+.moreCars-container .title {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #f4793d;
+  padding-bottom: 2em;
 }
 
-.moreCars .container{
-  border: 2px solid #CFCFCF;
+.moreCars .container {
+  border: 2px solid #cfcfcf;
   border-radius: 20px;
   padding: 2em;
   display: flex;
@@ -371,43 +387,43 @@ Blog Card Carousel Styles Start from here:
   justify-content: space-between;
   margin-bottom: 3em;
 }
-.moreCars .container .imgsec img{
+.moreCars .container .imgsec img {
   height: 200px;
   object-fit: cover;
 }
-.moreCars .container .car-details h3{
+.moreCars .container .car-details h3 {
   font-weight: bold;
   font-size: 1.7em;
   margin-top: 1em;
 }
 
-.moreCars .container .car-details .features p{
+.moreCars .container .car-details .features p {
   color: #555555;
   font-size: 1.3em;
 }
 
-.moreCars .container .car-details h5{
-    margin-top: 1.4em;
+.moreCars .container .car-details h5 {
+  margin-top: 1.4em;
   font-weight: bold;
   font-size: 1.2em;
 }
-.moreCars .container .bid h2{
-   color: #FF872C;
-   display: flex;
-   flex-direction: column;
-   justify-content: end;
-   height: 70%;
-   font-size: 1.6rem;
-   font-weight: bold;
+.moreCars .container .bid h2 {
+  color: #ff872c;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 70%;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
-.car-details .features{
+.car-details .features {
   margin-top: 1.4em;
   display: flex;
   gap: 4em;
 }
 
- .buttom-retail{
+.buttom-retail {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -415,13 +431,9 @@ Blog Card Carousel Styles Start from here:
   gap: 2em;
   padding-top: 1em;
 }
- .buttom-retail p{
- font-size: 1.5em;
+.buttom-retail p {
+  font-size: 1.5em;
 }
-
-
-
-
 
 /*----------------------------------
 ====================================
@@ -560,7 +572,6 @@ Footer Area CSS Part Starts
   text-decoration: underline;
 }
 
-
 /* ================================================
 ...................................................
              Media Query Starts from here
@@ -610,10 +621,10 @@ Footer Area CSS Part Starts
   }
 
   .active {
-  margin: 0;
-  padding-bottom: 2em;
-  border-bottom: 2px solid black;
-}
+    margin: 0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid black;
+  }
 
   .active_res_nav {
     transform: translateX(0);
@@ -654,7 +665,6 @@ Footer Area CSS Part Starts
     display: none;
   }
 
-
   .retailer-mainContainer {
     padding: 15em 2em 0 2em;
     display: flex;
@@ -662,34 +672,34 @@ Footer Area CSS Part Starts
     flex-wrap: wrap;
     flex-direction: column;
     gap: 9em;
-}
-.retailer-mainContainer .retailer1 {
+  }
+  .retailer-mainContainer .retailer1 {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 5em;
-}
-.retailer1 .heading {
-  width: 100%;
- text-align: center;
-}
-.retailer-mainContainer .retailer1 .heading p {
-  width: 100%;
-}
-.retailer-mainContainer .retailer1 .buttons {
+  }
+  .retailer1 .heading {
+    width: 100%;
+    text-align: center;
+  }
+  .retailer-mainContainer .retailer1 .heading p {
+    width: 100%;
+  }
+  .retailer-mainContainer .retailer1 .buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: auto;
-}
-/* .retailer-mainContainer .retailer1 .buttons .signin{
+  }
+  /* .retailer-mainContainer .retailer1 .buttons .signin{
   width: 100%;
   margin: auto;
 } */
-.retailer-mainContainer .retailer2 {
+  .retailer-mainContainer .retailer2 {
     width: 100%;
-}
-.user-persona {
+  }
+  .user-persona {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -697,16 +707,16 @@ Footer Area CSS Part Starts
     gap: 7em;
     padding: 0 0 5em 0;
     margin: 4rem 0;
-}
+  }
 
-.users-container {
+  .users-container {
     width: 90%;
     flex-direction: column;
     gap: 3em;
     padding-bottom: 7em;
-}
+  }
 
-.moreCars .container {
+  .moreCars .container {
     border: 2px solid rgb(207, 207, 207);
     border-radius: 20px;
     padding: 2em;
@@ -717,12 +727,11 @@ Footer Area CSS Part Starts
     align-items: center;
     flex-direction: column;
     gap: 2em;
-}
+  }
 
+  /* contact sec  */
 
-/* contact sec  */
-
-.contact-title h1 {
+  .contact-title h1 {
     width: 90%;
     margin: auto;
     text-align: center;
@@ -752,7 +761,6 @@ Footer Area CSS Part Starts
   .contact-flex .inputs .submit_btn {
     margin-top: 2em;
     width: 50%;
-  
   }
   .contact-details {
     margin: auto;
@@ -764,13 +772,13 @@ Footer Area CSS Part Starts
   .moreCars-container .buttom {
     padding: 0 2em;
     text-align: center;
-}
+  }
 
-.moreCars-container {
+  .moreCars-container {
     padding-bottom: 7em;
-}
+  }
 
-.moreCars-container .buttom .submit_btn {
+  .moreCars-container .buttom .submit_btn {
     background: var(--gradient);
     border: none;
     cursor: pointer;
@@ -778,9 +786,8 @@ Footer Area CSS Part Starts
     padding: 1.5rem 3rem;
     border-radius: 3rem;
     color: white;
-}
+  }
 
-  
   /* footer responsive  */
 
   .footer_container {
@@ -822,5 +829,5 @@ Footer Area CSS Part Starts
   }
   .footer_container .footer_content .copyright_para {
     text-align: center;
-}
+  }
 }
