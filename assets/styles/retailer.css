@@ -145,7 +145,7 @@ html {
 .google_review_font {
   font-size: 1.6rem;
 }
-.submit_btn {
+.submit_btn:hover {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -155,7 +155,7 @@ html {
   color: var(--primary_color);
   border: 2px solid var(--primary_color);
 }
-.submit_btn:hover {
+.submit_btn {
   background: var(--gradient);
   border: none;
   cursor: pointer;

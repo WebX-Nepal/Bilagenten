@@ -175,7 +175,7 @@ html {
   color: #f4793d;
 }
 
-.submit_btn {
+.submit_btn:hover {
   margin-top: 3rem;
   background: transparent;
   cursor: pointer;
@@ -185,7 +185,7 @@ html {
   color: var(--primary_color);
   border: 2px solid var(--primary_color);
 }
-.submit_btn:hover {
+.submit_btn {
   margin-top: 3rem;
   background: var(--gradient);
   cursor: pointer;

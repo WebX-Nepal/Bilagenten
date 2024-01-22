@@ -212,7 +212,7 @@ body {
   justify-content: space-between;
 }
 
-#nextBtn{
+#nextBtn:hover{
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -225,7 +225,7 @@ body {
   color: var(--primary_color);
 } 
 
-#nextBtn:hover{
+#nextBtn{
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
