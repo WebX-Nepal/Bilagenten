@@ -50,11 +50,12 @@ function toggle() {
 
 //  ########### Sidebar for view ###########
 
-var items = document.querySelectorAll(".view h5");
+var items = document.querySelectorAll(".view");
 
 for (var i = 0; i < items.length; i++) {
   items[i].addEventListener("click", function (e) {
     document.getElementById("myContainer").style.width = "50%";
+    e.stopPropagation(); // Prevent this click from triggering the document's click event
   });
 }
 
@@ -62,17 +63,27 @@ var closebtn = document.getElementById("closebtn");
 
 closebtn.addEventListener("click", function (e) {
   e.preventDefault();
-
   document.getElementById("myContainer").style.width = "0";
+});
+
+// Close the container when the document is clicked
+document.addEventListener("click", function (e) {
+  document.getElementById("myContainer").style.width = "0";
+});
+
+// Prevent clicks on the container from closing it
+document.getElementById("myContainer").addEventListener("click", function (e) {
+  e.stopPropagation();
 });
 
 
 //  ########### Sidebar for edit ###########
-var items = document.querySelectorAll(".edit h5");
+var items = document.querySelectorAll(".edit");
 
 for (var i = 0; i < items.length; i++) {
   items[i].addEventListener("click", function (e) {
     document.getElementById("myContainer2").style.width = "50%";
+    e.stopPropagation(); // Prevent this click from triggering the document's click event
   });
 }
 
@@ -80,9 +91,51 @@ var closebtn = document.getElementById("closebtn2");
 
 closebtn.addEventListener("click", function (e) {
   e.preventDefault();
-
   document.getElementById("myContainer2").style.width = "0";
 });
+
+// Close the container when the document is clicked
+document.addEventListener("click", function (e) {
+  document.getElementById("myContainer2").style.width = "0";
+});
+
+// Prevent clicks on the container from closing it
+document.getElementById("myContainer2").addEventListener("click", function (e) {
+  e.stopPropagation();
+});
+
+
+
+//  ########### Sidebar to Add Car ###########
+var items = document.querySelectorAll(".addcars");
+
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", function (e) {
+    document.getElementById("myContainer3").style.width = "50%";
+    e.stopPropagation(); // Prevent this click from triggering the document's click event
+  });
+}
+
+var closebtn = document.getElementById("closebtn3");
+
+closebtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("myContainer3").style.width = "0";
+});
+
+// Close the container when the document is clicked
+document.addEventListener("click", function (e) {
+  document.getElementById("myContainer3").style.width = "0";
+});
+
+// Prevent clicks on the container from closing it
+document.getElementById("myContainer3").addEventListener("click", function (e) {
+  e.stopPropagation();
+});
+
+
+
+
 
 //  ########### Seller dashboard menus ###########
  
