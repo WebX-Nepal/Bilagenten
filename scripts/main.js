@@ -227,12 +227,18 @@ document.querySelectorAll("a[data-content]").forEach(function (menuItem) {
 
     // Update the active menu item
     activeMenuItem = this;
+
+    // Store the id of the active menu item in localStorage
+    localStorage.setItem('activeMenuItem', this.dataset.content);
   });
 });
 
-// Call the function with 'my-cars' as argument to make it active on page load
-showContent("my-cars");
+// Get the id of the active menu item from localStorage
+var activeMenuItemId = localStorage.getItem('activeMenuItem') || 'my-cars';
 
-// Add the active class to the 'my-cars' menu item
-activeMenuItem = document.querySelector('a[data-content="my-cars"]');
+// Call the function with the active menu item id as argument to make it active on page load
+showContent(activeMenuItemId);
+
+// Add the active class to the active menu item
+activeMenuItem = document.querySelector('a[data-content="' + activeMenuItemId + '"]');
 activeMenuItem.classList.add("active");

@@ -39,6 +39,13 @@ body {
     #e3e3e3 0%,
     rgba(227, 227, 227, 0) 100%
   );
+  --gradientGrey: linear-gradient(
+    180deg,
+    #fafafa -28.46%,
+    #ededed 30.73%,
+    rgba(255, 255, 255, 0.08) 101.89%,
+    rgba(246, 246, 246, 0) 168.79%
+  );
 }
 
 /* nav css start  */
