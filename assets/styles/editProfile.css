@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,900;1,500;1,600;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Preahvihear&family=Titillium+Web:ital,wght@0,600;1,400&display=swap");
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  /* overflow-x: hidden; */
+}
+
+body {
+  /* overflow-x: hidden; */
+}
+
+.title-color {
+  color: orange;
+  font-size: 4rem;
+}
+
+:root {
+  --primary_color: orange;
+  --secondary_color: #000;
+  --light_gray: #a1a1a1;
+  --white: #fff;
+  --black: #000;
+  --gradient: linear-gradient(
+    107deg,
+    rgba(241, 29, 40, 0.8) -20.5%,
+    rgba(255, 135, 44, 0.8) 50.01%,
+    rgba(254, 97, 44, 0.8) 92.29%,
+    rgba(253, 58, 45, 0.8) 120.9%
+  );
+  --gradientGray: linear-gradient(
+    0deg,
+    #e3e3e3 0%,
+    rgba(227, 227, 227, 0) 100%
+  );
+  --gradientGrey: linear-gradient(
+    180deg,
+    #fafafa -28.46%,
+    #ededed 30.73%,
+    rgba(255, 255, 255, 0.08) 101.89%,
+    rgba(246, 246, 246, 0) 168.79%
+  );
+}
+
+/* nav css start  */
+.navbar {
+  background-color: var(--white);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 12rem;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.nav_list .nav_list_item {
+  width: 50vw;
+  /* font-size: 3vw; */
+  font-size: 1.6em;
+  text-decoration: none;
+  margin: 1rem 1.6rem;
+  color: #000;
+}
+
+.nav_list .nav_list_item:hover {
+  color: var(--primary_color);
+}
+
+.nav_buttons .navbar_btn {
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
+.main_button {
+  background: #000;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  color: white;
+}
+
+.main_button:hover {
+  background: var(--primary_color);
+  transition-duration: 0.3s;
+}
+
+.button_outline:hover {
+  border: 2px solid var(--primary_color);
+  transition-duration: 0.3s;
+}
+
+.button_outline {
+  border: 2px solid #000;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  color: #000;
+  margin-left: 1rem;
+}
+
+.menu-link.active {
+  color: #f4793d;
+}
+
+/* Responsive icon setups */
+
+.responsive_navbar_btn {
+  display: none;
+  cursor: pointer;
+}
+
+.menu_icon {
+  font-size: 1.6rem;
+}
+
+.menu_icon[name="maki-cross"] {
+  display: none;
+}
+
+.review_title {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.review_title .title_discolor {
+  color: var(--primary_color);
+  font-size: 4rem;
+}
+
+.review_holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.google_review {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.google_review_font {
+  font-size: 1.6rem;
+}
+/* nav css end  */
+
+/* main css start  */
+.editProfile-container {
+  margin-top: 10em;
+  margin-bottom: 8em;
+}
+.profile-edit-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px 10em;
+  background-color: #fff;
+  /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
+  border-radius: 20px;
+  border: 2px solid #ECECEC;
+}
+
+.profile-edit-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+.profile-edit-form form img {
+ width: 100%;
+ cursor: pointer;
+}
+
+.profile-edit-form input[type="text"],
+.profile-edit-form input[type="email"],
+.profile-edit-form input[type="number"] {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  margin-top: 1em;
+  border-radius: 20px;
+  font-size: 1.3em;
+}
+.inputColor:focus {
+  outline: none;
+  border: 1px solid #FF872C !important;
+}
+
+#nextBtn:hover{
+  margin-top: 1em;
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: transparent;
+  width: 60%;
+  border: 2px solid var(--primary_color);
+  color: var(--primary_color);
+} 
+
+#nextBtn{
+  margin-top: 1em;
+  padding: 1.2rem 1.6rem;
+  border-radius: 3.2rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: var(--gradient);
+  border: 2px solid var(--primary_color);
+  color: white;
+  width: 60%;
+} 
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+/* ====================================
+Footer Area CSS Part Starts
+==================================== */
+
+.footer_container {
+  height: 80vh;
+  width: 100%;
+  /* background: url(/assets/images/dark-car.gif); */
+  background: url(../images/dark-car.gif);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6.4rem 12rem;
+  margin: 0 auto;
+}
+
+.footer_container .footer_content .footer_details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 6.4rem;
+}
+
+.footer_container .footer_content .footer_details .fast_t_list_item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.footer_details .fast_t_list_item .fast_travel_links {
+  font-size: 1.6rem;
+}
+
+.footer_container .footer_content .footer_details .footer_company_details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3.2rem;
+  padding-bottom: 6.4rem;
+  width: 23%;
+}
+
+.footer_container .footer_content .footer_para,
+.footer_timing_para {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.footer_container .footer_content .copyright_para {
+  color: white;
+}
+
+.footer_fast_travel {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.footer_fast_travel .fast_t_title {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.timing_color {
+  color: orange;
+  font-size: 1.6rem;
+}
+
+.footer_container
+  .footer_content
+  .footer_details
+  .fast_t_list_item
+  .fast_travel_links {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.footer_container
+  .footer_content
+  .footer_details
+  .fast_t_list_item
+  .fast_travel_links:hover {
+  color: orange;
+}
+
+.social_media_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social_media_icons .social_icons {
+  height: 4rem;
+  width: 4rem;
+  font-size: 2.4rem;
+  background: orange;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_media_icons .social_icons:hover {
+  background: var(--white);
+  color: orange;
+}
+
+.footer_copyright {
+  padding: 4rem 0;
+}
+
+.footer_copyright .copyright_para {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.webx {
+  color: orange;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.webx:hover {
+  text-decoration: underline;
+}
+
+/*----------------------------------
+====================================
+Footer Area CSS Part ends
+====================================
+------------------------------------*/

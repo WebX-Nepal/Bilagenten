@@ -65,7 +65,16 @@
             style="height: fit-content; padding-left: 1em"
           />
           <h2>Yamu</h2>
-          <img src="./../assets/images/yamu.png" alt="" />
+          <div class="dropdown">
+  <img src="./../assets/images/yamu.png" alt="userImgErr" onclick="toggleDropdown()" style="cursor: pointer;"/>
+  <div id="dropdownMenu" class="dropdown-content">
+    <a href="./profileSetting.html" style="cursor: pointer;">Settings</a>
+    <div class="logout" style="cursor: pointer;">
+            <a href="/index.html" class="logout">Logout</a>
+            <img src="/assets/images/logOuticon.png" alt="" />
+          </div>
+  </div>
+</div>
         </div>
       </div>
       <div class="menu-container">
@@ -79,10 +88,10 @@
               >My Sold Cars</a
             >
           </div>
-          <div class="logout">
+          <!-- <div class="logout">
             <a href="/index.html" class="logout">Logout</a>
             <img src="/assets/images/logOuticon.png" alt="" />
-          </div>
+          </div> -->
         </div>
         <div class="details">
           <div id="my-cars" class="content">

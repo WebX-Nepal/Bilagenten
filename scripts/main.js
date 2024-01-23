@@ -76,7 +76,6 @@ document.getElementById("myContainer").addEventListener("click", function (e) {
   e.stopPropagation();
 });
 
-
 //  ########### Sidebar for edit ###########
 var items = document.querySelectorAll(".edit");
 
@@ -103,8 +102,6 @@ document.addEventListener("click", function (e) {
 document.getElementById("myContainer2").addEventListener("click", function (e) {
   e.stopPropagation();
 });
-
-
 
 //  ########### Sidebar to Add Car ###########
 var items = document.querySelectorAll(".addcars");
@@ -133,12 +130,8 @@ document.getElementById("myContainer3").addEventListener("click", function (e) {
   e.stopPropagation();
 });
 
-
-
-
-
 //  ########### Seller dashboard menus ###########
- 
+
 function showContent(id) {
   var contents = document.getElementsByClassName("content");
   for (var i = 0; i < contents.length; i++) {
@@ -229,16 +222,39 @@ document.querySelectorAll("a[data-content]").forEach(function (menuItem) {
     activeMenuItem = this;
 
     // Store the id of the active menu item in localStorage
-    localStorage.setItem('activeMenuItem', this.dataset.content);
+    localStorage.setItem("activeMenuItem", this.dataset.content);
   });
 });
 
 // Get the id of the active menu item from localStorage
-var activeMenuItemId = localStorage.getItem('activeMenuItem') || 'my-cars';
+var activeMenuItemId = localStorage.getItem("activeMenuItem") || "my-cars";
 
 // Call the function with the active menu item id as argument to make it active on page load
 showContent(activeMenuItemId);
 
 // Add the active class to the active menu item
-activeMenuItem = document.querySelector('a[data-content="' + activeMenuItemId + '"]');
+activeMenuItem = document.querySelector(
+  'a[data-content="' + activeMenuItemId + '"]'
+);
 activeMenuItem.classList.add("active");
+
+
+
+// ######### JS for dropdown menu in seller dashboard#########
+function toggleDropdown() {
+  var dropdownMenu = document.getElementById("dropdownMenu");
+  if (window.getComputedStyle(dropdownMenu).display === "none") {
+    dropdownMenu.style.display = "block";
+    document.addEventListener("click", clickOutside, true);
+  } else {
+    dropdownMenu.style.display = "none";
+    document.removeEventListener("click", clickOutside, true);
+  }
+
+  function clickOutside(e) {
+    if (!dropdownMenu.contains(e.target)) {
+      dropdownMenu.style.display = "none";
+      document.removeEventListener("click", clickOutside, true);
+    }
+  }
+}

@@ -287,6 +287,10 @@ Blog Card Carousel Styles Start from here:
   background: var(--gradientGray);
 }
 
+.getStarted-btn{
+  margin-top: 5em;
+}
+
 .user-image {
   /* height: 200px; */
   width: 100%;
