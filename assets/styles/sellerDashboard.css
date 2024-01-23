@@ -587,9 +587,6 @@ Footer Area CSS Part Starts
   margin: 0 auto;
 }
 
-.footer_container {
-}
-
 .footer_container .footer_content .footer_details {
   display: flex;
   justify-content: space-between;
