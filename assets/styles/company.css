@@ -339,6 +339,23 @@ Blog Card Carousel Styles Start from here:
   border-radius: 10px;
   font-size: 1.2em;
 }
+#name:focus {
+  outline: none;
+  border: 1px solid #FF872C !important;
+}
+#email:focus {
+  outline: none;
+  border: 1px solid #FF872C !important;
+}
+#phone:focus {
+  outline: none;
+  border: 1px solid #FF872C !important;
+}
+#message:focus {
+  outline: none;
+  border: 1px solid #FF872C !important;
+}
+
 .contact-flex .input-field textarea {
   padding: 1em;
   border: 1px solid #f1f1f1;

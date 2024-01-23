@@ -426,6 +426,7 @@ body {
 .biddingDate .bid .bidPrice {
   font-size: 2.5em;
   font-weight: 600;
+  color: #8A8A8A;
 }
 
 #start-button {
@@ -459,7 +460,7 @@ body {
   width: fit-content;
 }
 .endDate {
-  background-color: #0fa95859;
+  background-color: #F11D2880;
   font-size: 1.3em;
   padding: 0.2em 1em;
   border-radius: 2em;
@@ -560,14 +561,14 @@ body {
 }
 .bidders-list .bidder .names h3 {
   font-size: 1.5em;
-  margin-top: 0.4em;
+  margin-top: 1em;
   font-weight: 600;
 }
 .bidders-list .bidder .amount p {
   font-size: 1.5em;
   font-weight: 600;
   color: #f4793d;
-  margin-top: 0.4em;
+  margin-top: 1em;
 }
 
 /* ====================================

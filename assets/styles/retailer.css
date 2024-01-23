@@ -35,7 +35,13 @@ html {
     #e3e3e3 0%,
     rgba(227, 227, 227, 0) 100%
   );
-  --gradientGrey: linear-gradient(0deg, rgba(227, 227, 227, 0) 100% #e3e3e3 0%);
+  --gradientGrey: linear-gradient(
+    180deg,
+    #fafafa -28.46%,
+    #ededed 30.73%,
+    rgba(255, 255, 255, 0.08) 101.89%,
+    rgba(246, 246, 246, 0) 168.79%
+  );
 }
 
 .navbar {
@@ -184,7 +190,7 @@ html {
   border-radius: 3rem;
   color: white;
   margin-top: 2em;
-    border: 2px solid var(--primary_color);
+  border: 2px solid var(--primary_color);
 }
 
 /* herosec of retailers starts from here  */
@@ -296,6 +302,24 @@ Blog Card Carousel Styles Start from here:
 .contact-flex .inputs {
   width: 30%;
 }
+
+#name:focus {
+  outline: none;
+  border: 1px solid #FF872C !important;
+}
+#email:focus {
+  outline: none;
+  border: 1px solid #FF872C !important;
+}
+#phone:focus {
+  outline: none;
+  border: 1px solid #FF872C !important;
+}
+#message:focus {
+  outline: none;
+  border: 1px solid #FF872C !important;
+}
+
 .contact-flex .input-field {
   display: flex;
   flex-direction: column;
