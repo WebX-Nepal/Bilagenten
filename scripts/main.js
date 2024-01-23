@@ -46,130 +46,140 @@ function toggle() {
   }
 }
 
+// Seller Dashboard
 
-// Seller Dashboard 
+//  ########### Sidebar for view ###########
 
-//1. sidebar for view 
+var items = document.querySelectorAll(".view h5");
 
-      var items = document.querySelectorAll(".view h5");
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", function (e) {
+    document.getElementById("myContainer").style.width = "50%";
+  });
+}
 
-    
-      for (var i = 0; i < items.length; i++) {
-    
-        items[i].addEventListener("click", function (e) {
-     
-          document.getElementById("myContainer").style.width = "50%";
-        });
-      }
+var closebtn = document.getElementById("closebtn");
 
-    
-      var closebtn = document.getElementById("closebtn");
+closebtn.addEventListener("click", function (e) {
+  e.preventDefault();
 
+  document.getElementById("myContainer").style.width = "0";
+});
+
+
+//  ########### Sidebar for edit ###########
+var items = document.querySelectorAll(".edit h5");
+
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", function (e) {
+    document.getElementById("myContainer2").style.width = "50%";
+  });
+}
+
+var closebtn = document.getElementById("closebtn2");
+
+closebtn.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  document.getElementById("myContainer2").style.width = "0";
+});
+
+//  ########### Seller dashboard menus ###########
  
-      closebtn.addEventListener("click", function (e) {
-        e.preventDefault();
-   
-        document.getElementById("myContainer").style.width = "0";
-      });
+function showContent(id) {
+  var contents = document.getElementsByClassName("content");
+  for (var i = 0; i < contents.length; i++) {
+    contents[i].classList.remove("active");
+  }
+  document.getElementById(id).classList.add("active");
+}
 
+//  ########### Get the timer display element ###########
+const timerDisplay = document.getElementById("timer-display");
 
+// Get the start button element
+const startButton = document.getElementById("start-button");
 
- // 1. sidebar for edit 
-      var items = document.querySelectorAll(".edit h5");
+//Set the initial time to 16 seconds
+let time = 16;
 
+// Function to update the timer display
+function updateTimer() {
+  timerDisplay.textContent = time;
+}
 
-      for (var i = 0; i < items.length; i++) {
-   
-        items[i].addEventListener("click", function (e) {
-     
-          document.getElementById("myContainer2").style.width = "50%";
-        });
+// Function to start the timer
+function startTimer() {
+  // Update the timer display initially
+  updateTimer();
+
+  // Decrease the time by 1 every second
+  const timerInterval = setInterval(() => {
+    time--;
+
+    // Stop the timer when it reaches 0
+    if (time <= 0) {
+      clearInterval(timerInterval);
+      time = 0; // Ensure time doesn't go negative
+    }
+
+    updateTimer();
+  }, 1000);
+}
+
+// Add event listener to the start button
+startButton.addEventListener("click", startTimer);
+
+//  ########### sellerdashboard menus active ###########
+document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll(".menu-link");
+
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function (e) {
+      // Prevent the default action
+      e.preventDefault();
+
+      // Remove the "active" class from all links
+      for (var j = 0; j < links.length; j++) {
+        links[j].classList.remove("active");
       }
 
-  
-      var closebtn = document.getElementById("closebtn2");
+      // Add the "active" class to the clicked link
+      this.classList.add("active");
 
+      // Call the showContent function
+      showContent(this.dataset.content);
+    });
+  }
+});
 
-      closebtn.addEventListener("click", function (e) {
-        e.preventDefault();
+//  ########### JS for active page when the page loads ###########
 
-        document.getElementById("myContainer2").style.width = "0";
-      });
+// Add a class for the active menu item
+var activeMenuItem = null;
 
+// Add event listener to all menu items
+document.querySelectorAll("a[data-content]").forEach(function (menuItem) {
+  menuItem.addEventListener("click", function () {
+    // Call the showContent function
+    showContent(this.dataset.content);
 
-      //2 . seller dashboard menus 
-      
-      function showContent(id) {
-        var contents = document.getElementsByClassName("content");
-        for (var i = 0; i < contents.length; i++) {
-          contents[i].classList.remove("active");
-        }
-        document.getElementById(id).classList.add("active");
-      }
-      // Call the function with 'my-cars' as argument to make it active on page load
-      showContent("my-cars");
+    // Remove the active class from the previously active menu item
+    if (activeMenuItem) {
+      activeMenuItem.classList.remove("active");
+    }
 
+    // Add the active class to the clicked menu item
+    this.classList.add("active");
 
-      
-      //**** */  Get the timer display element
-      const timerDisplay = document.getElementById("timer-display");
+    // Update the active menu item
+    activeMenuItem = this;
+  });
+});
 
-      // Get the start button element
-      const startButton = document.getElementById("start-button");
+// Call the function with 'my-cars' as argument to make it active on page load
+showContent("my-cars");
 
-
-
-      //Set the initial time to 16 seconds
-      let time = 16;
-
-      // Function to update the timer display
-      function updateTimer() {
-        timerDisplay.textContent = time;
-      }
-
-      // Function to start the timer
-      function startTimer() {
-        // Update the timer display initially
-        updateTimer();
-
-        // Decrease the time by 1 every second
-        const timerInterval = setInterval(() => {
-          time--;
-
-          // Stop the timer when it reaches 0
-          if (time <= 0) {
-            clearInterval(timerInterval);
-            time = 0; // Ensure time doesn't go negative
-          }
-
-          updateTimer();
-        }, 1000);
-      }
-
-      // Add event listener to the start button
-      startButton.addEventListener("click", startTimer);
-
-
-
-      // 3 .sellerdashboard menus active 
-        document.addEventListener("DOMContentLoaded", function () {
-          var links = document.querySelectorAll(".menu-link");
-
-          for (var i = 0; i < links.length; i++) {
-            links[i].addEventListener("click", function (e) {
-              // Prevent the default action
-              e.preventDefault();
-
-              // Remove the "active" class from all links
-              for (var j = 0; j < links.length; j++) {
-                links[j].classList.remove("active");
-              }
-
-              // Add the "active" class to the clicked link
-              this.classList.add("active");
-
-              // Call the showContent function
-              showContent(this.dataset.content);
-            });
-          }
-        });
+// Add the active class to the 'my-cars' menu item
+activeMenuItem = document.querySelector('a[data-content="my-cars"]');
+activeMenuItem.classList.add("active");
