@@ -629,7 +629,7 @@ Footer Area CSS Part Starts
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -730,6 +730,9 @@ Footer Area CSS Part Starts
   .retailer-mainContainer .retailer1 .heading p {
     width: 100%;
   }
+  .tick{
+    margin: auto;
+  }
   .retailer-mainContainer .retailer1 .buttons {
     display: flex;
     flex-direction: column;
@@ -759,6 +762,14 @@ Footer Area CSS Part Starts
     gap: 3em;
     padding-bottom: 7em;
   }
+  .user-card-item {
+    width: 90%;
+    object-fit: cover;
+    padding: 0.8rem;
+    border: 1px solid white;
+    border-radius: 3rem;
+    background: var(--gradientGray);
+}
 
   .moreCars .container {
     border: 2px solid rgb(207, 207, 207);

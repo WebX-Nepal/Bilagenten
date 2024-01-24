@@ -1098,9 +1098,14 @@ Blog Card Carousel Styles Start from here:
     margin: 4rem auto;
     height: 100%;
 }
+.tab .tablinks.active {
+    height: 100%;
+    width: fit-content;
+    color: black;
+    border-bottom: 3px solid orange;
+}
 .car_card_image {
-    object-fit: cover;
-    height: 48vh;
+    object-fit: contain;
     width: 100%;
 }
 
@@ -1148,6 +1153,8 @@ Blog Card Carousel Styles Start from here:
     border-radius: 0.8rem;
     background: #f6f6f6;
 }
+
+
 
 .car-logos {
     display: flex;

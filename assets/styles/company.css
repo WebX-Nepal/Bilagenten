@@ -547,7 +547,7 @@ Footer Area CSS Part Starts
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -702,7 +702,7 @@ Footer Area CSS Part Starts
     padding-bottom: 3em;
   }
   .user-card-item {
-    width: 30rem;
+    width: 80%;
     height: 100%;
     object-fit: cover;
     padding: 0.8rem;
