@@ -447,6 +447,7 @@ Footer Area CSS Part Starts
     opacity: 1;
     visibility: hidden;
     pointer-events: none;
+    z-index: 9;
   }
 
   .active {

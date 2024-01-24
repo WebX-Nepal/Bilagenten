@@ -54,7 +54,11 @@ var items = document.querySelectorAll(".view");
 
 for (var i = 0; i < items.length; i++) {
   items[i].addEventListener("click", function (e) {
-    document.getElementById("myContainer").style.width = "50%";
+    if (window.innerWidth <= 560) {
+      document.getElementById("myContainer").style.width = "100%";
+    } else {
+      document.getElementById("myContainer").style.width = "50%";
+    }
     e.stopPropagation(); // Prevent this click from triggering the document's click event
   });
 }
@@ -81,7 +85,11 @@ var items = document.querySelectorAll(".edit");
 
 for (var i = 0; i < items.length; i++) {
   items[i].addEventListener("click", function (e) {
-    document.getElementById("myContainer2").style.width = "50%";
+    if (window.innerWidth <= 560) {
+      document.getElementById("myContainer2").style.width = "100%";
+    } else {
+      document.getElementById("myContainer2").style.width = "50%";
+    }
     e.stopPropagation(); // Prevent this click from triggering the document's click event
   });
 }
@@ -108,7 +116,11 @@ var items = document.querySelectorAll(".addcars");
 
 for (var i = 0; i < items.length; i++) {
   items[i].addEventListener("click", function (e) {
-    document.getElementById("myContainer3").style.width = "50%";
+    if (window.innerWidth <= 560) {
+      document.getElementById("myContainer3").style.width = "100%";
+    } else {
+      document.getElementById("myContainer3").style.width = "50%";
+    }
     e.stopPropagation(); // Prevent this click from triggering the document's click event
   });
 }
@@ -237,8 +249,6 @@ activeMenuItem = document.querySelector(
   'a[data-content="' + activeMenuItemId + '"]'
 );
 activeMenuItem.classList.add("active");
-
-
 
 // ######### JS for dropdown menu in seller dashboard#########
 function toggleDropdown() {

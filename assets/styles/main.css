@@ -866,7 +866,7 @@ Blog Card Carousel Styles Start from here:
   }
 } */
 
-@media (max-width: 980px) {
+/* @media (max-width: 980px) {
   .responsive_navbar_btn {
     display: block;
     z-index: 999;
@@ -943,30 +943,103 @@ Blog Card Carousel Styles Start from here:
   .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-cross"] {
     display: none;
   }
-}
+} */
 
 @media (max-width: 560px) {
   #bil_layout {
   margin: 0 2rem;
   max-width: 1400px;
 }
+/* nav res start  */
   .navbar {
-  background-color: var(--white);
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  width: 100%;
-  z-index: 999;
-  padding: 1rem 2rem;
-}
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
 
-.active {
-  margin: 0;
-  padding-bottom: 2em;
-  border-bottom: 2px solid black;
-}
+  .responsive_navbar_btn {
+    display: block;
+    z-index: 999;
+  }
+  .nav_list,
+  .nav_buttons {
+    display: none;
+  }
+
+  .responsive_menu_popup {
+    background: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #000;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 1;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 9;
+  }
+
+  .active {
+    margin: 0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid black;
+  }
+
+  .active_res_nav {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .res_nav_list,
+  .res_nav_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .res_nav_list_item {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .res_navbar_btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-menu"] {
+    display: block;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-cross"] {
+    display: none;
+  }
+
+  /* nav res ends  */
+ 
 
 .hero_container {
     padding: 7em 0;
@@ -1130,6 +1203,11 @@ Blog Card Carousel Styles Start from here:
     gap: 1rem;
     align-items: center;
     justify-content: center;
+}
+
+.safe_free .see_map_para_link {
+    font-size: 1.4em;
+    color: orange;
 }
 
 .user-persona {
