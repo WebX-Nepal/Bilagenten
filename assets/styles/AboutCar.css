@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,900;1,500;1,600;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Preahvihear&family=Titillium+Web:ital,wght@0,600;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,900;1,500;1,600;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Preahvihear&family=Titillium+Web:ital,wght@0,600;1,400&display=swap");
 
-*, html {
+*,
+html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 500;
   /* overflow-x: hidden; */
@@ -20,16 +21,24 @@ body {
   font-size: 4rem;
 }
 
-:root{
+:root {
   --primary_color: orange;
   --secondary_color: #000;
   --light_gray: #a1a1a1;
   --white: #fff;
   --black: #000;
-  --gradient: linear-gradient(107deg, rgba(241, 29, 40, 0.80) -20.5%, rgba(255, 135, 44, 0.80) 50.01%, rgba(254, 97, 44, 0.80) 92.29%, rgba(253, 58, 45, 0.80) 120.9%);
-  --gradientGray: linear-gradient(0deg, #E3E3E3 0%, rgba(227, 227, 227, 0.00) 100%);
-
-
+  --gradient: linear-gradient(
+    107deg,
+    rgba(241, 29, 40, 0.8) -20.5%,
+    rgba(255, 135, 44, 0.8) 50.01%,
+    rgba(254, 97, 44, 0.8) 92.29%,
+    rgba(253, 58, 45, 0.8) 120.9%
+  );
+  --gradientGray: linear-gradient(
+    0deg,
+    #e3e3e3 0%,
+    rgba(227, 227, 227, 0) 100%
+  );
 }
 
 /* nav css start  */
@@ -111,7 +120,6 @@ body {
   display: none;
 }
 
-
 .review_title {
   text-align: center;
   font-size: 4rem;
@@ -146,16 +154,15 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10rem 0;
-
 }
 
 .aboutCar-container {
-    width: 45%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.6rem;
-  border: 2px solid #ECECEC;
+  border: 2px solid #ececec;
   padding: 7em 17em;
   border-radius: 3em;
 }
@@ -169,14 +176,14 @@ body {
   color: #666;
 }
 
-.button{
-    margin-top: 1em;
+.button {
+  margin-top: 1em;
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-#nextBtn:hover{
+#nextBtn:hover {
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -187,9 +194,9 @@ body {
   width: 60%;
   border: 2px solid var(--primary_color);
   color: var(--primary_color);
-} 
+}
 
-#nextBtn{
+#nextBtn {
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -200,9 +207,9 @@ body {
   border: 2px solid var(--primary_color);
   color: white;
   width: 60%;
-} 
+}
 
-#backBtn{
+#backBtn {
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -213,9 +220,8 @@ body {
   width: 35%;
   border: 2px solid var(--primary_color);
   color: var(--primary_color);
-
-} 
-#backBtn:hover{
+}
+#backBtn:hover {
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -226,43 +232,42 @@ body {
   border: 2px solid var(--primary_color);
   color: white;
   width: 35%;
-} 
+}
 
 #registerBtn:hover {
   color: #000;
 }
 
 .question h2 {
-    font-size: 2em;
-    font-weight: 600;
-    margin-bottom: .7em;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 0.7em;
 }
 
-.question-container{
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
+.question-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
 }
 
-.answer{
-    display: flex;
-    justify-content: space-around;
+.answer {
+  display: flex;
+  justify-content: space-around;
 }
-.answer label{
-   font-size: 1.5em;
-   color: #656565;
+.answer label {
+  font-size: 1.5em;
+  color: #656565;
 }
-.yes{
-    display: flex;
-    align-items: center;
-    gap: 1em;    
+.yes {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
-.no{
-     display: flex;
-    align-items: center;
-    gap: 1em;
+.no {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
-
 
 /*----------------------------------
 ====================================
@@ -401,9 +406,8 @@ Footer Area CSS Part Starts
   text-decoration: underline;
 }
 
-
 @media (max-width: 560px) {
- /* nav res start  */
+  /* nav res start  */
   .navbar {
     background-color: var(--white);
     overflow: hidden;
@@ -446,10 +450,10 @@ Footer Area CSS Part Starts
   }
 
   .active {
-  margin: 0;
-  padding-bottom: 2em;
-  border-bottom: 2px solid black;
-}
+    margin: 0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid black;
+  }
 
   .active_res_nav {
     transform: translateX(0);
@@ -492,14 +496,42 @@ Footer Area CSS Part Starts
 
   /* nav res ends  */
 
+  .aboutCar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2em;
+  }
 
-.login-heading {
+  .aboutCar-container {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    border: 2px solid #ECECEC;
+    padding: 4em 0;
+    border-radius: 3em;
+    width: 100%;
+  }
+
+  .button {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.aboutCar-heading {
+     text-align: center;
     font-size: 3rem;
 }
 
+  .login-heading {
+    font-size: 3rem;
+  }
+
   .terms {
     font-size: 1.3em;
-}
+  }
   /* footer responsive  */
 
   .footer_container {

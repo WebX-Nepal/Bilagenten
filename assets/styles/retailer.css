@@ -770,7 +770,11 @@ Footer Area CSS Part Starts
     border-radius: 3rem;
     background: var(--gradientGray);
 }
-
+.moreCars .container .car-details h3 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
   .moreCars .container {
     border: 2px solid rgb(207, 207, 207);
     border-radius: 20px;

@@ -635,13 +635,47 @@ Footer Area CSS Part Starts
 
   /* nav res ends  */
 
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2em;
+}
 
-.login-heading {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    border: 2px solid #ECECEC;
+    padding: 4em 0;
+    border-radius: 3em;
+    width: 100%;
+}
+
+#name{
+  width: 70%;
+}
+#email{
+  width: 70%;
+}
+#phone{
+  width: 70%;
+} 
+
+.contact-heading {
+  text-align: center;
     font-size: 3rem;
 }
 
   .terms {
     font-size: 1.3em;
+    justify-content: center;
+}
+.button {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
 }
   /* footer responsive  */
 
