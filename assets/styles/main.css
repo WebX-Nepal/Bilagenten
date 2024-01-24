@@ -946,6 +946,10 @@ Blog Card Carousel Styles Start from here:
 }
 
 @media (max-width: 560px) {
+  #bil_layout {
+  margin: 0 2rem;
+  max-width: 1400px;
+}
   .navbar {
   background-color: var(--white);
   overflow: hidden;
@@ -953,8 +957,9 @@ Blog Card Carousel Styles Start from here:
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  width: 40%;
+  width: 100%;
   z-index: 999;
+  padding: 1rem 2rem;
 }
 
 .active {
@@ -963,8 +968,18 @@ Blog Card Carousel Styles Start from here:
   border-bottom: 2px solid black;
 }
 
+.hero_container {
+    padding: 7em 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .content_area .hero_heading {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 500;
     text-align: center;
 }
@@ -972,30 +987,54 @@ Blog Card Carousel Styles Start from here:
     width: auto;
     margin-top: 2.4rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
 .review_title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 .review_title .title_discolor {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .review_holder {
-    display: flex;
+        display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 5rem 0;
     gap: 2rem;
+    flex-direction: column;
 }
+
+.google_review_font {
+    font-size: 2em;
+}
+
 .testimonials {
     background: var(--gradientGray);
     padding: 2.4rem;
     border-radius: 20px;
     width: 100%;
     margin: 4rem 0;
+}
+
+.testimonaials_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0 4em 0;
+    width: 93%;
+    margin: auto;
+}
+
+.colorful_image img{
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -1008,16 +1047,184 @@ Blog Card Carousel Styles Start from here:
 .safe_n_easy {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 4rem;
     padding: 4rem 0;
     flex-direction: row;
     flex-wrap: wrap;
 }
+.safe_n_easy_icon{
+  object-fit: contain;
+}
+.safe_car_image_rotate {
+    width: 100%;
+}
 .safe_content_list .safe_content_list_items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1.6rem;
+}
+
+.safe_free .safe_title {
+    font-size: 1.7rem;
+}
+
+.tab_heading_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin: 2rem 0;
+    flex-direction: column;
+}
+
+.tab {
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    padding: 3rem 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.tabs_heading {
+    font-size: 3rem;
+    text-align: center;
+}
+.tabs_container {
+    width: 100%;
+    margin: 4rem auto;
+    height: 100%;
+}
+.car_card_image {
+    object-fit: cover;
+    height: 48vh;
+    width: 100%;
+}
+
+.divider_heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.divider_performance {
+    display: flex;
+    justify-content: center;
+    padding: 6rem 2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5em;
+    align-items: center;
+}
+
+.divider_one {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-persona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
+
+.user-card-item {
+    width: 95%;
+    margin: auto;
+    object-fit: cover;
+    padding: 2.5rem;
+    border: 1px solid white;
+    box-shadow: 2px 2px 10px 0px rgba(168, 168, 168, 0.25);
+    border-radius: 0.8rem;
+    background: #f6f6f6;
+}
+
+.car-logos {
+    display: flex;
+    margin: 8rem auto;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.faqs-deading {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.question-list {
+    width: 100%;
+    margin: 4rem auto;
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 95%;
+    margin: auto;
+}
+
+.contact-bg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: var(--gradient);
+    border-radius: 3.2rem;
+    padding: 0;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+}
+
+.contact-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+    padding: 6em 0;
+}
+.contact-form .input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.world-map {
+    display: none;
+}
+
+.contact-form {
+  padding: 5em 0;
+    width: 90%;
+}
+
+
+.safe_n_easy_content_area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBtn {
+  margin: auto;
+  width: fit-content;
 }
 
 /* footer responsive  */

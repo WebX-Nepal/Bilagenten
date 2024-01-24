@@ -317,7 +317,7 @@ Blog Card Carousel Styles Start from here:
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 10em;
+  padding: 0 2em 10em 2em;
 }
 .contact-flex .inputs {
   width: 30%;
