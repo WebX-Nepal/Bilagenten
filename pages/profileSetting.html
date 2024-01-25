@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../assets/styles/sellerDashboard.css" /> -->
     <link rel="stylesheet" href="../assets/styles/editProfile.css" />
-    <title>Edit Profile</title>
+    <title>Profile Setting</title>
   </head>
   <body>
     <!-- Navigation bar ---------------------------------------->
@@ -52,30 +53,69 @@
       </div>
     </div>
     <!--************* Responsive Navbar close here *********--------------------->
-    <div class="editProfile-container">
-      <div class="profile-edit-form">
-        <h2>Edit Profile</h2>
-        <form>
-            <img src="./../assets/images/importImage.png" alt="import err" >
-          <input type="text" id="name" class="inputColor" placeholder="First Name" required />
-          <input type="text" id="name" class="inputColor" placeholder="Last Name" required />
-          <input type="number" id="phone" class="inputColor" placeholder="Mobile Number" required />
-          <input type="email" id="email" class="inputColor" placeholder="Email Address" required />
-          <input type="text" id="city" class="inputColor" placeholder="City" required />
-          <input type="text" id="postal" class="inputColor" placeholder="Postal Code" required />
-          <div class="button">
-            <button
-              type="button"
-              id="nextBtn"
-              onclick="window.location.href='/pages/aboutCar.html'"
-            >
-              Save Changes
-            </button>
+    <div class="sellDash-container">
+      <div class="head">
+        <div class="left">
+          <h2>Profile Setting</h2>
+        </div>
+        <div class="mid"></div>
+        <div class="right">
+          <img
+            src="./../assets/images/icons/notificationIcon.png"
+            alt=""
+            style="height: fit-content;"
+          />
+          <h2>Yamu</h2>
+          <div class="dropdown">
+  <img src="./../assets/images/yamu.png" alt="userImgErr" onclick="toggleDropdown()" style="cursor: pointer;"/>
+  <div id="dropdownMenu" class="dropdown-content">
+    <a href="./profileSetting.html" style="cursor: pointer;">Settings</a>
+    <div class="logout" style="cursor: pointer;">
+            <a href="/index.html" class="logout">Logout</a>
+            <img src="/assets/images/logOuticon.png" alt="" />
           </div>
-        </form>
+  </div>
+</div>
+        </div>
       </div>
-    </div>
+      <div class="menu-container">
+        <div class="menu">
+          <h1 class="profile">Profile</h1>
+          <img src="./../assets/images/userYamu.png" alt="userImgErr" style="margin-top: 3em;">
+          <h2 class="userName">Yamu Pandey</h2>
+          <h2 class="userAddress">Nepal, Kathmandu</h2>
+        </div>
+        <div class="details-user">
+          <h1 class="basicInfo">Basic info</h1>
+          <div class="name">
+            <input type="text" id="name" class="fname" name="fname" placeholder="First Name" style="width: 48%;">
+            <input type="text" id="name" class="lname" name="fname" placeholder="Last Name" style="width: 48%;">
+          </div>
+          <div class="phone">
+            <input type="number" id="phone" class="phone" name="phone" placeholder="Mobile no. (+47)" style="width: 100%;">
+          </div>
+          <div class="email">
+            <input type="email" id="email" class="email" name="email" placeholder="Email" style="width: 100%;">
 
+          </div>
+          <div class="address">
+            <input type="text" id="address" class="address" name="address" placeholder="Address" style="width: 100%;">
+
+          </div>
+          <div class="cityCode">
+            <input type="text" id="city" class="city" name="city" placeholder="City" style="width: 48%;">
+            <input type="number" id="postalCode" class="postalCode" name="postalCode" placeholder="Postal Code" style="width: 48%;">
+          </div>
+            <button
+            type="button"
+            id="updateBtn"
+            onclick="window.location.href='/pages/profileSetting.html'"
+          >
+            Update
+          </button>
+        </div>
+        </div>
+      </div>
     <!-- Footer Area starts fron this line: Please explore it. -->
     <footer>
       <div class="footer_container">
@@ -160,5 +200,6 @@
     </footer>
     <script src="/scripts/main.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script></script>
   </body>
 </html>

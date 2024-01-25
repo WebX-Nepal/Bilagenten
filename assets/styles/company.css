@@ -629,7 +629,7 @@ Footer Area CSS Part Starts
   }
 
   .car-bg {
-    height: 70vh;
+    height: 100%;
     width: 100%;
     background-image: url(../images/carBg.png);
     background-repeat: no-repeat;
@@ -639,15 +639,16 @@ Footer Area CSS Part Starts
   .content {
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 1em;
-    padding-top: 13em;
-    padding-left: 1em;
+    /* padding-top: 13em;
+    padding-left: 1em; */
     height: 100%;
     width: 100%;
+    padding: 19em 1em 10em 1em;
   }
   .content h2 {
     width: 90%;
     margin: auto;
-    font-size: 2em;
+    font-size: 2.7em;
     color: white;
     text-align: center;
   }
