@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/styles/dealerPortal1.css" />
+    <link rel="stylesheet" href="../assets/styles/dealerRegForm.css" />
     <title>Dealer Registration Form</title>
   </head>
   <body>
@@ -60,25 +60,45 @@
         <h1 class="contact-heading">Dealer Registration Form</h1>
         <p class="contact-subtitle">Enter Your details</p>
         <img src="../assets/images/contactInfo.png" alt="login" />
-       <input type="email" name="email" id="email" placeholder="Email" />
-        <input type="password" name="password" id="password" placeholder="Password" />
-        <input type="password" name="currentPassword" id="currentPassword" placeholder="Current Password" />
+       <input type="text" name="name" id="name"  class="fname" placeholder="First Name" />
+       <input type="text" name="name" id="name"  class="lname" placeholder="Last Name" />
+        <input type="number" name="orgNo" id="orgNo" placeholder="Organization no." />
+        <input type="text" name="dealerName" id="dealerName" placeholder="Name of Dealer" />
+        <input type="number" name="phone" id="phone" placeholder="Mobile no (+47)" />
+        <input type="text" name="address" id="address" placeholder="Street Address" />
+        <input type="number" name="postal" id="postal" placeholder="Postal Code" />
+        <input type="text" name="city" id="city" placeholder="City" />
+        <div class="uploadDoc">
+            <h1 class="uploadHeading">Upload Documents</h1>
+            <p class="drag">Drag & Drop your file here</p>
+            <p class="drag">(OR)</p>
+            <input type="file" id="fileInput" style="display: none;" />
+
+<button
+  type="button"
+  id="browseBtn"
+  onclick="document.getElementById('fileInput').click();"
+>
+  Browse Files
+</button>
+        </div>
         <label for="terms" class="terms">
           <input type="radio" name="term" id="term" />
           I accept<span style="color: #F4793D; font-size: 1em">the terms</span> of use of the service
         </label>
         <div class="button">
+            <!-- <link rel="stylesheet" href="./dealerPortal.html"> -->
           <button
             type="button"
             id="backBtn"
-            onclick="window.location.href='/index.html'"
+            onclick="window.location.href='./dealerPortal.html'"
           >
             Back
           </button>
           <button
             type="button"
             id="nextBtn"
-            onclick="window.location.href='/pages/dealerRegForm.html'"
+            onclick="window.location.href='/pages/aboutCar.html'"
           >
             Next
           </button>
@@ -170,5 +190,10 @@
     </footer>
     <script src="/scripts/main.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function() {
+    console.log(this.files[0]);
+  });
+    </script>
   </body>
 </html>
