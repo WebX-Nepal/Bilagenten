@@ -10,19 +10,21 @@
     <!-- Navigation bar ---------------------------------------->
     <nav class="navbar">
       <div class="brand_logo">
-        <a href="./pages/seller.html">
-          <img src="/assets/images/logo.png" alt="logo" height="40" />
+        <a href="../index.html">
+          <img src="../assets/images/logo.png" alt="logo" height="40" />
         </a>
       </div>
 
       <div class="nav_list">
-        <a href="/#" class="nav_list_item">Sell the Car</a>
-        <a href="/pages/company.html" class="nav_list_item">Company</a>
-        <a href="/pages/retailer.html" class="nav_list_item">Retailer</a>
+        <a href="../index.html" class="nav_list_item">Sell the Car</a>
+        <a href="./company.html" class="nav_list_item">Company</a>
+        <a href="./retailer.html" class="nav_list_item">Retailer</a>
       </div>
       <div class="nav_buttons">
-        <a href="../pages/login.html" class="navbar_btn main_button">My Page</a>
-        <a href="../pages/dealerPortal.html" class="navbar_btn button_outline">Dealer Portal</a>
+        <a href="./login.html" class="navbar_btn main_button">My Page</a>
+        <a href="./dealerPortal.html" class="navbar_btn button_outline"
+          >Dealer Portal</a
+        >
       </div>
       <!-- Responsive Navbar start from here --------------------->
       <div class="responsive_navbar_btn">
@@ -40,17 +42,15 @@
     </nav>
     <div class="responsive_menu_popup">
       <div class="res_nav_list">
-        <a href="/#" class="res_nav_list_item">Sell the Car</a>
-        <a href="/pages/company.html" class="res_nav_list_item active"
-          >Company</a
-        >
-        <a href="/pages/retailer.html" class="res_nav_list_item">Retailer</a>
+        <a href="../index.html" class="res_nav_list_item">Sell the Car</a>
+        <a href="./company.html" class="res_nav_list_item">Company</a>
+        <a href="./retailer.html" class="res_nav_list_item">Retailer</a>
       </div>
       <div class="res_nav_buttons">
-        <a href="/pages/login.html" class="res_navbar_btn main_button"
-          >My Page</a
+        <a href="./login.html" class="res_navbar_btn main_button">My Page</a>
+        <a href="./dealerPortal.html" class="res_navbar_btn button_outline"
+          >Dealer Portal</a
         >
-        <a href="./dealerPortal.html" class="res_navbar_btn button_outline">Dealer Portal</a>
       </div>
     </div>
     <!--************* Responsive Navbar close here *********--------------------->
@@ -60,34 +60,75 @@
         <h1 class="contact-heading">Dealer Registration Form</h1>
         <p class="contact-subtitle">Enter Your details</p>
         <img src="../assets/images/contactInfo.png" alt="login" />
-       <input type="text" name="name" id="name"  class="fname" placeholder="First Name" />
-       <input type="text" name="name" id="name"  class="lname" placeholder="Last Name" />
-        <input type="number" name="orgNo" id="orgNo" placeholder="Organization no." />
-        <input type="text" name="dealerName" id="dealerName" placeholder="Name of Dealer" />
-        <input type="number" name="phone" id="phone" placeholder="Mobile no (+47)" />
-        <input type="text" name="address" id="address" placeholder="Street Address" />
-        <input type="number" name="postal" id="postal" placeholder="Postal Code" />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="fname"
+          placeholder="First Name"
+        />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="lname"
+          placeholder="Last Name"
+        />
+        <input
+          type="number"
+          name="orgNo"
+          id="orgNo"
+          placeholder="Organization no."
+        />
+        <input
+          type="text"
+          name="dealerName"
+          id="dealerName"
+          placeholder="Name of Dealer"
+        />
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          placeholder="Mobile no (+47)"
+        />
+        <input
+          type="text"
+          name="address"
+          id="address"
+          placeholder="Street Address"
+        />
+        <input
+          type="number"
+          name="postal"
+          id="postal"
+          placeholder="Postal Code"
+        />
         <input type="text" name="city" id="city" placeholder="City" />
         <div class="uploadDoc">
-            <h1 class="uploadHeading">Upload Documents</h1>
-            <p class="drag">Drag & Drop your file here</p>
-            <p class="drag">(OR)</p>
-            <input type="file" id="fileInput" style="display: none;" />
+          <h1 class="uploadHeading">Upload Documents</h1>
+          <p class="drag">Drag & Drop your file here</p>
+          <p class="drag">(OR)</p>
+          <input type="file" id="fileInput" style="display: none" />
 
-<button
-  type="button"
-  id="browseBtn"
-  onclick="document.getElementById('fileInput').click();"
->
-  Browse Files
-</button>
+          <button
+            type="button"
+            id="browseBtn"
+            onclick="document.getElementById('fileInput').click();"
+          >
+            Browse Files
+          </button>
+        </div>
+        <div class="showDoc">
+          <h2 class="showDocTitle">Uploaded Files</h2>
         </div>
         <label for="terms" class="terms">
           <input type="radio" name="term" id="term" />
-          I accept<span style="color: #F4793D; font-size: 1em">the terms</span> of use of the service
+          I accept<span style="color: #f4793d; font-size: 1em">the terms</span>
+          of use of the service
         </label>
         <div class="button">
-            <!-- <link rel="stylesheet" href="./dealerPortal.html"> -->
+          <!-- <link rel="stylesheet" href="./dealerPortal.html"> -->
           <button
             type="button"
             id="backBtn"
@@ -191,9 +232,11 @@
     <script src="/scripts/main.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script>
-        document.getElementById('fileInput').addEventListener('change', function() {
-    console.log(this.files[0]);
-  });
+      document
+        .getElementById("fileInput")
+        .addEventListener("change", function () {
+          console.log(this.files[0]);
+        });
     </script>
   </body>
 </html>

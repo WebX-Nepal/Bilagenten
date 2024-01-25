@@ -11,19 +11,21 @@
     <!-- Navigation bar ---------------------------------------->
     <nav class="navbar">
       <div class="brand_logo">
-        <a href="./pages/seller.html">
-          <img src="/assets/images/logo.png" alt="logo" height="40" />
+        <a href="../index.html">
+          <img src="../assets/images/logo.png" alt="logo" height="40" />
         </a>
       </div>
 
       <div class="nav_list">
-        <a href="/#" class="nav_list_item">Sell the Car</a>
-        <a href="/pages/company.html" class="nav_list_item">Company</a>
-        <a href="/pages/retailer.html" class="nav_list_item">Retailer</a>
+        <a href="../index.html" class="nav_list_item">Sell the Car</a>
+        <a href="./company.html" class="nav_list_item">Company</a>
+        <a href="./retailer.html" class="nav_list_item">Retailer</a>
       </div>
       <div class="nav_buttons">
-        <a href="../pages/login.html" class="navbar_btn main_button">My Page</a>
-        <a href="./dealerPortal.html" class="navbar_btn button_outline">Dealer Portal</a>
+        <a href="./login.html" class="navbar_btn main_button">My Page</a>
+        <a href="./dealerPortal.html" class="navbar_btn button_outline"
+          >Dealer Portal</a
+        >
       </div>
       <!-- Responsive Navbar start from here --------------------->
       <div class="responsive_navbar_btn">
@@ -41,15 +43,15 @@
     </nav>
     <div class="responsive_menu_popup">
       <div class="res_nav_list">
-        <a href="/#" class="res_nav_list_item">Sell the Car</a>
-        <a href="/pages/company.html" class="res_nav_list_item">Company</a>
-        <a href="/pages/retailer.html" class="res_nav_list_item">Retailer</a>
+        <a href="../index.html" class="res_nav_list_item">Sell the Car</a>
+        <a href="./company.html" class="res_nav_list_item">Company</a>
+        <a href="./retailer.html" class="res_nav_list_item">Retailer</a>
       </div>
       <div class="res_nav_buttons">
-        <a href="/pages/login.html" class="res_navbar_btn main_button"
-          >My Page</a
+        <a href="./login.html" class="res_navbar_btn main_button">My Page</a>
+        <a href="./dealerPortal.html" class="res_navbar_btn button_outline"
+          >Dealer Portal</a
         >
-        <a href="./dealerPortal.html" class="res_navbar_btn button_outline">Dealer Portal</a>
       </div>
     </div>
     <!--************* Responsive Navbar close here *********--------------------->
@@ -63,66 +65,124 @@
           <img
             src="./../assets/images/icons/notificationIcon.png"
             alt=""
-            style="height: fit-content;"
+            style="height: fit-content"
           />
           <h2>Yamu</h2>
           <div class="dropdown">
-  <img src="./../assets/images/yamu.png" alt="userImgErr" onclick="toggleDropdown()" style="cursor: pointer;"/>
-  <div id="dropdownMenu" class="dropdown-content">
-    <a href="./profileSetting.html" style="cursor: pointer;">Settings</a>
-    <div class="logout" style="cursor: pointer;">
-            <a href="/index.html" class="logout">Logout</a>
-            <img src="/assets/images/logOuticon.png" alt="" />
+            <img
+              src="./../assets/images/yamu.png"
+              alt="userImgErr"
+              onclick="toggleDropdown()"
+              style="cursor: pointer"
+            />
+            <div id="dropdownMenu" class="dropdown-content">
+              <a href="./profileSetting.html" style="cursor: pointer"
+                >Settings</a
+              >
+              <div class="logout" style="cursor: pointer">
+                <a href="../index.html" class="logout">Logout</a>
+                <img src="../assets/images/logOuticon.png" alt="" />
+              </div>
+            </div>
           </div>
-  </div>
-</div>
         </div>
       </div>
       <div class="menu-container">
         <div class="menu">
           <h1 class="profile">Profile</h1>
-          <img src="./../assets/images/userYamu.png" alt="userImgErr" style="margin-top: 3em;">
+          <img
+            src="./../assets/images/userYamu.png"
+            alt="userImgErr"
+            style="margin-top: 3em"
+          />
           <h2 class="userName">Yamu Pandey</h2>
           <h2 class="userAddress">Nepal, Kathmandu</h2>
         </div>
         <div class="details-user">
           <h1 class="basicInfo">Basic info</h1>
           <div class="name">
-            <input type="text" id="name" class="fname" name="fname" placeholder="First Name" style="width: 48%;">
-            <input type="text" id="name" class="lname" name="fname" placeholder="Last Name" style="width: 48%;">
+            <input
+              type="text"
+              id="name"
+              class="fname"
+              name="fname"
+              placeholder="First Name"
+              style="width: 48%"
+            />
+            <input
+              type="text"
+              id="name"
+              class="lname"
+              name="fname"
+              placeholder="Last Name"
+              style="width: 48%"
+            />
           </div>
           <div class="phone">
-            <input type="number" id="phone" class="phone" name="phone" placeholder="Mobile no. (+47)" style="width: 100%;">
+            <input
+              type="number"
+              id="phone"
+              class="phone"
+              name="phone"
+              placeholder="Mobile no. (+47)"
+              style="width: 100%"
+            />
           </div>
           <div class="email">
-            <input type="email" id="email" class="email" name="email" placeholder="Email" style="width: 100%;">
-
+            <input
+              type="email"
+              id="email"
+              class="email"
+              name="email"
+              placeholder="Email"
+              style="width: 100%"
+            />
           </div>
           <div class="address">
-            <input type="text" id="address" class="address" name="address" placeholder="Address" style="width: 100%;">
-
+            <input
+              type="text"
+              id="address"
+              class="address"
+              name="address"
+              placeholder="Address"
+              style="width: 100%"
+            />
           </div>
           <div class="cityCode">
-            <input type="text" id="city" class="city" name="city" placeholder="City" style="width: 48%;">
-            <input type="number" id="postalCode" class="postalCode" name="postalCode" placeholder="Postal Code" style="width: 48%;">
+            <input
+              type="text"
+              id="city"
+              class="city"
+              name="city"
+              placeholder="City"
+              style="width: 48%"
+            />
+            <input
+              type="number"
+              id="postalCode"
+              class="postalCode"
+              name="postalCode"
+              placeholder="Postal Code"
+              style="width: 48%"
+            />
           </div>
-            <button
+          <button
             type="button"
             id="updateBtn"
-            onclick="window.location.href='/pages/profileSetting.html'"
+            onclick="window.location.href='./profileSetting.html'"
           >
             Update
           </button>
         </div>
-        </div>
       </div>
+    </div>
     <!-- Footer Area starts fron this line: Please explore it. -->
     <footer>
       <div class="footer_container">
         <div class="footer_content">
           <div class="footer_details">
             <div class="footer_company_details">
-              <img src="/assets/images/whiteLogo.png" alt="footerLogo" />
+              <img src="../assets/images/whiteLogo.png" alt="footerLogo" />
               <p class="footer_para">
                 We collect all the cars, evaluate the valuations. Making them
                 ready so everyone can buy it in reasonable costs.
@@ -198,7 +258,7 @@
         </div>
       </div>
     </footer>
-    <script src="/scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script></script>
   </body>
