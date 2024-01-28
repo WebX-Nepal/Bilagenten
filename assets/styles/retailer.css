@@ -800,7 +800,7 @@ Footer Area CSS Part Starts
 
   .submit_btn {
     font-size: 1.4em;
-}
+  }
 
   /* contact sec  */
 
@@ -903,4 +903,381 @@ Footer Area CSS Part Starts
   .footer_container .footer_content .copyright_para {
     text-align: center;
   }
+}
+
+/* For tabs  */
+
+@media (min-width: 560px) and (max-width: 980px) {
+  #bil_layout {
+    margin: 0 4rem;
+    max-width: 1400px;
+  }
+  /* nav res start  */
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .responsive_navbar_btn {
+    display: block;
+    z-index: 999;
+  }
+  .nav_list,
+  .nav_buttons {
+    display: none;
+  }
+
+  .responsive_menu_popup {
+    background: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #000;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 1;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 9;
+  }
+
+  .active {
+    margin: 0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid black;
+  }
+
+  .active_res_nav {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .res_nav_list,
+  .res_nav_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .res_nav_list_item {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .res_navbar_btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-menu"] {
+    display: block;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-cross"] {
+    display: none;
+  }
+
+  /* nav res ends  */
+
+  .retailer-mainContainer {
+    padding: 15em 2em 0 2em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 9em;
+  }
+  .retailer-mainContainer .retailer1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+  }
+  .retailer1 .heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .retailer-mainContainer .retailer1 h1 {
+    font-size: 4em;
+    line-height: 1.2em;
+    padding: 0 2rem;
+}
+
+  .retailer-mainContainer .retailer1 .heading p {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .tick {
+    margin: auto;
+  }
+
+  .retailer-mainContainer .retailer1 .tick .item p {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .retailer-mainContainer .retailer1 .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttom-retail p {
+    padding: 0 1em;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  /* .retailer-mainContainer .retailer1 .buttons .signin{
+  width: 100%;
+  margin: auto;
+} */
+  .retailer-mainContainer .retailer2 {
+    width: 100%;
+  }
+  .user-persona {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0 2em 5em 2em;
+    margin: 4rem 0;
+  }
+
+  .users-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 3em;
+    padding-bottom: 7em;
+  }
+  .user-card-item {
+    width: 70%;
+    object-fit: cover;
+    padding: 0.8rem;
+    border: 1px solid white;
+    border-radius: 3rem;
+    background: var(--gradientGray);
+  }
+  .moreCars .container .car-details h3 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: start;
+  }
+  .moreCars .container .imgsec img {
+    height: 145px;
+    object-fit: cover;
+}
+  .moreCars .container {
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    width: 90%;
+    margin: auto auto 3em;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .submit_btn {
+    font-size: 1.4em;
+  }
+
+   .moreCars-container .buttom {
+    padding: 0 2em;
+    text-align: center;
+  }
+
+  .moreCars-container {
+    padding-bottom: 7em;
+  }
+
+  .moreCars-container .buttom .submit_btn {
+    background: var(--gradient);
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    color: white;
+  }
+
+  /* contact sec  */
+
+  .contact-title h1 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 3em;
+  }
+
+  .contact-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10em;
+    flex-wrap: wrap;
+    gap: 5em;
+  }
+  .questions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .questions strong {
+    font-weight: 600;
+    font-size: 3em;
+  }
+  .contact-flex .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-flex .input-field input {
+    padding: 1em;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    font-size: 1.5rem;
+  }
+  .contact-flex .input-field textarea {
+    padding: 1em;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    font-size: 1.5em;
+  }
+  .contact-details h4 {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+  .contact-flex .inputs {
+    width: 90%;
+    margin: auto;
+  }
+  .contact-flex .inputs .submit_btn {
+    margin-top: 2em;
+  }
+  .contact-details {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+ 
+
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 6.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 750px) {
+  .user-persona {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 0 2em 5em 2em;
+    margin: 4rem 0;
+  }
+
+  .users-container {
+    width: 90%;
+    flex-direction: column;
+    gap: 3em;
+    padding-bottom: 7em;
+  }
+  .user-card-item {
+    width: 70%;
+    object-fit: cover;
+    padding: 0.8rem;
+    border: 1px solid white;
+    border-radius: 3rem;
+    background: var(--gradientGray);
+  }
+  .moreCars .container {
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    width: 90%;
+    margin: auto auto 3em;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
 }

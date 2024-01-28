@@ -927,7 +927,7 @@ Footer Area CSS Part Starts
   .content p {
     margin-top: 3rem;
     width: 90%;
-    margin: 2em auto;
+    margin: 2em 2em;
     font-size: 2em;
     color: #e3e3e3;
     text-align: center;
