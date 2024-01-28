@@ -1286,3 +1286,109 @@ Footer Area CSS Part Starts
     gap: 2em;
   }
 }
+
+/* For laptops  */
+
+@media (min-width: 980px) and (max-width: 1350px) {
+
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+  
+.retailer-mainContainer {
+    padding: 13em 5em 10em 5em;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 0;
+}
+.user-persona {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0.5em;
+    padding: 0 0 5em 0;
+    margin: 4rem 0;
+}
+.retailer-mainContainer .retailer1 h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+    width: 90%;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.signin {
+  width: fit-content;
+}
+
+.moreCars .container {
+    border: 2px solid #cfcfcf;
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 3em;
+    gap: 5em;
+}
+
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    padding: 0 5em 6.4rem 5em;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+  }
+}

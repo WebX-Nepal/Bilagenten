@@ -112,7 +112,7 @@ body {
 
 /* Hero Section CSS starting points */
 .hero_container {
-  height: 95vh;
+  padding: 12rem 5rem;
   width: 100%;
 
   display: flex;
@@ -1492,7 +1492,7 @@ Blog Card Carousel Styles Start from here:
     background: var(--gradientGray);
     padding: 2.4rem;
     border-radius: 20px;
-    width: 45%;
+    width: 49%;
     margin: 4rem 0;
   }
 
@@ -1507,12 +1507,13 @@ Blog Card Carousel Styles Start from here:
 
   .testimonaials_cards {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
     padding: 0 0 4em 0;
-    width: 93%;
+    width: 100%;
     margin: auto;
+    gap: 1em;
   }
 
   .testimonials .people_reviews .name_n_voice .people_name {
@@ -1781,6 +1782,135 @@ Blog Card Carousel Styles Start from here:
     justify-content: center;
     border-bottom: 1px solid lightgray;
     padding-bottom: 6.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+  }
+}
+
+/* for laptops  */
+
+@media (min-width: 980px) and (max-width: 1350px) {
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  #bil_layout {
+    margin: 0 5rem;
+    max-width: 1400px;
+  }
+
+  .hero_container {
+    /* height: 95vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10em 5em;
+  }
+  .review_title {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .review_title .title_discolor {
+    color: var(--primary_color);
+    font-size: 3rem;
+  }
+
+  .safe_free .see_map_para_link {
+    font-size: 1.2rem;
+    color: orange;
+  }
+
+  .tabs_container {
+    width: 100%;
+    margin: 4rem auto;
+    height: 100%;
+  }
+
+  .tabs_heading {
+    font-size: 3rem;
+    text-align: center;
+}
+.safe_n_easy_content_area .safe_heading {
+    font-size: 3rem;
+}
+.divider_heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+  .divider_performance {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 90%;
+    margin: auto;
+}
+
+.user-persona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    margin: 4rem 0;
+}
+
+.car-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7rem 15rem;
+}
+
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    padding: 0 5em 6.4rem 5em;
     flex-wrap: wrap;
     text-align: center;
     gap: 3em;
