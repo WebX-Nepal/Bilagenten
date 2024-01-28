@@ -178,7 +178,7 @@ body {
 
 #email,
 #password,
-#currentPassword {
+#conf-password {
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: 2px solid #888;
@@ -635,14 +635,17 @@ Footer Area CSS Part Starts
     width: 100%;
   }
 
-  #name {
-    width: 70%;
+  #email{
+    width: 85%;
   }
-  #email {
-    width: 70%;
+  #password{
+    width: 85%;
   }
-  #phone {
-    width: 70%;
+  #conf-password{
+    width: 85%;
+  }
+  .terms{
+    width: 85%;
   }
 
   .contact-heading {
@@ -651,7 +654,7 @@ Footer Area CSS Part Starts
   }
 
   .terms {
-    font-size: 1.3em;
+    font-size: 1.2em;
     justify-content: center;
   }
   .button {
@@ -702,3 +705,258 @@ Footer Area CSS Part Starts
     text-align: center;
   }
 }
+
+
+/* For tabs  */
+
+@media (min-width: 560px) and (max-width: 980px) {
+  #bil_layout {
+    margin: 0 4rem;
+    max-width: 1400px;
+  }
+  /* nav res start  */
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .responsive_navbar_btn {
+    display: block;
+    z-index: 999;
+  }
+  .nav_list,
+  .nav_buttons {
+    display: none;
+  }
+
+  .responsive_menu_popup {
+    background: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #000;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 1;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 9;
+  }
+
+  .active {
+    margin: 0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid black;
+  }
+
+  .active_res_nav {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .res_nav_list,
+  .res_nav_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .res_nav_list_item {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .res_navbar_btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-menu"] {
+    display: block;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-cross"] {
+    display: none;
+  }
+
+  /* nav res ends  */
+
+ 
+  .contact-container {
+    border: 2px solid #ECECEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 4em 0;
+    border-radius: 3em;
+    width: 70%;
+}
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2em;
+  }
+  .contact-subtitle {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #666;
+  }
+  .contact-validations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3.2rem 0;
+    margin: auto;
+    width: 60%;
+  }
+
+  .contact-heading {
+    font-size: 2.5rem;
+  }
+
+  .terms {
+    font-size: 1.3em;
+  }
+  #email{
+    width: 60%;
+  }
+  #password{
+    width: 60%;
+  }
+  #conf-password{
+    width: 60%;
+  }
+  .terms{
+    width: 60%;
+  }
+
+  .button {
+    width: 60%;
+  }
+
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 6.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+  }
+}
+
+ @media (min-width: 560px) and (max-width: 750px) {
+    .contact-container {
+    border: 2px solid #ECECEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 4em 0;
+    border-radius: 3em;
+    width: 92%;
+}
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2em;
+  }
+  .contact-subtitle {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #666;
+  }
+  .contact-validations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3.2rem 0;
+    margin: auto;
+    width: 70%;
+  }
+
+  .contact-heading {
+    font-size: 2.5rem;
+  }
+
+  .terms {
+    font-size: 1.3em;
+  }
+  #email{
+    width: 70%;
+  }
+  #password{
+    width: 70%;
+  }
+  #conf-password{
+    width: 70%;
+  }
+  .terms{
+    width: 70%;
+  }
+
+  .button {
+    width: 70%;
+  }
+} 
