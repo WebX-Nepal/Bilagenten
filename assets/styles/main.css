@@ -1908,7 +1908,7 @@ Blog Card Carousel Styles Start from here:
   .footer_container .footer_content .footer_details {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     border-bottom: 1px solid lightgray;
     padding: 0 5em 6.4rem 5em;
     flex-wrap: wrap;
