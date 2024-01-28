@@ -1148,11 +1148,21 @@ Blog Card Carousel Styles Start from here:
     display: flex;
     overflow: hidden;
     text-align: center;
-    padding: 3rem 0;
-    flex-direction: column;
+    padding: 3rem 1rem;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: nowrap;
+  }
+  .tab .tablinks {
+    display: flex;
+    cursor: pointer;
+    padding: 0;
+    transition: 0.3s;
+    font-size: 1.2rem;
+    color: #888;
+    gap: 0.5em;
+    align-items: center;
   }
 
   .tabs_heading {
@@ -1852,14 +1862,14 @@ Blog Card Carousel Styles Start from here:
   .tabs_heading {
     font-size: 3rem;
     text-align: center;
-}
-.safe_n_easy_content_area .safe_heading {
+  }
+  .safe_n_easy_content_area .safe_heading {
     font-size: 3rem;
-}
-.divider_heading {
+  }
+  .divider_heading {
     text-align: center;
     font-size: 3rem;
-}
+  }
 
   .divider_performance {
     display: flex;
@@ -1867,23 +1877,23 @@ Blog Card Carousel Styles Start from here:
     padding: 4em;
     width: 90%;
     margin: auto;
-}
+  }
 
-.user-persona {
+  .user-persona {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     height: 100%;
     margin: 4rem 0;
-}
+  }
 
-.car-logos {
+  .car-logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 7rem 15rem;
-}
+  }
 
   /* footer responsive  */
 

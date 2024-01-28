@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,900;1,500;1,600;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Preahvihear&family=Titillium+Web:ital,wght@0,600;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,900;1,500;1,600;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Preahvihear&family=Titillium+Web:ital,wght@0,600;1,400&display=swap");
 
-*, html {
+*,
+html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 500;
   /* overflow-x: hidden; */
@@ -20,16 +21,24 @@ body {
   font-size: 4rem;
 }
 
-:root{
+:root {
   --primary_color: orange;
   --secondary_color: #000;
   --light_gray: #a1a1a1;
   --white: #fff;
   --black: #000;
-  --gradient: linear-gradient(107deg, rgba(241, 29, 40, 0.80) -20.5%, rgba(255, 135, 44, 0.80) 50.01%, rgba(254, 97, 44, 0.80) 92.29%, rgba(253, 58, 45, 0.80) 120.9%);
-  --gradientGray: linear-gradient(0deg, #E3E3E3 0%, rgba(227, 227, 227, 0.00) 100%);
-
-
+  --gradient: linear-gradient(
+    107deg,
+    rgba(241, 29, 40, 0.8) -20.5%,
+    rgba(255, 135, 44, 0.8) 50.01%,
+    rgba(254, 97, 44, 0.8) 92.29%,
+    rgba(253, 58, 45, 0.8) 120.9%
+  );
+  --gradientGray: linear-gradient(
+    0deg,
+    #e3e3e3 0%,
+    rgba(227, 227, 227, 0) 100%
+  );
 }
 
 /* nav css start  */
@@ -147,7 +156,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10rem 0;
-
 }
 
 .contact-container {
@@ -155,9 +163,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1.6rem;
-    border: 2px solid #ECECEC;
-    padding: 4em 14em;
-    border-radius: 3em;
+  border: 2px solid #ececec;
+  padding: 4em 14em;
+  border-radius: 3em;
 }
 
 .contact-heading {
@@ -169,7 +177,7 @@ body {
   color: #666;
 }
 
-#name{
+#name {
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: 2px solid #888;
@@ -177,7 +185,7 @@ body {
   outline-color: orange;
   width: 90%;
 }
-#email{
+#email {
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: 2px solid #888;
@@ -185,20 +193,18 @@ body {
   outline-color: orange;
   width: 90%;
 }
-#phone{
+#phone {
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: 2px solid #888;
   font-size: 1.4rem;
   width: 90%;
   outline-color: orange;
-} 
-
-
+}
 
 .terms {
   display: flex;
-  gap: .8rem;
+  gap: 0.8rem;
   align-items: center;
   justify-content: flex-start;
   font-size: 1.3em;
@@ -206,13 +212,13 @@ body {
   width: 89%;
   margin-top: 1em;
 }
-.button{
+.button {
   display: flex;
   width: 90%;
   justify-content: space-between;
 }
 
-#nextBtn:hover{
+#nextBtn:hover {
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -223,9 +229,9 @@ body {
   width: 60%;
   border: 2px solid var(--primary_color);
   color: var(--primary_color);
-} 
+}
 
-#nextBtn{
+#nextBtn {
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -236,9 +242,9 @@ body {
   border: 2px solid var(--primary_color);
   color: white;
   width: 60%;
-} 
+}
 
-#backBtn{
+#backBtn {
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -249,9 +255,8 @@ body {
   width: 30%;
   border: 2px solid var(--primary_color);
   color: var(--primary_color);
-
-} 
-#backBtn:hover{
+}
+#backBtn:hover {
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -262,12 +267,11 @@ body {
   border: 2px solid var(--primary_color);
   color: white;
   width: 30%;
-} 
+}
 
 #registerBtn:hover {
   color: #000;
 }
-
 
 /* ====================================
 Footer Area CSS Part Starts
@@ -406,7 +410,6 @@ Footer Area CSS Part Starts
   text-decoration: underline;
 }
 
-
 /*----------------------------------
 ====================================
 Footer Area CSS Part Starts
@@ -544,9 +547,8 @@ Footer Area CSS Part Starts
   text-decoration: underline;
 }
 
-
 @media (max-width: 560px) {
- /* nav res start  */
+  /* nav res start  */
   .navbar {
     background-color: var(--white);
     overflow: hidden;
@@ -590,10 +592,10 @@ Footer Area CSS Part Starts
   }
 
   .active {
-  margin: 0;
-  padding-bottom: 2em;
-  border-bottom: 2px solid black;
-}
+    margin: 0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid black;
+  }
 
   .active_res_nav {
     transform: translateX(0);
@@ -641,43 +643,44 @@ Footer Area CSS Part Starts
     justify-content: center;
     align-items: center;
     padding: 10rem 2em;
-}
+  }
 
   .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.6rem;
-    border: 2px solid #ECECEC;
+    border: 2px solid #ececec;
     padding: 4em 0;
     border-radius: 3em;
     width: 100%;
-}
+  }
 
-#name{
-  width: 70%;
-}
-#email{
-  width: 70%;
-}
-#phone{
-  width: 70%;
-} 
+  #name {
+    width: 85%;
+  }
 
-.contact-heading {
-  text-align: center;
-    font-size: 3rem;
-}
+  #email {
+    width: 85%;
+  }
+  #phone {
+    width: 85%;
+  }
+
+  .contact-heading {
+    text-align: center;
+    font-size: 2.5rem;
+  }
 
   .terms {
     font-size: 1.3em;
     justify-content: center;
-}
-.button {
+  }
+  .button {
     display: flex;
-    width: 80%;
+    width: 85%;
     justify-content: space-between;
-}
+  }
   /* footer responsive  */
 
   .footer_container {

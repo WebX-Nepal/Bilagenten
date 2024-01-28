@@ -517,13 +517,13 @@ Footer Area CSS Part Starts
 
   .button {
     display: flex;
-    width: 80%;
+    width: 85%;
     justify-content: space-between;
 }
 
 .aboutCar-heading {
      text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
   .login-heading {

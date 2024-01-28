@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,900;1,500;1,600;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Preahvihear&family=Titillium+Web:ital,wght@0,600;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,900;1,500;1,600;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Preahvihear&family=Titillium+Web:ital,wght@0,600;1,400&display=swap");
 
-*, html {
+*,
+html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 500;
   /* overflow-x: hidden; */
@@ -20,16 +21,24 @@ body {
   font-size: 4rem;
 }
 
-:root{
+:root {
   --primary_color: orange;
   --secondary_color: #000;
   --light_gray: #a1a1a1;
   --white: #fff;
   --black: #000;
-  --gradient: linear-gradient(107deg, rgba(241, 29, 40, 0.80) -20.5%, rgba(255, 135, 44, 0.80) 50.01%, rgba(254, 97, 44, 0.80) 92.29%, rgba(253, 58, 45, 0.80) 120.9%);
-  --gradientGray: linear-gradient(0deg, #E3E3E3 0%, rgba(227, 227, 227, 0.00) 100%);
-
-
+  --gradient: linear-gradient(
+    107deg,
+    rgba(241, 29, 40, 0.8) -20.5%,
+    rgba(255, 135, 44, 0.8) 50.01%,
+    rgba(254, 97, 44, 0.8) 92.29%,
+    rgba(253, 58, 45, 0.8) 120.9%
+  );
+  --gradientGray: linear-gradient(
+    0deg,
+    #e3e3e3 0%,
+    rgba(227, 227, 227, 0) 100%
+  );
 }
 
 /* nav css start  */
@@ -165,7 +174,7 @@ body {
   color: #666;
 }
 
-#email{
+#email {
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: 2px solid #888;
@@ -173,15 +182,15 @@ body {
   outline-color: orange;
   width: 90%;
 }
-#password{
+#password {
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: 2px solid #888;
   font-size: 1.4rem;
   width: 90%;
   outline-color: orange;
-} 
-#conf-password{
+}
+#conf-password {
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: 2px solid #888;
@@ -194,7 +203,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .8rem;
+  gap: 0.8rem;
   font-size: 1.2rem;
 }
 
@@ -207,14 +216,14 @@ body {
 
 .terms {
   display: flex;
-  gap: .8rem;
+  gap: 0.8rem;
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
   width: 89%;
 }
 
-#registerBtn{
+#registerBtn {
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
   border: none;
@@ -223,12 +232,11 @@ body {
   cursor: pointer;
   background: var(--gradient);
   color: white;
-} 
+}
 
 #registerBtn:hover {
   color: #000;
 }
-
 
 /* ====================================
 Footer Area CSS Part Starts
@@ -367,7 +375,6 @@ Footer Area CSS Part Starts
   text-decoration: underline;
 }
 
-
 /*----------------------------------
 ====================================
 Footer Area CSS Part Starts
@@ -504,9 +511,8 @@ Footer Area CSS Part Starts
   text-decoration: underline;
 }
 
-
 @media (max-width: 560px) {
- /* nav res start  */
+  /* nav res start  */
   .navbar {
     background-color: var(--white);
     overflow: hidden;
@@ -527,7 +533,6 @@ Footer Area CSS Part Starts
   .nav_buttons {
     display: none;
   }
-
 
   .responsive_menu_popup {
     background: orange;
@@ -551,10 +556,10 @@ Footer Area CSS Part Starts
   }
 
   .active {
-  margin: 0;
-  padding-bottom: 2em;
-  border-bottom: 2px solid black;
-}
+    margin: 0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid black;
+  }
 
   .active_res_nav {
     transform: translateX(0);
@@ -598,13 +603,43 @@ Footer Area CSS Part Starts
   /* nav res ends  */
 
 
-.login-heading {
-    font-size: 3rem;
+  .login-container {
+    border: 2px solid #ECECEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 4em 0;
+    border-radius: 3em;
 }
+
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2em;
+  }
+  .login-subtitle {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #666;
+  }
+  .login-validations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3.2rem 0;
+    margin: auto;
+    width: 85%;
+  }
+
+  .login-heading {
+    font-size: 2.5rem;
+  }
 
   .terms {
     font-size: 1.3em;
-}
+  }
   /* footer responsive  */
 
   .footer_container {
@@ -652,7 +687,6 @@ Footer Area CSS Part Starts
 /* for laptops  */
 
 @media (min-width: 980px) and (max-width: 1350px) {
-
   .navbar {
     background-color: var(--white);
     overflow: hidden;
@@ -663,9 +697,7 @@ Footer Area CSS Part Starts
     width: 100%;
     position: fixed;
     z-index: 999;
-}
-
-
+  }
 
   /* footer responsive  */
 
