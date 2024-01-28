@@ -9,7 +9,6 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 10px;
   font-weight: 500;
-
 }
 
 body {
@@ -170,7 +169,7 @@ body {
   border: 2px solid var(--primary_color);
 }
 
-.getStarted{
+.getStarted {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,7 +331,6 @@ Safe & Easy section's style
   justify-content: center;
   gap: 0.5rem;
 }
-
 
 .safe_free .safe_title {
   font-size: 2rem;
@@ -944,10 +942,10 @@ Blog Card Carousel Styles Start from here:
 
 @media (max-width: 560px) {
   #bil_layout {
-  margin: 0 2rem;
-  max-width: 1400px;
-}
-/* nav res start  */
+    margin: 0 2rem;
+    max-width: 1400px;
+  }
+  /* nav res start  */
   .navbar {
     background-color: var(--white);
     overflow: hidden;
@@ -1036,9 +1034,8 @@ Blog Card Carousel Styles Start from here:
   }
 
   /* nav res ends  */
- 
 
-.hero_container {
+  .hero_container {
     padding: 7em 0;
     height: 100%;
     width: 100%;
@@ -1046,14 +1043,14 @@ Blog Card Carousel Styles Start from here:
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.content_area .hero_heading {
+  .content_area .hero_heading {
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
-}
-.register_form {
+  }
+  .register_form {
     width: auto;
     margin-top: 2.4rem;
     display: flex;
@@ -1062,37 +1059,37 @@ Blog Card Carousel Styles Start from here:
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-}
-.review_title {
+  }
+  .review_title {
     text-align: center;
     font-size: 3rem;
-}
-.review_title .title_discolor {
+  }
+  .review_title .title_discolor {
     font-size: 3rem;
-}
-.review_holder {
-        display: flex;
+  }
+  .review_holder {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 5rem 0;
     gap: 2rem;
     flex-direction: column;
-}
+  }
 
-.google_review_font {
+  .google_review_font {
     font-size: 2em;
-}
+  }
 
-.testimonials {
+  .testimonials {
     background: var(--gradientGray);
     padding: 2.4rem;
     border-radius: 20px;
     width: 100%;
     margin: 4rem 0;
-}
+  }
 
-.testimonaials_cards {
+  .testimonaials_cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1100,21 +1097,20 @@ Blog Card Carousel Styles Start from here:
     padding: 0 0 4em 0;
     width: 93%;
     margin: auto;
-}
+  }
 
-.colorful_image img{
-  height: 100%;
-  width: 100%;
-}
+  .colorful_image img {
+    height: 100%;
+    width: 100%;
+  }
 
-
-.safe_n_easy_content_area .safe_content_list {
+  .safe_n_easy_content_area .safe_content_list {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
     flex-wrap: wrap;
-}
-.safe_n_easy {
+  }
+  .safe_n_easy {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1122,33 +1118,33 @@ Blog Card Carousel Styles Start from here:
     padding: 4rem 0;
     flex-direction: row;
     flex-wrap: wrap;
-}
-.safe_n_easy_icon{
-  object-fit: contain;
-}
-.safe_car_image_rotate {
+  }
+  .safe_n_easy_icon {
+    object-fit: contain;
+  }
+  .safe_car_image_rotate {
     width: 100%;
-}
-.safe_content_list .safe_content_list_items {
+  }
+  .safe_content_list .safe_content_list_items {
     display: flex;
     flex-direction: row;
     gap: 1.6rem;
-}
+  }
 
-.safe_free .safe_title {
+  .safe_free .safe_title {
     font-size: 1.7rem;
-}
+  }
 
-.tab_heading_items {
+  .tab_heading_items {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
     margin: 2rem 0;
     flex-direction: column;
-}
+  }
 
-.tab {
+  .tab {
     display: flex;
     overflow: hidden;
     text-align: center;
@@ -1157,34 +1153,34 @@ Blog Card Carousel Styles Start from here:
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-}
+  }
 
-.tabs_heading {
+  .tabs_heading {
     font-size: 3rem;
     text-align: center;
-}
-.tabs_container {
+  }
+  .tabs_container {
     width: 100%;
     margin: 4rem auto;
     height: 100%;
-}
-.tab .tablinks.active {
+  }
+  .tab .tablinks.active {
     height: 100%;
     width: fit-content;
     color: black;
     border-bottom: 3px solid orange;
-}
-.car_card_image {
+  }
+  .car_card_image {
     object-fit: contain;
     width: 100%;
-}
+  }
 
-.divider_heading {
+  .divider_heading {
     text-align: center;
     font-size: 3rem;
-}
+  }
 
-.divider_performance {
+  .divider_performance {
     display: flex;
     justify-content: center;
     padding: 6rem 2rem;
@@ -1192,22 +1188,22 @@ Blog Card Carousel Styles Start from here:
     flex-direction: column;
     gap: 5em;
     align-items: center;
-}
+  }
 
-.divider_one {
+  .divider_one {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.safe_free .see_map_para_link {
+  .safe_free .see_map_para_link {
     font-size: 1.4em;
     color: orange;
-}
+  }
 
-.user-persona {
+  .user-persona {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1216,9 +1212,9 @@ Blog Card Carousel Styles Start from here:
     margin: 4rem 0;
     flex-wrap: wrap;
     /* flex-direction: row; */
-}
+  }
 
-.user-card-item {
+  .user-card-item {
     width: 95%;
     margin: auto;
     object-fit: cover;
@@ -1227,37 +1223,35 @@ Blog Card Carousel Styles Start from here:
     box-shadow: 2px 2px 10px 0px rgba(168, 168, 168, 0.25);
     border-radius: 0.8rem;
     background: #f6f6f6;
-}
+  }
 
-
-
-.car-logos {
+  .car-logos {
     display: flex;
     margin: 8rem auto;
     justify-content: center;
     align-items: center;
     gap: 3em;
     flex-wrap: wrap;
-}
+  }
 
-.faqs-deading {
+  .faqs-deading {
     font-size: 3rem;
     text-align: center;
-}
+  }
 
-.question-list {
+  .question-list {
     width: 100%;
     margin: 4rem auto;
-}
-.questions {
+  }
+  .questions {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 95%;
     margin: auto;
-}
+  }
 
-.contact-bg {
+  .contact-bg {
     height: 100%;
     width: 100%;
     display: flex;
@@ -1269,9 +1263,9 @@ Blog Card Carousel Styles Start from here:
     padding: 0;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
-}
+  }
 
-.contact-details {
+  .contact-details {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1279,37 +1273,36 @@ Blog Card Carousel Styles Start from here:
     gap: 4rem;
     align-items: center;
     padding: 6em 0;
-}
-.contact-form .input-fields {
+  }
+  .contact-form .input-fields {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
-}
-.world-map {
+  }
+  .world-map {
     display: none;
-}
+  }
 
-.contact-form {
-  padding: 5em 0;
+  .contact-form {
+    padding: 5em 0;
     width: 90%;
-}
+  }
 
-
-.safe_n_easy_content_area {
+  .safe_n_easy_content_area {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.contactBtn {
-  margin: auto;
-  width: fit-content;
-}
+  .contactBtn {
+    margin: auto;
+    width: fit-content;
+  }
 
-/* footer responsive  */
+  /* footer responsive  */
 
   .footer_container {
     height: 100%;
@@ -1353,21 +1346,20 @@ Blog Card Carousel Styles Start from here:
   }
 }
 
-
 /* For tabs  */
-@media (min-width: 560px) and (max-width: 980px){
+@media (min-width: 560px) and (max-width: 980px) {
   #bil_layout {
-  margin: 0 2rem;
-  max-width: 1400px;
-}
-/* nav res start  */
+    margin: 0 4rem;
+    max-width: 1400px;
+  }
+  /* nav res start  */
   .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -1449,9 +1441,8 @@ Blog Card Carousel Styles Start from here:
   }
 
   /* nav res ends  */
- 
 
-.hero_container {
+  .hero_container {
     padding: 7em 0;
     height: 100%;
     width: 100%;
@@ -1459,14 +1450,14 @@ Blog Card Carousel Styles Start from here:
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.content_area .hero_heading {
+  .content_area .hero_heading {
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
-}
-.register_form {
+  }
+  .register_form {
     width: auto;
     margin-top: 2.4rem;
     display: flex;
@@ -1475,46 +1466,46 @@ Blog Card Carousel Styles Start from here:
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-}
-.review_title {
+  }
+  .review_title {
     text-align: center;
     font-size: 4rem;
-}
-.review_title .title_discolor {
+  }
+  .review_title .title_discolor {
     font-size: 4rem;
-}
-.review_holder {
-        display: flex;
+  }
+  .review_holder {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 5rem 0;
     gap: 2rem;
     flex-direction: column;
-}
+  }
 
-.google_review_font {
+  .google_review_font {
     font-size: 3em;
-}
+  }
 
-.testimonials {
+  .testimonials {
     background: var(--gradientGray);
     padding: 2.4rem;
     border-radius: 20px;
     width: 45%;
     margin: 4rem 0;
-}
+  }
 
-.testimonials .people_reviews {
+  .testimonials .people_reviews {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.6rem;
     padding: 2rem 0;
     flex-direction: column;
-}
+  }
 
-.testimonaials_cards {
+  .testimonaials_cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1522,33 +1513,32 @@ Blog Card Carousel Styles Start from here:
     padding: 0 0 4em 0;
     width: 93%;
     margin: auto;
-}
+  }
 
-.testimonials .people_reviews .name_n_voice .people_name {
+  .testimonials .people_reviews .name_n_voice .people_name {
     font-size: 2.5rem;
-}
+  }
 
-.testimonials .people_reviews .name_n_voice .people_voices {
+  .testimonials .people_reviews .name_n_voice .people_voices {
     word-wrap: normal;
     color: #777;
     font-size: 2rem;
     font-style: italic;
     font-weight: 400;
-}
+  }
 
-.colorful_image img{
-  height: 100%;
-  width: 100%;
-}
+  .colorful_image img {
+    height: 100%;
+    width: 100%;
+  }
 
-
-.safe_n_easy_content_area .safe_content_list {
+  .safe_n_easy_content_area .safe_content_list {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
     flex-wrap: wrap;
-}
-.safe_n_easy {
+  }
+  .safe_n_easy {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1556,42 +1546,42 @@ Blog Card Carousel Styles Start from here:
     padding: 4rem 0;
     flex-direction: row;
     flex-wrap: wrap;
-}
-.safe_n_easy_icon{
-  object-fit: contain;
-}
-.safe_car_image_rotate {
+  }
+  .safe_n_easy_icon {
+    object-fit: contain;
+  }
+  .safe_car_image_rotate {
     width: 100%;
-}
-.safe_content_list .safe_content_list_items {
+  }
+  .safe_content_list .safe_content_list_items {
     display: flex;
     flex-direction: row;
     gap: 1.6rem;
-}
+  }
 
-.safe_free .safe_title {
+  .safe_free .safe_title {
     font-size: 2.7rem;
-}
-.safe_free .safe_para {
+  }
+  .safe_free .safe_para {
     font-size: 1.8rem;
     color: var(--light_gray);
-}
+  }
 
-.safe_free .see_map_para_link {
+  .safe_free .see_map_para_link {
     font-size: 1.9rem;
     color: orange;
-}
+  }
 
-.tab_heading_items {
+  .tab_heading_items {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
     margin: 2rem 0;
     flex-direction: column;
-}
+  }
 
-.tab {
+  .tab {
     display: flex;
     overflow: hidden;
     text-align: center;
@@ -1600,34 +1590,34 @@ Blog Card Carousel Styles Start from here:
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
+  }
 
-.tabs_heading {
+  .tabs_heading {
     font-size: 4rem;
     text-align: center;
-}
-.tabs_container {
+  }
+  .tabs_container {
     width: 100%;
     margin: 4rem auto;
     height: 100%;
-}
-.tab .tablinks.active {
+  }
+  .tab .tablinks.active {
     height: 100%;
     width: fit-content;
     color: black;
     border-bottom: 3px solid orange;
-}
-.car_card_image {
+  }
+  .car_card_image {
     object-fit: contain;
     width: 100%;
-}
+  }
 
-.divider_heading {
+  .divider_heading {
     text-align: center;
     font-size: 4rem;
-}
+  }
 
-.divider_performance {
+  .divider_performance {
     display: flex;
     justify-content: center;
     padding: 6rem 2rem;
@@ -1635,22 +1625,22 @@ Blog Card Carousel Styles Start from here:
     flex-direction: row;
     gap: 5em;
     align-items: center;
-}
+  }
 
-.divider_one {
+  .divider_one {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.safe_free .see_map_para_link {
+  .safe_free .see_map_para_link {
     font-size: 1.8em;
     color: orange;
-}
+  }
 
-.user-persona {
+  .user-persona {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1659,25 +1649,25 @@ Blog Card Carousel Styles Start from here:
     margin: 4rem 0;
     flex-wrap: wrap;
     /* flex-direction: row; */
-}
-.user-title {
+  }
+  .user-title {
     font-size: 2.5em;
     font-weight: 600;
-}
+  }
 
-.user-persona-para {
+  .user-persona-para {
     color: #888;
     font-size: 2rem;
     padding: 1.4rem 0;
-}
+  }
 
-.user-button-link {
+  .user-button-link {
     color: orange;
     font-size: 2rem;
     font-style: italic;
-}
+  }
 
-.user-card-item {
+  .user-card-item {
     width: 45%;
     margin: auto;
     object-fit: cover;
@@ -1686,37 +1676,35 @@ Blog Card Carousel Styles Start from here:
     box-shadow: 2px 2px 10px 0px rgba(168, 168, 168, 0.25);
     border-radius: 0.8rem;
     background: #f6f6f6;
-}
+  }
 
-
-
-.car-logos {
+  .car-logos {
     display: flex;
     margin: 8rem auto;
     justify-content: center;
     align-items: center;
     gap: 3em;
     flex-wrap: wrap;
-}
+  }
 
-.faqs-deading {
+  .faqs-deading {
     font-size: 3rem;
     text-align: center;
-}
+  }
 
-.question-list {
+  .question-list {
     width: 100%;
     margin: 4rem auto;
-}
-.questions {
+  }
+  .questions {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 95%;
     margin: auto;
-}
+  }
 
-.contact-bg {
+  .contact-bg {
     height: 100%;
     width: 100%;
     display: flex;
@@ -1728,9 +1716,9 @@ Blog Card Carousel Styles Start from here:
     padding: 0;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
-}
+  }
 
-.contact-details {
+  .contact-details {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1738,37 +1726,36 @@ Blog Card Carousel Styles Start from here:
     gap: 4rem;
     align-items: center;
     padding: 6em 0;
-}
-.contact-form .input-fields {
+  }
+  .contact-form .input-fields {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
-}
-.world-map {
+  }
+  .world-map {
     display: none;
-}
+  }
 
-.contact-form {
-  padding: 5em 0;
+  .contact-form {
+    padding: 5em 0;
     width: 90%;
-}
+  }
 
-
-.safe_n_easy_content_area {
+  .safe_n_easy_content_area {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 4rem;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.contactBtn {
-  margin: auto;
-  width: fit-content;
-}
+  .contactBtn {
+    margin: auto;
+    width: fit-content;
+  }
 
-/* footer responsive  */
+  /* footer responsive  */
 
   .footer_container {
     height: 100%;
@@ -1783,14 +1770,14 @@ Blog Card Carousel Styles Start from here:
   }
 
   .footer_container .footer_content {
-    padding: 0 1rem;
+    padding: 0 4rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
   .footer_container .footer_content .footer_details {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     border-bottom: 1px solid lightgray;
     padding-bottom: 6.4rem;
