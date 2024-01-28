@@ -272,7 +272,7 @@ Blog Card Carousel Styles Start from here:
 .user-persona {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 2rem;
   padding: 0 0 5em 0;
   margin: 4rem 0;
@@ -280,7 +280,6 @@ Blog Card Carousel Styles Start from here:
 
 .user-card-item {
   width: 30rem;
-  height: 64vh;
   object-fit: cover;
   padding: 0.8rem;
   border: 1px solid white;
@@ -981,7 +980,6 @@ Footer Area CSS Part Starts
   }
   .user-card-item {
     width: 45%;
-    height: 75vh;
     object-fit: cover;
     padding: 0.8rem;
     border: 1px solid white;
@@ -991,7 +989,7 @@ Footer Area CSS Part Starts
   .user-persona {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 3rem;
     padding: 0 3rem 5em 2rem;
     margin: 4rem 0;
@@ -1103,4 +1101,9 @@ Footer Area CSS Part Starts
   .footer_container .footer_content .copyright_para {
     text-align: center;
   }
+}
+
+
+@media (min-width: 560px) and (max-width: 750px) {
+
 }

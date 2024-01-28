@@ -1025,7 +1025,7 @@ Footer Area CSS Part Starts
     font-size: 4em;
     line-height: 1.2em;
     padding: 0 2rem;
-}
+  }
 
   .retailer-mainContainer .retailer1 .heading p {
     width: 100%;
@@ -1033,6 +1033,7 @@ Footer Area CSS Part Starts
   }
   .tick {
     margin: auto;
+    padding: 0 2em;
   }
 
   .retailer-mainContainer .retailer1 .tick .item p {
@@ -1050,7 +1051,7 @@ Footer Area CSS Part Starts
   }
 
   .buttom-retail p {
-    padding: 0 1em;
+    padding: 0 2em;
     text-align: center;
     font-size: 2rem;
   }
@@ -1074,10 +1075,15 @@ Footer Area CSS Part Starts
 
   .users-container {
     width: 90%;
-    flex-direction: column;
+    flex-direction: row;
     gap: 3em;
     padding-bottom: 7em;
   }
+  .users-container .item h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #51585a;
+}
   .user-card-item {
     width: 70%;
     object-fit: cover;
@@ -1094,13 +1100,13 @@ Footer Area CSS Part Starts
   .moreCars .container .imgsec img {
     height: 145px;
     object-fit: cover;
-}
+  }
   .moreCars .container {
     border: 2px solid rgb(207, 207, 207);
     border-radius: 20px;
     padding: 2em;
     display: flex;
-    width: 90%;
+    width: 88%;
     margin: auto auto 3em;
     justify-content: space-between;
     align-items: center;
@@ -1112,7 +1118,7 @@ Footer Area CSS Part Starts
     font-size: 1.4em;
   }
 
-   .moreCars-container .buttom {
+  .moreCars-container .buttom {
     padding: 0 2em;
     text-align: center;
   }
@@ -1181,7 +1187,7 @@ Footer Area CSS Part Starts
     margin-top: 10px;
     font-size: 2rem;
     font-weight: 600;
-}
+  }
   .contact-flex .inputs {
     width: 90%;
     margin: auto;
@@ -1196,7 +1202,6 @@ Footer Area CSS Part Starts
     align-items: center;
     text-align: center;
   }
- 
 
   /* footer responsive  */
 
@@ -1273,11 +1278,11 @@ Footer Area CSS Part Starts
     border-radius: 20px;
     padding: 2em;
     display: flex;
-    width: 90%;
+    width: 84%;
     margin: auto auto 3em;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     gap: 2em;
-}
+  }
 }
