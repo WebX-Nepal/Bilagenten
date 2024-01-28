@@ -724,3 +724,227 @@ Footer Area CSS Part Starts
     text-align: center;
   }
 }
+
+/* For tabs  */
+
+@media (min-width: 560px) and (max-width: 980px) {
+  #bil_layout {
+    margin: 0 4rem;
+    max-width: 1400px;
+  }
+  /* nav res start  */
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .responsive_navbar_btn {
+    display: block;
+    z-index: 999;
+  }
+  .nav_list,
+  .nav_buttons {
+    display: none;
+  }
+
+  .responsive_menu_popup {
+    background: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #000;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 1;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 9;
+  }
+
+  .active {
+    margin: 0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid black;
+  }
+
+  .active_res_nav {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .res_nav_list,
+  .res_nav_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .res_nav_list_item {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .res_navbar_btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-menu"] {
+    display: block;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-cross"] {
+    display: none;
+  }
+
+  /* nav res ends  */
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2em;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    border: 2px solid #ececec;
+    padding: 4em 0;
+    border-radius: 3em;
+    width: 70%;
+  }
+
+  #name {
+    width: 60%;
+  }
+
+  #email {
+    width: 60%;
+  }
+  #phone {
+    width: 60%;
+  }
+
+  .contact-heading {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .terms {
+    font-size: 1.6rem;
+    justify-content: center;
+  }
+  .button {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+  }
+
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 6.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+  }
+}
+
+ @media (min-width: 560px) and (max-width: 750px) {
+     .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    border: 2px solid #ececec;
+    padding: 4em 0;
+    border-radius: 3em;
+    width: 92%;
+  }
+
+  #name {
+    width: 70%;
+  }
+
+  #email {
+    width: 70%;
+  }
+  #phone {
+    width: 70%;
+  }
+
+  .contact-heading {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .terms {
+    font-size: 1.6rem;
+    justify-content: center;
+  }
+  .button {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  }
+} 

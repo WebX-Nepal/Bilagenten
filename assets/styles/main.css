@@ -41,8 +41,9 @@ body {
 }
 
 #bil_layout {
-  margin: 0 12rem;
+  padding: 0 12rem;
   max-width: 1400px;
+  margin: auto;
 }
 
 .navbar {
@@ -190,8 +191,7 @@ body {
   display: none;
 }
 
-.review_container {
-}
+
 
 .review_title {
   text-align: center;
@@ -359,8 +359,7 @@ Footer Area CSS Part Starts
   margin: 0 auto;
 }
 
-.footer_container {
-}
+
 
 .footer_container .footer_content .footer_details {
   display: flex;
@@ -942,8 +941,9 @@ Blog Card Carousel Styles Start from here:
 
 @media (max-width: 560px) {
   #bil_layout {
-    margin: 0 2rem;
+    padding: 0 2rem;
     max-width: 1400px;
+    margin: auto;
   }
   /* nav res start  */
   .navbar {
@@ -1359,8 +1359,9 @@ Blog Card Carousel Styles Start from here:
 /* For tabs  */
 @media (min-width: 560px) and (max-width: 980px) {
   #bil_layout {
-    margin: 0 4rem;
+    padding: 0 4rem;
     max-width: 1400px;
+    margin: auto;
   }
   /* nav res start  */
   .navbar {
@@ -1789,7 +1790,7 @@ Blog Card Carousel Styles Start from here:
   .footer_container .footer_content .footer_details {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     border-bottom: 1px solid lightgray;
     padding-bottom: 6.4rem;
     flex-wrap: wrap;
@@ -1826,8 +1827,9 @@ Blog Card Carousel Styles Start from here:
   }
 
   #bil_layout {
-    margin: 0 5rem;
+    padding: 0 5rem;
     max-width: 1400px;
+    margin: auto;
   }
 
   .hero_container {
@@ -1892,8 +1894,9 @@ Blog Card Carousel Styles Start from here:
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 7rem 15rem;
-  }
+    margin: 7rem auto;
+    width: 80%;
+}
 
   /* footer responsive  */
 

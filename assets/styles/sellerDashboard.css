@@ -154,6 +154,8 @@ body {
 
 .sellDash-container {
   padding: 0 12rem;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .head h2 {
@@ -925,7 +927,7 @@ Media Query
     align-items: center;
     gap: 1em;
     margin: auto;
-}
+  }
 
   .menu-container .menu {
     padding: 2em 0em;
@@ -1196,4 +1198,772 @@ Media Query
   .footer_container .footer_content .copyright_para {
     text-align: center;
   }
+}
+
+@media (min-width: 560px) and (max-width: 980px) {
+  #bil_layout {
+    margin: 0 4rem;
+    max-width: 1400px;
+  }
+  /* nav res start  */
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .responsive_navbar_btn {
+    display: block;
+    z-index: 999;
+  }
+  .nav_list,
+  .nav_buttons {
+    display: none;
+  }
+
+  .responsive_menu_popup {
+    background: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #000;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 1;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 9;
+  }
+
+  .active {
+    margin: 0;
+    padding-bottom: 2em;
+    /* border-bottom: 2px solid black; */
+  }
+
+  .active_res_nav {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .res_nav_list,
+  .res_nav_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .res_nav_list_item {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .res_navbar_btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-menu"] {
+    display: block;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-cross"] {
+    display: none;
+  }
+
+  /* nav res ends  */
+
+  .sellDash-container {
+    padding: 0 1rem;
+  }
+
+  .sellDash-container .head {
+    display: flex;
+    padding-top: 10em;
+    flex-direction: row;
+    align-items: center;
+  }
+  .head h2 {
+    font-size: 2.5rem;
+    color: #909090;
+    white-space: nowrap;
+  }
+
+  .menu-link.active {
+    /* font-size: 1.3em; */
+    padding: 0;
+    color: #f4793d;
+  }
+
+  .sellDash-container .head .left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .sellDash-container .head .mid {
+    border-bottom: 1px solid #cfcfcf;
+    width: 100%;
+    margin-bottom: 2em;
+    margin-left: 2em;
+  }
+  .sellDash-container .head .right {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2em;
+  }
+  .sellDash-container .head .right h2 {
+    display: none;
+  }
+
+  .sellDash-container .head .right img {
+    padding-left: 0;
+    /* height: 5em; */
+  }
+  .sellDash-container .head .right .userImg {
+    height: 5em;
+  }
+  .notificationIcon {
+    height: 4em;
+  }
+
+  .menu-container {
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
+  }
+  #my-cars .addcars {
+    padding-left: 0;
+    padding-bottom: 3em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: auto;
+  }
+
+  .menu-container .menu {
+    padding: 4em 5em;
+    width: fit-content;
+    height: 100%;
+    margin: auto;
+  }
+  .menu-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    font-size: 1.6rem;
+  }
+
+  #my-cars .addcars h1 {
+    font-size: 3em;
+  }
+
+  .container .bid .view-flex .view {
+    font-size: 1.4em;
+  }
+  .container .bid .view-flex .edit {
+    font-size: 1.4em;
+  }
+
+  .menu-container .details {
+    padding: 0;
+    /* padding: 0 2em; */
+    width: 100%;
+  }
+
+  .content .container {
+    border: 1px solid #0fa958;
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    margin: 4em 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0;
+    
+  }
+
+  .content .container-sold {
+    border: 1px solid rgb(255, 208, 208);
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    margin: 0 0 3em 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0;
+    flex-direction: row;
+    gap: 3em;
+  }
+
+  .container .imgsec {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container .car-details {
+    width: 25%;
+  }
+
+  .container .bid {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding-top: 1em;
+  }
+
+  .bid-sold {
+    padding-bottom: 0;
+  }
+
+  .container .car-details h3 {
+    text-align: start;
+    font-weight: bold;
+    font-size: 2em;
+    white-space: nowrap;
+  }
+
+  .container .car-details h5 {
+    text-align: start;
+    margin-top: 0.8em;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+
+  .car-details .features {
+    margin-top: 1.4em;
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .addCar {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .view-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em 4em;
+    gap: 2em;
+    white-space: nowrap;
+  }
+
+  /* ######## current bidding ######### */
+
+  #current-biddings .container-bid {
+        border: 1px solid #cfcfcf;
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3em;
+    /* margin-left: 4.6em; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-bid .details {
+    padding: 0;
+  }
+
+  .bidders-list-container {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    padding: 4em 0;
+    border-radius: 3em;
+    margin-bottom: 6em;
+    margin-left: 0;
+  }
+
+  #current-biddings .container-bid .imgsec img {
+    height: 165px;
+    object-fit: contain;
+  }
+  #current-biddings .container-bid .imgsec  {
+    width: 40%;
+  }
+  #current-biddings .container-bid .biddingDate  {
+    width: 50%;
+  }
+  #current-biddings .container-bid .status  {
+    width: 10%;
+  }
+
+  .car-details-container {
+    display: flex;
+    align-items: baseline;
+    gap: 0;
+  }
+  .biddingDate {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+  }
+  #timer-display {
+    font-size: 3em;
+    padding: 0.2em 1em;
+    background-color: #e9e9e9;
+    color: #f4793d;
+    font-weight: 600;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #cfcfcf;
+  }
+  #start-button {
+    font-size: 2em;
+    padding: 0.7em 1em;
+    background: #000;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .status {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .biddingDate .bid h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #ff872c;
+    margin-top: 1em;
+  }
+
+  /* ######## current bidding ends ######### */
+
+  .importImg img {
+    width: 100%;
+  }
+
+  #saveBtn {
+    padding: 1.2rem 1.6rem;
+    border-radius: 3.2rem;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background: var(--gradient);
+    border: 2px solid var(--primary_color);
+    color: white;
+    width: 100%;
+    margin: 0;
+  }
+
+  .sendbtn {
+    margin-left: 0;
+  }
+  .details-view h3 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1em;
+    width: 50%;
+    font-size: 1.3em;
+  }
+
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 6.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 560px) and (max-width: 750px) {
+
+  .sellDash-container {
+    padding: 0;
+  }
+
+  .sellDash-container .head {
+    display: flex;
+    padding-top: 10em;
+    flex-direction: row;
+    align-items: center;
+  }
+  .head h2 {
+    font-size: 1.5rem;
+    color: #909090;
+    white-space: nowrap;
+  }
+
+  .menu-link.active {
+    /* font-size: 1.3em; */
+    padding: 0;
+    color: #f4793d;
+  }
+
+  .sellDash-container .head .left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .sellDash-container .head .mid {
+    border-bottom: 1px solid #cfcfcf;
+    width: 100%;
+    margin-bottom: 2em;
+    margin-left: 2em;
+  }
+  .sellDash-container .head .right {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2em;
+  }
+  .sellDash-container .head .right h2 {
+    display: none;
+  }
+
+  .sellDash-container .head .right img {
+    padding-left: 0;
+  }
+  #current-biddings .container-bid .imgsec  {
+    width: 100%;
+  }
+  #current-biddings .container-bid .biddingDate  {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  #current-biddings .container-bid .status  {
+    width: 100%;
+  }
+
+  .menu-container {
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
+  }
+  #my-cars .addcars {
+    padding-left: 0;
+    padding-bottom: 3em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: auto;
+  }
+
+  .menu-container .menu {
+    padding: 2em 0em;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-container .menu a{
+    font-size: 2rem;
+  }
+  .menu-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center;
+    font-size: 0.9em;
+  }
+
+  .container .bid .view-flex .view {
+    font-size: 1.4em;
+  }
+  .container .bid .view-flex .edit {
+    font-size: 1.4em;
+  }
+
+  .menu-container .details {
+    padding: 0;
+    /* padding: 0 2em; */
+    width: 100%;
+  }
+
+  .content .container {
+    border: 1px solid #0fa958;
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    margin: 0 0 3em 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .content .container-sold {
+    border: 1px solid rgb(255, 208, 208);
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    margin: 0 0 3em 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .container .imgsec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container .car-details {
+    width: 100%;
+  }
+
+  .container .bid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding-top: 1em;
+  }
+
+  .bid-sold {
+    padding-bottom: 0;
+  }
+
+  .container .car-details h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .container .car-details h5 {
+    text-align: center;
+    margin-top: 0.8em;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+
+  .car-details .features {
+    margin-top: 1.4em;
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .addCar {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .view-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em 4em;
+    gap: 2em;
+    white-space: nowrap;
+  }
+
+  /* ######## current bidding ######### */
+
+  #current-biddings .container-bid {
+    border: 1px solid #cfcfcf;
+    border-radius: 20px;
+    padding: 2em;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3em;
+    /* margin-left: 4.6em; */
+    flex-direction: column;
+  }
+  .container-bid .details {
+    padding: 0;
+  }
+
+  .bidders-list-container {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    padding: 4em 0;
+    border-radius: 3em;
+    margin-bottom: 6em;
+    margin-left: 0;
+  }
+
+  #current-biddings .container-bid .imgsec img {
+    height: 165px;
+    object-fit: contain;
+  }
+
+  .car-details-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 0;
+  }
+  .biddingDate {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+  }
+  #timer-display {
+    font-size: 3em;
+    padding: 0.2em 1em;
+    background-color: #e9e9e9;
+    color: #f4793d;
+    font-weight: 600;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #cfcfcf;
+  }
+  #start-button {
+    font-size: 2em;
+    padding: 0.7em 1em;
+    background: #000;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .status {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .biddingDate .bid h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #ff872c;
+    margin-top: 1em;
+  }
+
+  /* ######## current bidding ends ######### */
+
+  .importImg img {
+    width: 100%;
+  }
+
+  #saveBtn {
+    padding: 1.2rem 1.6rem;
+    border-radius: 3.2rem;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background: var(--gradient);
+    border: 2px solid var(--primary_color);
+    color: white;
+    width: 100%;
+    margin: 0;
+  }
+
+  .sendbtn {
+    margin-left: 0;
+  }
+  .details-view h3 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1em;
+    width: 50%;
+    font-size: 1.3em;
+  }
+  
 }
