@@ -229,7 +229,8 @@ body {
 .menu-container .menu {
   padding: 2em;
   width: 17%;
-  height: 40em;
+  height: fit-content;
+  padding: 3em 2em;
 }
 .menu-list {
   display: flex;
@@ -625,6 +626,37 @@ body {
 
 .sendbtn{
   margin-left: 7em;
+}
+
+.annualModel .annual{
+  color: #8A8A8A;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+.kilometer .kilometerStand{
+  color: #8A8A8A;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+ .from{
+  color: #8A8A8A;
+  font-size: 1.5rem;
+  background: #FFEDE0;
+  text-align: center;  
+  border-radius: 2em;
+  padding: 0.4em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+ .till{
+  color: #8A8A8A;
+  font-size: 1.5rem;
+  background: #FFEDE0;
+  text-align: center;  
+  border-radius: 2em;
+  padding: 0.4em;
+  margin-top: 0.5em;
+  cursor: pointer;
 }
 
 /* ====================================
