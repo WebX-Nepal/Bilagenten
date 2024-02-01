@@ -54,7 +54,7 @@
       </div>
     </div>
     <!--************* Responsive Navbar close here *********--------------------->
-    <div class="sellDash-container">
+    <div class="dealerDash-container">
       <div class="head">
         <div class="left">
           <h2>Dealer Dashboard</h2>
@@ -64,59 +64,86 @@
           <img
             src="../assets/images/icons/notificationIcon.png"
             alt=""
-            style="height: fit-content;"
+            style="height: fit-content"
           />
           <h2>Yamu</h2>
           <div class="dropdown">
-  <img src="../assets/images/yamu.png" alt="userImgErr" onclick="toggleDropdown()" style="cursor: pointer;"/>
-  <div id="dropdownMenu" class="dropdown-content">
-    <a href="./profileSetting.html" style="cursor: pointer;">Settings</a>
-    <div class="logout" style="cursor: pointer;">
-            <a href="../index.html" class="logout">Logout</a>
-            <img src="../assets/images/logOuticon.png" alt="" />
+            <img
+              src="../assets/images/yamu.png"
+              alt="userImgErr"
+              onclick="toggleDropdown()"
+              style="cursor: pointer"
+            />
+            <div id="dropdownMenu" class="dropdown-content">
+              <a href="./profileSetting.html" style="cursor: pointer"
+                >Settings</a
+              >
+              <div class="logout" style="cursor: pointer">
+                <a href="../index.html" class="logout">Logout</a>
+                <img src="../assets/images/logOuticon.png" alt="" />
+              </div>
+            </div>
           </div>
-  </div>
-</div>
         </div>
       </div>
       <div class="menu-container">
         <div class="menu">
           <div class="menu-list">
             <div class="activeBet">
-              <img src="../assets/images/icons/activeBetIcon.png" alt="iconErr">
-              <a href="#" class="menu-link" data-content="my-cars">Active Betting rounds</a>
+              <img
+                src="../assets/images/icons/activeBetIcon.png"
+                alt="iconErr"
+              />
+              <a href="#" class="menu-link" data-content="my-cars"
+                >Active Betting rounds</a
+              >
             </div>
             <div class="upcommingCars">
-              <img src="../assets/images/icons/upcommingIcon.png" alt="iconErr">
+              <img
+                src="../assets/images/icons/upcommingIcon.png"
+                alt="iconErr"
+              />
               <a href="#" class="menu-link" data-content="current-biddings"
-              >Upcoming Cars 200</a
-            >
+                >Upcoming Cars 200</a
+              >
             </div>
-           <div class="wishList">
-            <img src="../assets/images/icons/wishListIcon.png" alt="iconErr">
-             <a href="#" class="menu-link" data-content="my-sold-cars"
-              >Wishlist</a
-            >
-           </div>
-           <div class="myPurchase">
-            <img src="../assets/images/icons/myPurchaseIcon.png" alt="iconErr">
-             <a href="#" class="menu-link" data-content="my-purchase-list"
-              >My Purchase</a
-            >
-           </div>
-           <hr>
-           <div class="annualModel">
-            <h1 class="annual">Annual Model</h1>
-            <p class="from">From</p>
-            <hr>
-            <p class="till">Till</p>
-           </div>
-           <div class="kilometer">
-            <h1 class="kilometerStand">Kilometerstand</h1>
-            <p class="from">From</p>
-            <hr>
-            <p class="till">Till</p>
-           </div>
+            <div class="wishList">
+              <img
+                src="../assets/images/icons/wishListIcon.png"
+                alt="iconErr"
+              />
+              <a href="#" class="menu-link" data-content="my-sold-cars"
+                >Wishlist</a
+              >
+            </div>
+            <div class="myPurchase">
+              <img
+                src="../assets/images/icons/myPurchaseIcon.png"
+                alt="iconErr"
+              />
+              <a href="#" class="menu-link" data-content="my-purchase-list"
+                >My Purchase</a
+              >
+            </div>
+            <div class="line">
+              <img src="../assets/images/line.png" alt="" />
+            </div>
+            <div class="annualModel">
+              <h1 class="annual">Annual Model</h1>
+              <p class="from">From</p>
+              <div class="line">
+                <img src="../assets/images/line.png" alt="" />
+              </div>
+              <p class="till">Till</p>
+            </div>
+            <div class="kilometer">
+              <h1 class="kilometerStand">Kilometerstand</h1>
+              <p class="from">From</p>
+              <div class="line">
+                <img src="../assets/images/line.png" alt="" />
+              </div>
+              <p class="till">Till</p>
+            </div>
           </div>
           <!-- <div class="logout">
             <a href="/index.html" class="logout">Logout</a>
@@ -125,17 +152,17 @@
         </div>
         <div class="details">
           <div id="my-cars" class="content">
-            <div class="addcars" style="width: fit-content;">
-              <img src="../assets/images/plusIcon.png" alt="addIconErr" style="cursor: pointer;" />
-              <h1 style="cursor: pointer;">Add Car</h1>
+            <div class="bed-cars" style="width: fit-content">
+              <h1 style="cursor: pointer; color: #8a8a8a">Bidding Round</h1>
             </div>
             <div class="border"></div>
-            <div class="container" style="background: var(--gradientGrey);">
-              <div class="imgsec">
-                <img src="../assets/images/car4.png" alt="" />
-              </div>
-              <div class="car-details">
-                <h3>Maybach S 650 Sedan</h3>
+            <div class="container-bid" style="background: var(--gradientGrey)">
+              <div class="car-sec">
+                <div class="bid-img">
+                  <img src="../assets/images/mercedes.png" alt="" />
+                </div>
+                <h1 class="name" style="color: #f4793d">Reg No</h1>
+                <h2 class="name">Mercedes Benz</h2>
                 <div class="features">
                   <div class="left">
                     <p>Leather</p>
@@ -149,170 +176,129 @@
                     <p>V.Pump</p>
                   </div>
                 </div>
-                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+                <p class="det">2020 . 18,000 km . Automatic . Electricity</p>
               </div>
-              <div class="bid">
-                <div class="highest-amount">
-                  <h2>Highest Bid</h2>
-                  <p class="amount">$50,000</p>
+              <div class="bid-sec">
+                <div class="bidImg">
+                  <img src="../assets/images/bid.png" alt="" />
                 </div>
-                <div class="view-flex">
-                  <div class="view" style="cursor: pointer">
-                    <img
-                      src="../assets/images/icons/viewIcon.png"
-                      alt="imgErr"
-                      style="object-fit: contain"
-                    />
-                    <h5 style="font-size: 1.2em">view</h5>
+                <h2 style="color: #f4793d">Highest Bidding Price</h2>
+                <p class="price" style="color: #8a8a8a">$89.000</p>
+                <div class="kmImg">
+                  <img src="../assets/images/Frame 213.png" alt="" />
+                </div>
+                <div class="buttons">
+                  <input class="submit_btn" type="submit" value="Give Bid" />
+                  <input
+                    class="submit_btn signin"
+                    type="submit"
+                    value="Give Autobid"
+                  />
+                </div>
+              </div>
+              <div class="bid-date">
+                <h3 class="start" style="color: #8a8a8a">
+                  Bidding Starting Date
+                </h3>
+                <p class="startDate">30/01/2024</p>
+                <h3 style="color: #8a8a8a">Bidding End Date</h3>
+                <p class="endDate">29/2/2024</p>
+
+                <div class="list-bid">
+                  <h2 style="color: #f4793d">Biddings</h2>
+                  <div class="bid-list">
+                    <div class="name">
+                      <p style="font-weight: bold">Bidder 01</p>
+                      <p>22.12 20:16:47</p>
+                    </div>
+                    <div class="amount">
+                      <p>19,000 Kr</p>
+                    </div>
                   </div>
-                  <div class="edit" style="cursor: pointer">
-                    <img
-                      src="../assets/images/icons/editIcon.png"
-                      alt="imgErr"
-                      style="object-fit: contain"
-                    />
-                    <h5 style="font-size: 1.2em">edit</h5>
+                  <div class="bid-list">
+                    <div class="name">
+                      <p style="font-weight: bold">Bidder 01</p>
+                      <p>22.12 20:16:47</p>
+                    </div>
+                    <div class="amount">
+                      <p>19,000 Kr</p>
+                    </div>
+                  </div>
+                  <div class="bid-list">
+                    <div class="name">
+                      <p style="font-weight: bold">Bidder 01</p>
+                      <p>22.12 20:16:47</p>
+                    </div>
+                    <div class="amount">
+                      <p>19,000 Kr</p>
+                    </div>
+                  </div>
+                  <div class="bid-list">
+                    <div class="name">
+                      <p style="font-weight: bold">Bidder 01</p>
+                      <p>22.12 20:16:47</p>
+                    </div>
+                    <div class="amount">
+                      <p>19,000 Kr</p>
+                    </div>
+                  </div>
+                  <div class="bid-list">
+                    <div class="name">
+                      <p style="font-weight: bold">Bidder 01</p>
+                      <p>22.12 20:16:47</p>
+                    </div>
+                    <div class="amount">
+                      <p>19,000 Kr</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="container" style="background: var(--gradientGrey);">
-              <div class="imgsec">
-                <img src="../assets/images/car2.png" alt="" />
-              </div>
-              <div class="car-details">
-                <h3>Orange Audi Q3</h3>
-                <div class="features">
-                  <div class="left">
-                    <p>Leather</p>
-                    <p>ACC</p>
-                    <p>Navi</p>
-                    <p>R.Cam</p>
-                  </div>
-                  <div class="right">
-                    <p>DAB</p>
-                    <p>Active Info Display</p>
-                    <p>V.Pump</p>
-                  </div>
-                </div>
-                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
-              </div>
-              <div class="bid">
-                <div class="highest-amount">
-                  <h2>Highest Bid</h2>
-                  <p class="amount">$50,000</p>
-                </div>
-                <div class="view-flex">
-                  <div class="view" style="cursor: pointer">
-                    <img
-                      src="../assets/images/icons/viewIcon.png"
-                      alt="imgErr"
-                      style="object-fit: contain"
-                    />
-                    <h5 style="font-size: 1.2em">view</h5>
-                  </div>
-                  <div class="edit" style="cursor: pointer">
-                    <img
-                      src="../assets/images/icons/editIcon.png"
-                      alt="imgErr"
-                      style="object-fit: contain"
-                    />
-                    <h5 style="font-size: 1.2em">edit</h5>
-                  </div>
-                </div>
-              </div>
+            <div class="other-details">
+              <h1 class="title-bid" style="color: #f4793d">Other Details</h1>
+              <p class="explain exp-title" style="color: #8a8a8a">
+                The car is sold for estate - The buyer should calculate
+                approximately 1 week delivery time.
+              </p>
+              <p class="explain" style="color: #8a8a8a">
+                Please note that this car is advertised with function Test from
+                Mercedes Control. It is a less compressive test in relation to
+                technical tariffs and doesnot consider varnish and bodywork .
+                See defined control points in test. Beneath the moonlit sky, the
+                ancient oak tree whispered secrets to the night breeze, carrying
+                tales of forgotten realms. In a distant city, neon lights
+                flickered like distant stars, illuminating the bustling streets
+                where dreams and realities intertwined. A lone wanderer traced
+                the shoreline, collecting seashells as echoes of waves played a
+                melodic lullaby. Within the pages of an old book, a wizard's
+                incantations sparked the imagination of a curious child, opening
+                doorways to mystical worlds. As the sun dipped below the
+                horizon, the world embraced the tranquility of twilight, a brief
+                moment where day and night shared a delicate dance.
+              </p>
             </div>
-            <div class="container" style="background: var(--gradientGrey);">
-              <div class="imgsec">
-                <img src="../assets/images/blue.png" alt="" />
-              </div>
-              <div class="car-details">
-                <h3>2017 Ford Mustang EcoBoost</h3>
-                <div class="features">
-                  <div class="left">
-                    <p>Leather</p>
-                    <p>ACC</p>
-                    <p>Navi</p>
-                    <p>R.Cam</p>
-                  </div>
-                  <div class="right">
-                    <p>DAB</p>
-                    <p>Active Info Display</p>
-                    <p>V.Pump</p>
-                  </div>
-                </div>
-                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
-              </div>
-              <div class="bid">
-                <div class="highest-amount">
-                  <h2>Highest Bid</h2>
-                  <p class="amount">$50,000</p>
-                </div>
-                <div class="view-flex">
-                  <div class="view" style="cursor: pointer">
-                    <img
-                      src="../assets/images/icons/viewIcon.png"
-                      alt="imgErr"
-                      style="object-fit: contain"
-                    />
-                    <h5 style="font-size: 1.2em">view</h5>
-                  </div>
-                  <div class="edit" style="cursor: pointer">
-                    <img
-                      src="../assets/images/icons/editIcon.png"
-                      alt="imgErr"
-                      style="object-fit: contain"
-                    />
-                    <h5 style="font-size: 1.2em">edit</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="container" style="background: var(--gradientGrey);">
-              <div class="imgsec">
-                <img src="../assets/images/mercedes.png" alt="" />
-              </div>
-              <div class="car-details">
-                <h3>Mercedies Benz GLE</h3>
-                <div class="features">
-                  <div class="left">
-                    <p>Leather</p>
-                    <p>ACC</p>
-                    <p>Navi</p>
-                    <p>R.Cam</p>
-                  </div>
-                  <div class="right">
-                    <p>DAB</p>
-                    <p>Active Info Display</p>
-                    <p>V.Pump</p>
-                  </div>
-                </div>
-                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
-              </div>
-              <div class="bid">
-                <div class="highest-amount">
-                  <h2>Highest Bid</h2>
-                  <p class="amount">$50,000</p>
-                </div>
-                <div class="view-flex">
-                  <div class="view" style="cursor: pointer">
-                    <img
-                      src="../assets/images/icons/viewIcon.png"
-                      alt="imgErr"
-                      style="object-fit: contain"
-                    />
-                    <h5 style="font-size: 1.2em">view</h5>
-                  </div>
-                  <div class="edit" style="cursor: pointer">
-                    <img
-                      src="../assets/images/icons/editIcon.png"
-                      alt="imgErr"
-                      style="object-fit: contain"
-                    />
-                    <h5 style="font-size: 1.2em">edit</h5>
-                  </div>
-                </div>
-              </div>
+            <div class="other-details">
+              <h1 class="title-bid" style="color: #f4793d">Other Details</h1>
+              <p class="explain exp-title" style="color: #8a8a8a">
+                The car is sold for estate - The buyer should calculate
+                approximately 1 week delivery time.
+              </p>
+              <p class="explain" style="color: #8a8a8a">
+                Please note that this car is advertised with function Test from
+                Mercedes Control. It is a less compressive test in relation to
+                technical tariffs and doesnot consider varnish and bodywork .
+                See defined control points in test. Beneath the moonlit sky, the
+                ancient oak tree whispered secrets to the night breeze, carrying
+                tales of forgotten realms. In a distant city, neon lights
+                flickered like distant stars, illuminating the bustling streets
+                where dreams and realities intertwined. A lone wanderer traced
+                the shoreline, collecting seashells as echoes of waves played a
+                melodic lullaby. Within the pages of an old book, a wizard's
+                incantations sparked the imagination of a curious child, opening
+                doorways to mystical worlds. As the sun dipped below the
+                horizon, the world embraced the tranquility of twilight, a brief
+                moment where day and night shared a delicate dance.
+              </p>
             </div>
           </div>
 
@@ -345,11 +331,9 @@
               >&times;</a
             >
             <div style="padding-top: 13em">
-              <div
-                class="view-content"
-              >
+              <div class="view-content">
                 <div style="display: flex" class="details-view">
-                 <h3>Car Name:</h3>
+                  <h3>Car Name:</h3>
                   <input
                     style="
                       width: 50%;
@@ -365,9 +349,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>
-                    Registration Number:
-                  </h3>
+                  <h3>Registration Number:</h3>
                   <input
                     style="
                       width: 50%;
@@ -383,7 +365,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Kilometer:</h3>
+                  <h3>Kilometer:</h3>
                   <input
                     style="
                       width: 50%;
@@ -399,7 +381,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Fuel type:</h3>
+                  <h3>Fuel type:</h3>
                   <input
                     style="
                       width: 50%;
@@ -415,7 +397,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Wheel drive:</h3>
+                  <h3>Wheel drive:</h3>
                   <input
                     style="
                       width: 50%;
@@ -431,9 +413,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>
-                    Uses-imported no:
-                  </h3>
+                  <h3>Uses-imported no:</h3>
                   <input
                     style="
                       width: 50%;
@@ -449,7 +429,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Color</h3>
+                  <h3>Color</h3>
                   <input
                     style="
                       width: 50%;
@@ -465,7 +445,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Types:</h3>
+                  <h3>Types:</h3>
                   <input
                     style="
                       width: 50%;
@@ -481,7 +461,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Next EU Control:</h3>
+                  <h3>Next EU Control:</h3>
                   <input
                     style="
                       width: 50%;
@@ -497,7 +477,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Price:</h3>
+                  <h3>Price:</h3>
                   <input
                     style="
                       width: 50%;
@@ -513,7 +493,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Description:</h3>
+                  <h3>Description:</h3>
                   <input
                     style="
                       width: 50%;
@@ -551,11 +531,7 @@
                 </div>
                 <div
                   class="sendbtn"
-                  style="
-                    display: flex;
-                    justify-content: center;
-                    
-                  "
+                  style="display: flex; justify-content: center"
                 >
                   <button
                     type="button"
@@ -600,12 +576,9 @@
               >&times;</a
             >
             <div style="padding-top: 13em">
-              <div
-             
-                class="view-content"
-              >
+              <div class="view-content">
                 <div style="display: flex" class="details-view">
-                 <h3>Car Name:</h3>
+                  <h3>Car Name:</h3>
                   <input
                     style="
                       width: 50%;
@@ -621,9 +594,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>
-                    Registration Number:
-                  </h3>
+                  <h3>Registration Number:</h3>
                   <input
                     style="
                       width: 50%;
@@ -639,7 +610,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Kilometer:</h3>
+                  <h3>Kilometer:</h3>
                   <input
                     style="
                       width: 50%;
@@ -655,7 +626,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Fuel type:</h3>
+                  <h3>Fuel type:</h3>
                   <input
                     style="
                       width: 50%;
@@ -671,7 +642,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Wheel drive:</h3>
+                  <h3>Wheel drive:</h3>
                   <input
                     style="
                       width: 50%;
@@ -687,9 +658,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>
-                    Uses-imported no:
-                  </h3>
+                  <h3>Uses-imported no:</h3>
                   <input
                     style="
                       width: 50%;
@@ -705,7 +674,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Color</h3>
+                  <h3>Color</h3>
                   <input
                     style="
                       width: 50%;
@@ -721,7 +690,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Types:</h3>
+                  <h3>Types:</h3>
                   <input
                     style="
                       width: 50%;
@@ -737,7 +706,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Next EU Control:</h3>
+                  <h3>Next EU Control:</h3>
                   <input
                     style="
                       width: 50%;
@@ -753,7 +722,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Price:</h3>
+                  <h3>Price:</h3>
                   <input
                     style="
                       width: 50%;
@@ -769,7 +738,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Description:</h3>
+                  <h3>Description:</h3>
                   <input
                     style="
                       width: 50%;
@@ -807,11 +776,7 @@
                 </div>
                 <div
                   class="sendbtn"
-                  style="
-                    display: flex;
-                    justify-content: center;
-
-                  "
+                  style="display: flex; justify-content: center"
                 >
                   <button
                     type="button"
@@ -855,9 +820,7 @@
               >&times;</a
             >
             <div style="padding-top: 13em">
-              <div
-                class="view-content"
-              >
+              <div class="view-content">
                 <div style="display: flex" class="details-view">
                   <h3>Car Name:</h3>
                   <input
@@ -875,9 +838,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                  <h3>
-                    Registration Number:
-                  </h3>
+                  <h3>Registration Number:</h3>
                   <input
                     style="
                       width: 50%;
@@ -909,7 +870,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Fuel type:</h3>
+                  <h3>Fuel type:</h3>
                   <input
                     style="
                       width: 50%;
@@ -925,7 +886,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Wheel drive:</h3>
+                  <h3>Wheel drive:</h3>
                   <input
                     style="
                       width: 50%;
@@ -941,9 +902,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>
-                    Uses-imported no:
-                  </h3>
+                  <h3>Uses-imported no:</h3>
                   <input
                     style="
                       width: 50%;
@@ -959,7 +918,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Color</h3>
+                  <h3>Color</h3>
                   <input
                     style="
                       width: 50%;
@@ -975,7 +934,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Types:</h3>
+                  <h3>Types:</h3>
                   <input
                     style="
                       width: 50%;
@@ -991,7 +950,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Next EU Control:</h3>
+                  <h3>Next EU Control:</h3>
                   <input
                     style="
                       width: 50%;
@@ -1007,7 +966,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Price:</h3>
+                  <h3>Price:</h3>
                   <input
                     style="
                       width: 50%;
@@ -1023,7 +982,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                 <h3>Description:</h3>
+                  <h3>Description:</h3>
                   <input
                     style="
                       width: 50%;
@@ -1039,9 +998,7 @@
                   />
                 </div>
                 <div style="display: flex" class="details-view">
-                  <h3>
-                    Brand:
-                  </h3>
+                  <h3>Brand:</h3>
                   <input
                     style="
                       width: 50%;
@@ -1061,10 +1018,7 @@
                 </div>
                 <div
                   class="sendbtn"
-                  style="
-                    display: flex;
-                    justify-content: center;
-                  "
+                  style="display: flex; justify-content: center"
                 >
                   <button
                     type="button"
@@ -1081,37 +1035,31 @@
           <!--Add car side bar ends here  -->
 
           <div id="current-biddings" class="content">
-            <div class="container-bid" style="background: var(--gradientGrey);">
+            <div class="upcommingCars-active" style="width: fit-content">
+              <h1 style="cursor: pointer; color: #8a8a8a">Upcoming Cars</h1>
+              <div class="line">
+                <img src="../assets/images/line2.png" alt="" />
+              </div>
+            </div>
+            <div class="container-bid" style="background: var(--gradientGrey)">
+             
               <div class="imgsec">
+                 <div class="wish">
+               <img src="../assets/images/mask.png"  alt="" style="object-fit: contain;">
+              </div>
                 <div class="details">
                   <img src="../assets/images/mercedes.png" alt="imgErr" />
-                  <div class="car-details-container">
-                    <div class="car-details">
-                      <h3>Mercedies Benz</h3>
-                      <div class="features">
-                        <div class="left">
-                          <p>Leather</p>
-                          <p>ACC</p>
-                          <p>Navi</p>
-                          <p>R.Cam</p>
-                        </div>
-                        <div class="right">
-                          <p>DAB</p>
-                          <p>Active Info Display</p>
-                          <p>V.Pump</p>
-                        </div>
-                      </div>
-                      <h5>2020 . 18,000 km . Automatic . Electricity</h5>
-                    </div>
-                    <div class="prize">
-                      <strong>$150,000</strong>
+                  <div class="car-detail-container">
+                    <div class="car-detail">
+                     <h3 style="color: #f4793d">Reg No. : <span class="blurAmount">$50,000</span> </h3>
+                      <h4 class="carName">Mercedies Benz</h4>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="biddingDate">
-                <div class="timer">
+                <div class="timer" style="display: none;">
                   <h2 id="timer-display">16</h2>
                   <button id="start-button">+</button>
                 </div>
@@ -1119,60 +1067,110 @@
                   <h2>Highest Bidding Price</h2>
                   <strong class="bidPrice">$89.000</strong>
 
-                  <h3 class="start">Bidding Starting Date</h3>
-                  <p class="startDate">30/01/2024</p>
-                  <h3>Bidding End Date</h3>
-                  <p class="endDate">29/2/2024</p>
+                 
                 </div>
               </div>
               <div class="status">
-                <h2 class="status-state">Status</h2>
-                <h2 class="active-state">Inactive</h2>
+                 <h3 class="start">Bidding Starting Date</h3>
+                  <p class="startDate">30/01/2024</p>
+                  <h3 class="end">Bidding End Date</h3>
+                  <p class="endDate">29/2/2024</p>
+                  <div class="frame">
+                    <img src="../assets/images/Frame 213.png" alt="">
+                  </div>
+               <input class="submit_btn" type="submit" value="View Bidding" />
               </div>
             </div>
-            <div class="bidders-list-container" style="background: var(--gradientGrey);">
-              <h1>Bidders List</h1>
-              <div class="bidders-list">
-                <div class="bidder">
-                  <div class="names">
-                    <h3>Ramesh Dai</h3>
-                  </div>
-                  <div class="amount">
-                    <p>$55,000</p>
-                  </div>
-                </div>
-                <div class="bidder">
-                  <div class="names">
-                    <h3>Ramesh Dai</h3>
-                  </div>
-                  <div class="amount">
-                    <p>$55,000</p>
-                  </div>
-                </div>
-                <div class="bidder">
-                  <div class="names">
-                    <h3>Ramesh Dai</h3>
-                  </div>
-                  <div class="amount">
-                    <p>$55,000</p>
-                  </div>
-                </div>
-                <div class="bidder">
-                  <div class="names">
-                    <h3>Ramesh Dai</h3>
-                  </div>
-                  <div class="amount">
-                    <p>$55,000</p>
+            <div class="container-bid" style="background: var(--gradientGrey)">
+             
+              <div class="imgsec">
+                 <div class="wish">
+               <img src="../assets/images/maskFilled.png"  alt="" style="object-fit: contain;">
+              </div>
+                <div class="details">
+                  <img src="../assets/images/mercedes.png" alt="imgErr" />
+                  <div class="car-detail-container">
+                    <div class="car-detail">
+                      <h3 style="color: #f4793d">Reg No. : <span class="blurAmount">$50,000</span> </h3>
+                      <h4 class="carName">Mercedies Benz</h4>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <div class="biddingDate">
+                <div class="timer" style="display: none;">
+                  <h2 id="timer-display">16</h2>
+                  <button id="start-button">+</button>
+                </div>
+                <div class="bid">
+                  <h2>Highest Bidding Price</h2>
+                  <strong class="bidPrice">$89.000</strong>
+
+                 
+                </div>
+              </div>
+              <div class="status">
+                 <h3 class="start">Bidding Starting Date</h3>
+                  <p class="startDate">30/01/2024</p>
+                  <h3 class="end">Bidding End Date</h3>
+                  <p class="endDate">29/2/2024</p>
+                  <div class="frame">
+                    <img src="../assets/images/Frame 213.png" alt="">
+                  </div>
+               <input class="submit_btn" type="submit" value="View Bidding" />
+              </div>
             </div>
+            <div class="container-bid" style="background: var(--gradientGrey)">
+             
+              <div class="imgsec">
+                 <div class="wish">
+               <img src="../assets/images/mask.png"  alt="" style="object-fit: contain;">
+              </div>
+                <div class="details">
+                  <img src="../assets/images/mercedes.png" alt="imgErr" />
+                  <div class="car-detail-container">
+                    <div class="car-detail">
+                     <h3 style="color: #f4793d">Reg No. : <span class="blurAmount">$50,000</span> </h3>
+                      <h4 class="carName">Mercedies Benz</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="biddingDate">
+                <div class="timer" style="display: none;">
+                  <h2 id="timer-display">16</h2>
+                  <button id="start-button">+</button>
+                </div>
+                <div class="bid">
+                  <h2>Highest Bidding Price</h2>
+                  <strong class="bidPrice">$89.000</strong>
+
+                 
+                </div>
+              </div>
+              <div class="status">
+                 <h3 class="start">Bidding Starting Date</h3>
+                  <p class="startDate">30/01/2024</p>
+                  <h3 class="end">Bidding End Date</h3>
+                  <p class="endDate">29/2/2024</p>
+                  <div class="frame">
+                    <img src="../assets/images/Frame 213.png" alt="">
+                  </div>
+               <input class="submit_btn" type="submit" value="View Bidding" />
+              </div>
+            </div>
+          
           </div>
           <div id="my-sold-cars" class="content">
             <div class="soldcars">
-              <h1>My sold cars list</h1>
+              <h1>WishList</h1>
             </div>
-            <div style="margin-top: 2em; background: var(--gradientGrey);" class="container container-sold" >
+            <div
+              style="margin-top: 2em; background: var(--gradientGrey)"
+              class="container container-sold"
+            >
               <div class="imgsec">
                 <img src="../assets/images/car4.png" alt="" />
               </div>
@@ -1193,12 +1191,15 @@
                 </div>
                 <h5>2020 . 18,000 km . Automatic . Electricity</h5>
               </div>
-              <div class="bid bid-sold" style="gap: 0; ">
+              <div class="bid bid-sold" style="gap: 0">
                 <h2>Highest Bid</h2>
                 <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
               </div>
             </div>
-            <div class="container container-sold" style="background: var(--gradientGrey);">
+            <div
+              class="container container-sold"
+              style="background: var(--gradientGrey)"
+            >
               <div class="imgsec">
                 <img src="../assets/images/car2.png" alt="" />
               </div>
@@ -1219,12 +1220,15 @@
                 </div>
                 <h5>2020 . 18,000 km . Automatic . Electricity</h5>
               </div>
-              <div class="bid bid-sold" style="gap: 0;">
+              <div class="bid bid-sold" style="gap: 0">
                 <h2>Highest Bid</h2>
                 <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
               </div>
             </div>
-            <div class="container container-sold" style="background: var(--gradientGrey);">
+            <div
+              class="container container-sold"
+              style="background: var(--gradientGrey)"
+            >
               <div class="imgsec">
                 <img src="../assets/images/blue.png" alt="" />
               </div>
@@ -1245,12 +1249,15 @@
                 </div>
                 <h5>2020 . 18,000 km . Automatic . Electricity</h5>
               </div>
-              <div class="bid bid-sold" style="gap: 0;">
+              <div class="bid bid-sold" style="gap: 0">
                 <h2>Highest Bid</h2>
                 <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
               </div>
             </div>
-            <div class="container container-sold" style="background: var(--gradientGrey);">
+            <div
+              class="container container-sold"
+              style="background: var(--gradientGrey)"
+            >
               <div class="imgsec">
                 <img src="../assets/images/mercedes.png" alt="" />
               </div>
@@ -1271,7 +1278,7 @@
                 </div>
                 <h5>2020 . 18,000 km . Automatic . Electricity</h5>
               </div>
-              <div class="bid" style="gap: 0;">
+              <div class="bid" style="gap: 0">
                 <h2>Highest Bid</h2>
                 <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
               </div>
@@ -1279,9 +1286,12 @@
           </div>
           <div id="my-purchase-list" class="content">
             <div class="soldcars">
-              <h1>My </h1>
+              <h1>My Purchase</h1>
             </div>
-            <div style="margin-top: 2em; background: var(--gradientGrey);" class="container container-sold" >
+            <div
+              style="margin-top: 2em; background: var(--gradientGrey)"
+              class="container container-sold"
+            >
               <div class="imgsec">
                 <img src="../assets/images/car4.png" alt="" />
               </div>
@@ -1302,12 +1312,15 @@
                 </div>
                 <h5>2020 . 18,000 km . Automatic . Electricity</h5>
               </div>
-              <div class="bid bid-sold" style="gap: 0; ">
+              <div class="bid bid-sold" style="gap: 0">
                 <h2>Highest Bid</h2>
                 <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
               </div>
             </div>
-            <div class="container container-sold" style="background: var(--gradientGrey);">
+            <div
+              class="container container-sold"
+              style="background: var(--gradientGrey)"
+            >
               <div class="imgsec">
                 <img src="../assets/images/car2.png" alt="" />
               </div>
@@ -1328,12 +1341,15 @@
                 </div>
                 <h5>2020 . 18,000 km . Automatic . Electricity</h5>
               </div>
-              <div class="bid bid-sold" style="gap: 0;">
+              <div class="bid bid-sold" style="gap: 0">
                 <h2>Highest Bid</h2>
                 <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
               </div>
             </div>
-            <div class="container container-sold" style="background: var(--gradientGrey);">
+            <div
+              class="container container-sold"
+              style="background: var(--gradientGrey)"
+            >
               <div class="imgsec">
                 <img src="../assets/images/blue.png" alt="" />
               </div>
@@ -1354,12 +1370,15 @@
                 </div>
                 <h5>2020 . 18,000 km . Automatic . Electricity</h5>
               </div>
-              <div class="bid bid-sold" style="gap: 0;">
+              <div class="bid bid-sold" style="gap: 0">
                 <h2>Highest Bid</h2>
                 <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
               </div>
             </div>
-            <div class="container container-sold" style="background: var(--gradientGrey);">
+            <div
+              class="container container-sold"
+              style="background: var(--gradientGrey)"
+            >
               <div class="imgsec">
                 <img src="../assets/images/mercedes.png" alt="" />
               </div>
@@ -1380,7 +1399,7 @@
                 </div>
                 <h5>2020 . 18,000 km . Automatic . Electricity</h5>
               </div>
-              <div class="bid" style="gap: 0;">
+              <div class="bid" style="gap: 0">
                 <h2>Highest Bid</h2>
                 <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
               </div>

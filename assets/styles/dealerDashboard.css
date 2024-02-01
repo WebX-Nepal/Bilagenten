@@ -152,7 +152,7 @@ body {
 }
 /* nav css end  */
 
-.sellDash-container {
+.dealerDash-container {
   padding: 0 12rem;
 }
 
@@ -161,31 +161,31 @@ body {
   /* padding-top: 3em; */
   color: #909090;
 }
-.sellDash-container .head {
+.dealerDash-container .head {
   display: flex;
   justify-content: space-between;
   padding-top: 10em;
 }
-.sellDash-container .head .left {
+.dealerDash-container .head .left {
   width: 25%;
 }
-.sellDash-container .head .mid {
+.dealerDash-container .head .mid {
   border-bottom: 1px solid #cfcfcf;
   width: 70%;
   margin-bottom: 2em;
 }
-.sellDash-container .head .right {
+.dealerDash-container .head .right {
   width: 15%;
   display: flex;
   gap: 2em;
   align-items: center;
 }
 
-.sellDash-container .head .right img {
+.dealerDash-container .head .right img {
   object-fit: contain;
   padding-left: 1em;
 }
-.sellDash-container .head .right h2 {
+.dealerDash-container .head .right h2 {
   font-size: 2em;
   color: #000;
 }
@@ -314,7 +314,7 @@ body {
   width: 25%;
 }
 
-#my-cars .addcars {
+#my-cars .bed-cars {
   padding-left: 5.3em;
   padding-bottom: 3em;
   display: flex;
@@ -327,8 +327,11 @@ body {
   border-bottom: 1px solid #cfcfcf;
   margin-bottom: 3em;
 }
-#my-cars .addcars h1 {
+#my-cars .bed-cars h1 {
   font-size: 2em;
+  color: #8a8a8a;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .soldcars h1 {
   font-size: 2em;
@@ -337,6 +340,159 @@ body {
   padding-bottom: 1em;
   font-weight: 600;
   letter-spacing: 1px;
+}
+.container-bet {
+  display: flex;
+  padding: 2em 0;
+}
+
+.content .container-bid {
+  border: 1px solid #0fa958;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+  margin: 0 0 3em 4.5em;
+  align-items: center;
+  padding: 4em 3em;
+  justify-content: space-around;
+  gap: 3em;
+}
+.content .container-bid .car-sec .name {
+  font-size: 2rem;
+}
+.content .container-bid .car-sec .features p {
+  font-size: 1.4rem;
+  color: #8a8a8a;
+}
+.content .container-bid .car-sec p {
+  font-size: 1.4rem;
+}
+.content .container-bid .car-sec .det {
+  font-size: 1.4rem;
+  margin-top: 1em;
+}
+.content .container-bid .bid-sec {
+  display: flex;
+  flex-direction: column;
+}
+.content .container-bid .bid-sec .bidImg img {
+  padding-bottom: 2em;
+  width: 90%;
+}
+.content .container-bid .bid-sec .kmImg img {
+  width: 90%;
+}
+.content .container-bid .bid-sec h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.content .container-bid .bid-sec p {
+  font-size: 3.5rem;
+  padding-bottom: 1em;
+}
+.content .container-bid .bid-sec .buttons {
+  display: flex;
+  gap: 1em;
+}
+.content .container-bid .bid-sec .buttons input {
+  padding: 0.8em 1.8em;
+}
+.content .container-bid .bid-date h3 {
+  font-size: 1.7rem;
+  margin-top: 0.8em;
+}
+.content .container-bid .bid-date .list-bid h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-top: 1em;
+}
+.content .container-bid .bid-date .list-bid .bid-list {
+  margin-top: 1em;
+}
+.content .container-bid .bid-date .list-bid .bid-list p {
+  font-size: 1.3rem;
+}
+
+.upcommingCars-active {
+  display: flex;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+.upcommingCars-active h1 {
+  font-size: 2em;
+  color: #8a8a8a;
+  padding-left: 2.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.car-detail-container .car-detail h4 {
+  font-size: 2.4rem;
+}
+
+.bid-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.other-details {
+  padding-left: 5em;
+}
+.other-details .title-bid {
+  font-size: 3rem;
+}
+.other-details .explain {
+  font-size: 1.7rem;
+  padding-bottom: 4em;
+}
+.other-details .exp-title {
+  padding-bottom: 3em;
+  padding-top: 0.1em;
+}
+
+.bid-img img {
+  height: 200px;
+}
+.submit_btn:hover {
+  margin-top: 3rem;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  color: var(--primary_color);
+  border: 2px solid var(--primary_color);
+}
+.submit_btn {
+  margin-top: 3rem;
+  background: var(--gradient);
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  color: white;
+  border: 2px solid var(--primary_color);
+}
+.signin {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  color: var(--primary_color);
+  border: 2px solid var(--primary_color);
+}
+.signin:hover {
+  background: var(--gradient);
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  border-radius: 3rem;
+  color: white;
+  border: 2px solid var(--primary_color);
 }
 
 .container {
@@ -523,15 +679,26 @@ body {
   width: 20%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   padding-top: 3em;
 }
-.status h2 {
-  font-size: 1.7em;
-  font-weight: 600;
+.status h3{
+  font-size: 1.4rem;
+  color: #8a8a8a;
+
 }
-.status-state {
-  color: #f4793d;
+.status .end{
+ margin-top: 2em;
+
+}
+.status .frame{
+ margin-top: 3em;
+ 
+
+}
+.status .frame img{
+ width: 100%;
+
 }
 
 #current-biddings .container-bid .imgsec img {
@@ -541,7 +708,7 @@ body {
 #current-biddings .container-bid {
   border: 1px solid #cfcfcf;
   border-radius: 20px;
-  padding: 2em;
+  padding: 5em 2em;
   display: flex;
   width: 100%;
   margin: auto;
@@ -573,6 +740,21 @@ body {
   font-size: 1.3em;
   font-weight: 600;
   margin-top: 1em;
+}
+#current-biddings .container-bid .imgsec .wish img {
+ height: 2em;
+}
+
+.blurAmount{
+  
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #f4793d;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+    filter: blur(0.3rem);
+
 }
 
 .bidders-list-container {
@@ -624,35 +806,35 @@ body {
   margin-top: 1em;
 }
 
-.sendbtn{
+.sendbtn {
   margin-left: 7em;
 }
 
-.annualModel .annual{
-  color: #8A8A8A;
+.annualModel .annual {
+  color: #8a8a8a;
   font-size: 1.5rem;
   margin-bottom: 0.5em;
 }
-.kilometer .kilometerStand{
-  color: #8A8A8A;
+.kilometer .kilometerStand {
+  color: #8a8a8a;
   font-size: 1.5rem;
   margin-bottom: 0.5em;
 }
- .from{
-  color: #8A8A8A;
+.from {
+  color: #8a8a8a;
   font-size: 1.5rem;
-  background: #FFEDE0;
-  text-align: center;  
+  background: #ffede0;
+  text-align: center;
   border-radius: 2em;
   padding: 0.4em;
   margin-bottom: 0.5em;
   cursor: pointer;
 }
- .till{
-  color: #8A8A8A;
+.till {
+  color: #8a8a8a;
   font-size: 1.5rem;
-  background: #FFEDE0;
-  text-align: center;  
+  background: #ffede0;
+  text-align: center;
   border-radius: 2em;
   padding: 0.4em;
   margin-top: 0.5em;
@@ -893,11 +1075,11 @@ Media Query
 
   /* nav res ends  */
 
-  .sellDash-container {
+  .dealerDash-container {
     padding: 0 2rem;
   }
 
-  .sellDash-container .head {
+  .dealerDash-container .head {
     display: flex;
     justify-content: space-between;
     padding-top: 10em;
@@ -909,17 +1091,17 @@ Media Query
     color: #f4793d;
   }
 
-  .sellDash-container .head .left {
+  .dealerDash-container .head .left {
     width: 100%;
     text-align: center;
     margin-bottom: 2em;
   }
-  .sellDash-container .head .mid {
+  .dealerDash-container .head .mid {
     border-bottom: 1px solid #cfcfcf;
     width: 100%;
     margin-bottom: 2em;
   }
-  .sellDash-container .head .right {
+  .dealerDash-container .head .right {
     width: 100%;
     display: flex;
     gap: 5em;
@@ -927,7 +1109,7 @@ Media Query
     justify-content: center;
   }
 
-  .sellDash-container .head .right img {
+  .dealerDash-container .head .right img {
     padding-left: 0;
   }
 
@@ -1131,7 +1313,7 @@ Media Query
     margin-top: 1em;
   }
 
-   /* ######## current bidding ends ######### */
+  /* ######## current bidding ends ######### */
 
   .importImg img {
     width: 100%;
@@ -1150,17 +1332,17 @@ Media Query
     margin: 0;
   }
 
-  .sendbtn{
-  margin-left: 0;
-}
+  .sendbtn {
+    margin-left: 0;
+  }
   .details-view h3 {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 1em;
-  width: 50%;
-  font-size: 1.3em;
-}
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1em;
+    width: 50%;
+    font-size: 1.3em;
+  }
 
   /* footer responsive  */
 
