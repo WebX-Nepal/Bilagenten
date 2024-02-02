@@ -158,12 +158,14 @@ body {
   padding: 10rem 0;
 }
 
-
 .login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.6rem;
+  border: 2px solid #ececec;
+  padding: 4em 14em;
+  border-radius: 3em;
 }
 
 .login-heading {
@@ -603,9 +605,8 @@ Footer Area CSS Part Starts
 
   /* nav res ends  */
 
-
   .login-container {
-    border: 2px solid #ECECEC;
+    border: 2px solid #ececec;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -613,7 +614,7 @@ Footer Area CSS Part Starts
     padding: 4em 0;
     border-radius: 3em;
     width: 100%;
-}
+  }
 
   .login {
     display: flex;
@@ -642,16 +643,16 @@ Footer Area CSS Part Starts
   .terms {
     font-size: 1.3em;
   }
-  #email{
+  #email {
     width: 85%;
   }
-  #password{
+  #password {
     width: 85%;
   }
-  #conf-password{
+  #conf-password {
     width: 85%;
   }
-  .terms{
+  .terms {
     width: 85%;
   }
 
@@ -807,9 +808,8 @@ Footer Area CSS Part Starts
 
   /* nav res ends  */
 
- 
   .login-container {
-    border: 2px solid #ECECEC;
+    border: 2px solid #ececec;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -817,7 +817,7 @@ Footer Area CSS Part Starts
     padding: 4em 0;
     border-radius: 3em;
     width: 70%;
-}
+  }
 
   .login {
     display: flex;
@@ -846,16 +846,16 @@ Footer Area CSS Part Starts
   .terms {
     font-size: 1.3em;
   }
-  #email{
+  #email {
     width: 60%;
   }
-  #password{
+  #password {
     width: 60%;
   }
-  #conf-password{
+  #conf-password {
     width: 60%;
   }
-  .terms{
+  .terms {
     width: 60%;
   }
 
@@ -907,9 +907,9 @@ Footer Area CSS Part Starts
   }
 }
 
- @media (min-width: 560px) and (max-width: 750px) {
-     .login-container {
-    border: 2px solid #ECECEC;
+@media (min-width: 560px) and (max-width: 750px) {
+  .login-container {
+    border: 2px solid #ececec;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -917,7 +917,7 @@ Footer Area CSS Part Starts
     padding: 4em 0;
     border-radius: 3em;
     width: 92%;
-}
+  }
 
   .login {
     display: flex;
@@ -946,23 +946,23 @@ Footer Area CSS Part Starts
   .terms {
     font-size: 1.3em;
   }
-  #email{
+  #email {
     width: 70%;
   }
-  #password{
+  #password {
     width: 70%;
   }
-  #conf-password{
+  #conf-password {
     width: 70%;
   }
-  .terms{
+  .terms {
     width: 70%;
   }
 
   #registerBtn {
     width: 70%;
   }
-} 
+}
 
 /* for laptops  */
 
