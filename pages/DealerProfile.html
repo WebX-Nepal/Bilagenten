@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../assets/styles/sellerDashboard.css" /> -->
+    <link rel="stylesheet" href="../assets/styles/DealerProfile.css" />
+
+    <title>Profile Setting</title>
+  </head>
+  <body>
+    <!-- Navigation bar ---------------------------------------->
+    <nav class="navbar">
+      <div class="brand_logo">
+        <a href="../index.html">
+          <img src="../assets/images/logo.png" alt="logo" height="40" />
+        </a>
+      </div>
+
+      <div class="nav_list">
+        <a href="../index.html" class="nav_list_item">Sell the Car</a>
+        <a href="./company.html" class="nav_list_item">Company</a>
+        <a href="./retailer.html" class="nav_list_item">Retailer</a>
+      </div>
+      <div class="nav_buttons">
+        <a href="./login.html" class="navbar_btn main_button">My Page</a>
+        <a href="./dealerPortal.html" class="navbar_btn button_outline"
+          >Dealer Portal</a
+        >
+      </div>
+      <!-- Responsive Navbar start from here --------------------->
+      <div class="responsive_navbar_btn">
+        <iconify-icon
+          icon="pepicons-pop:menu"
+          name="maki-menu"
+          class="menu_icon"
+        ></iconify-icon>
+        <iconify-icon
+          icon="maki:cross"
+          name="maki-cross"
+          class="menu_icon"
+        ></iconify-icon>
+      </div>
+    </nav>
+    <div class="responsive_menu_popup">
+      <div class="res_nav_list">
+        <a href="../index.html" class="res_nav_list_item">Sell the Car</a>
+        <a href="./company.html" class="res_nav_list_item">Company</a>
+        <a href="./retailer.html" class="res_nav_list_item">Retailer</a>
+      </div>
+      <div class="res_nav_buttons">
+        <a href="./login.html" class="res_navbar_btn main_button">My Page</a>
+        <a href="./dealerPortal.html" class="res_navbar_btn button_outline"
+          >Dealer Portal</a
+        >
+      </div>
+    </div>
+    <!--************* Responsive Navbar close here *********--------------------->
+    <div class="sellDash-container">
+      <div class="head">
+        <div class="left">
+          <h2>Profile Setting</h2>
+        </div>
+        <div class="mid"></div>
+        <div class="right">
+          <img
+            src="../assets/images/icons/notificationIcon.png"
+            alt=""
+            style="height: fit-content"
+          />
+          <h2>Yamu</h2>
+          <div class="dropdown">
+            <div class="userImg">
+             <img
+              src="../assets/images/testi2.png"
+              alt="userImgErr"
+              onclick="toggleDropdown()"
+              style="cursor: pointer"
+            />
+           </div>
+            <div id="dropdownMenu" class="dropdown-content">
+              <a href="./profileSetting.html" style="cursor: pointer"
+                >Settings</a
+              >
+              <div class="logout" style="cursor: pointer">
+                <a href="../index.html" class="logout">Logout</a>
+                <img src="../assets/images/logOuticon.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-container">
+        <div class="menu">
+         <div class="hello">
+          <img src="../assets/images/icons/waving.png" alt="" style="height: 30px; width: 30px;">
+           <h1 class="profile">Hi, Harley Davis!</h1>
+         </div>
+          <div class="img-wrapper">
+            <img src="../assets/images/testi2.png" alt="Your Image" />
+          </div>
+          <h2 class="userName">Harley Davis</h2>
+          <h2 class="userAddress">Nepal, Pokhara</h2>
+          <div class="menu-list">
+            <div class="updateProfile">
+              <div class="profile-User">
+                <img
+                  src="../assets/images/icons/profile.png"
+                  alt=""
+                  style="height: 10px; width: 10px"
+                />
+              </div>
+              <a href="#" class="menu-link" data-content="my-cars"
+                >Update Your Profile</a
+              >
+            </div>
+            <div class="changePassword">
+              <div class="User-password">
+                <img
+                  src="../assets/images/icons/password.png"
+                  alt=""
+                  style="height: 10px; width: 10px"
+                />
+              </div>
+              <a href="#" class="menu-link" data-content="current-biddings"
+                >Change Password</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="my-cars" class="slide">
+          <div class="details-user">
+            <h1 class="basicInfo">Update Your Details</h1>
+            <div class="name">
+              <input
+                type="text"
+                id="name"
+                class="fname"
+                name="fname"
+                placeholder="First Name"
+                style="width: 48%"
+              />
+              <input
+                type="text"
+                id="name"
+                class="lname"
+                name="fname"
+                placeholder="Last Name"
+                style="width: 48%"
+              />
+            </div>
+            <div class="phone">
+              <input
+                type="number"
+                id="phone"
+                class="phone"
+                name="phone"
+                placeholder="Mobile no. (+47)"
+                style="width: 100%"
+              />
+            </div>
+            <div class="email">
+              <input
+                type="email"
+                id="email"
+                class="email"
+                name="email"
+                placeholder="Email"
+                style="width: 100%"
+              />
+            </div>
+            <div class="address">
+              <input
+                type="text"
+                id="address"
+                class="address"
+                name="address"
+                placeholder="Address"
+                style="width: 100%"
+              />
+            </div>
+            <div class="cityCode">
+              <input
+                type="text"
+                id="city"
+                class="city"
+                name="city"
+                placeholder="City"
+                style="width: 48%"
+              />
+              <input
+                type="number"
+                id="postalCode"
+                class="postalCode"
+                name="postalCode"
+                placeholder="Postal Code"
+                style="width: 48%"
+              />
+            </div>
+            <button
+              type="button"
+              id="updateBtn"
+              onclick="window.location.href='./profileSetting.html'"
+            >
+              Update
+            </button>
+          </div>
+        </div>
+
+        <div id="current-biddings" class="slide">
+          <div class="details-user">
+            <h1 class="basicInfo">Change Password</h1>
+            <div class="name">
+              <input
+                type="password"
+                id="oPassword"
+                class="oldPassword"
+                name="oldPassword"
+                placeholder="Old Password"
+                style="width: 48%"
+              />
+              <input
+                type="password"
+                id="nPassword"
+                class="newPassword"
+                name="newPassword"
+                placeholder="New Password"
+                style="width: 48%"
+              />
+            </div>
+            <div class="phone confpassword">
+              <input
+                type="password"
+                id="cPassword"
+                class="confirmPassword"
+                name="confirmPassword"
+                placeholder="Confirm Password"
+                style="width: 100%"
+              />
+            </div>
+
+            <button
+              type="button"
+              id="updateBtn"
+              onclick="window.location.href='./profileSetting.html'"
+            >
+              Update
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Area starts fron this line: Please explore it. -->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_content">
+          <div class="footer_details">
+            <div class="footer_company_details">
+              <img src="../assets/images/whiteLogo.png" alt="footerLogo" />
+              <p class="footer_para">
+                We collect all the cars, evaluate the valuations. Making them
+                ready so everyone can buy it in reasonable costs.
+              </p>
+              <p class="footer_timing_para">
+                You can call us <span class="timing_color">Mon - Fri</span> at
+                <span class="timing_color">08-20</span>
+                <span class="timing_color">Sat - Sun</span>and at
+                <span class="timing_color">10-16</span>
+              </p>
+            </div>
+            <div class="footer_fast_travel">
+              <h1 class="fast_t_title">Fast Travel</h1>
+              <div class="fast_t_list_item">
+                <a href="#" class="fast_travel_links">Car Tips</a
+                ><a href="#" class="fast_travel_links">Question and answers</a
+                ><a href="#" class="fast_travel_links">About Us</a
+                ><a href="#" class="fast_travel_links">Valuation</a
+                ><a href="#" class="fast_travel_links">Career with us</a
+                ><a href="#" class="fast_travel_links">For dealer</a>
+              </div>
+            </div>
+            <div class="footer_fast_travel">
+              <h1 class="fast_t_title">Terms</h1>
+              <div class="fast_t_list_item">
+                <a href="#" class="fast_travel_links">Privacy Statement</a
+                ><a href="#" class="fast_travel_links">Question and answers</a
+                ><a href="#" class="fast_travel_links">Cookies</a
+                ><a href="#" class="fast_travel_links">The Transparency Act</a>
+              </div>
+            </div>
+            <div class="footer_fast_travel">
+              <h1 class="fast_t_title">Get in touch</h1>
+              <div class="fast_t_list_item">
+                <div class="social_media_icons">
+                  <a href="facebook.com" target="_blank"
+                    ><iconify-icon
+                      icon="ri:facebook-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                  <a href="instagram.com" target="_blank"
+                    ><iconify-icon
+                      icon="ri:instagram-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                  <a href="linkedin.com" target="_blank"
+                    ><iconify-icon
+                      icon="mingcute:linkedin-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                  <a href="twitter.com" target="_blank"
+                    ><iconify-icon
+                      icon="akar-icons:x-fill"
+                      class="social_icons"
+                    ></iconify-icon
+                  ></a>
+                </div>
+                <a href="#" class="fast_travel_links">956 35 566</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_copyright">
+            <p class="copyright_para">
+              &copy;Copyright2024 | All Right Reserved | Designed By
+              <a href="https://webxnep.com" target="_blank" class="webx"
+                >WebX</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script>
+      document.querySelectorAll(".menu-link").forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Remove 'active' class from all menu links
+          document.querySelectorAll(".menu-link").forEach(function (link) {
+            link.classList.remove("active");
+          });
+
+          // Add 'active' class to the clicked link
+          this.classList.add("active");
+
+          // Hide all slides
+          document.querySelectorAll(".slide").forEach(function (slide) {
+            slide.style.display = "none";
+            slide.classList.remove("animate__animated", "animate__slideInDown"); // Remove the animation classes
+          });
+
+          // Show the clicked slide
+          var content = this.getAttribute("data-content");
+          var slide = document.getElementById(content);
+          slide.style.display = "block";
+          slide.classList.add("animate__animated", "animate__slideInDown"); // Add the animation classes
+        });
+      });
+
+      // Load the active slide when the page loads
+      window.onload = function () {
+        var activeSlide = window.location.hash.substring(1); // Remove the '#' from the hash
+        var menuItem = document.querySelector(
+          `.menu-link[data-content="${activeSlide}"]`
+        );
+        if (menuItem) {
+          menuItem.click();
+        } else {
+          // If there's no active slide stored, click the first menu item
+          var firstMenuItem = document.querySelector(".menu-link");
+          if (firstMenuItem) {
+            firstMenuItem.click();
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
