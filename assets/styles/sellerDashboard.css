@@ -152,28 +152,36 @@ body {
 }
 /* nav css end  */
 
+
+#bil_layout{
+  margin: 0 12rem;
+  max-width: 1400px;
+
+}
 .sellDash-container {
   max-width: 1400px;
   margin: auto;
 }
 
 .head h2 {
-  font-size: 2.5em;
-  /* padding-top: 3em; */
+  font-size: 1.5em;
+  
   color: #909090;
 }
 .sellDash-container .head {
   display: flex;
   justify-content: space-between;
   padding-top: 10em;
+  align-items: center;
 }
 .sellDash-container .head .left {
-  width: 25%;
+   width: 15%;
+  padding-left: 5em;
 }
 .sellDash-container .head .mid {
   border-bottom: 1px solid #cfcfcf;
   width: 70%;
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
 }
 .sellDash-container .head .right {
   width: 15%;
@@ -182,12 +190,17 @@ body {
   align-items: center;
 }
 
+.user-dashboard{
+  display: flex;
+  align-items: center;
+}
+
 .sellDash-container .head .right img {
   object-fit: contain;
   padding-left: 1em;
 }
 .sellDash-container .head .right h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #000;
 }
 
@@ -239,7 +252,7 @@ body {
 }
 .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 10em;
   border: 1px solid #ccc;

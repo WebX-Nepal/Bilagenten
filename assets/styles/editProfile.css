@@ -159,7 +159,7 @@ body {
 }
 
 .head h2 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   /* padding-top: 3em; */
   color: #909090;
 }
@@ -167,14 +167,15 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 10em;
+  align-items: center;
 }
 .sellDash-container .head .left {
-  width: 25%;
+  width: 15%;
+  padding-left: 8em;
 }
 .sellDash-container .head .mid {
   border-bottom: 1px solid #cfcfcf;
   width: 70%;
-  margin-bottom: 2em;
 }
 .sellDash-container .head .right {
   width: 15%;
@@ -188,7 +189,7 @@ body {
   padding-left: 1em;
 }
 .sellDash-container .head .right h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #000;
 }
 
@@ -217,6 +218,10 @@ body {
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
+}
+.user-dashboard {
+  display: flex;
+  align-items: center;
 }
 .logout {
   display: flex;
@@ -268,12 +273,11 @@ body {
 #address,
 #city,
 #postalCode,
-#phone{
+#phone {
   outline-color: orange;
-  
 }
 
-#updateBtn:hover{
+#updateBtn:hover {
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -284,9 +288,9 @@ body {
   width: 20%;
   border: 2px solid var(--primary_color);
   color: var(--primary_color);
-} 
+}
 
-#updateBtn{
+#updateBtn {
   margin-top: 1em;
   padding: 1.2rem 1.6rem;
   border-radius: 3.2rem;
@@ -297,7 +301,7 @@ body {
   border: 2px solid var(--primary_color);
   color: white;
   width: 20%;
-} 
+}
 .menu-container .menu {
   padding: 2em 2em 5em 2em;
   width: 20%;

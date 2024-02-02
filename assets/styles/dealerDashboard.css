@@ -161,7 +161,7 @@ body {
 }
 
 .head h2 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   /* padding-top: 3em; */
   color: #909090;
 }
@@ -169,14 +169,19 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 10em;
+  align-items: center;
 }
 .dealerDash-container .head .left {
-  width: 25%;
+  width: 15%;
+  padding-left: 4em;
+}
+.user-dashboard{
+  display: flex;
+  align-items: center;
 }
 .dealerDash-container .head .mid {
   border-bottom: 1px solid #cfcfcf;
   width: 70%;
-  margin-bottom: 2em;
 }
 .dealerDash-container .head .right {
   width: 15%;
@@ -190,7 +195,7 @@ body {
   padding-left: 1em;
 }
 .dealerDash-container .head .right h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #000;
 }
 
@@ -389,14 +394,14 @@ body {
   letter-spacing: 1px;
 }
 .soldcars {
- display: flex;
-    align-items: center;
-    padding-bottom: 3em;
+  display: flex;
+  align-items: center;
+  padding-bottom: 3em;
 }
-.soldcars .sold-name{
- display: flex;
-    align-items: center;
-    padding-bottom: 3em;
+.soldcars .sold-name {
+  display: flex;
+  align-items: center;
+  padding-bottom: 3em;
 }
 .soldcars h1 {
   font-size: 2em;
