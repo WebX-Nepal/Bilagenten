@@ -104,6 +104,10 @@ body {
   margin-left: 1rem;
 }
 
+.menu-link {
+  margin-left: 5px;
+}
+
 .menu-link.active {
   color: #f4793d;
 }
@@ -223,12 +227,12 @@ body {
   margin-bottom: 2em;
 }
 .menu-container .details {
-  padding: 0 2em;
-  width: 80%;
+  padding: 0 5em 0 0;
+  width: 100%;
 }
 .menu-container .menu {
   padding: 2em;
-  width: 17%;
+  width: 20%;
   height: fit-content;
   padding: 3em 2em;
 }
@@ -237,6 +241,7 @@ body {
   flex-direction: column;
   gap: 2em;
 }
+
 .menu {
   display: flex;
   justify-content: space-around;
@@ -249,9 +254,8 @@ body {
 .dropdown .userImg {
   height: 50px;
   width: 50px;
-
 }
-.dropdown .userImg img{
+.dropdown .userImg img {
   height: 50px;
   width: 50px;
   border-radius: 100%;
@@ -292,22 +296,22 @@ body {
   padding: 2em;
 }
 .content .container-purchase {
- padding: 2em ;
+  padding: 2em;
 }
-.content .container-purchase .wish img{
- padding-bottom: 13em;
+.content .container-purchase .wish img {
+  padding-bottom: 13em;
 }
-.content .container-purchase .imgsec{
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 1em;
+.content .container-purchase .imgsec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
-.content .container-purchase .imgsec h3{
- font-size: 1.9rem;
+.content .container-purchase .imgsec h3 {
+  font-size: 1.9rem;
 }
-.content .container-purchase .imgsec img{
- object-fit: contain;
+.content .container-purchase .imgsec img {
+  object-fit: contain;
 }
 
 .cont_fetch {
@@ -315,7 +319,7 @@ body {
   font-size: 1.2rem;
   margin-top: 1em;
 }
-.cont_fetch  span{
+.cont_fetch span {
   font-weight: bold;
   font-size: 1.2rem;
   margin-top: 1em;
@@ -384,11 +388,21 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
 }
+.soldcars {
+ display: flex;
+    align-items: center;
+    padding-bottom: 3em;
+}
+.soldcars .sold-name{
+ display: flex;
+    align-items: center;
+    padding-bottom: 3em;
+}
 .soldcars h1 {
   font-size: 2em;
   color: #8a8a8a;
   padding-left: 2.5em;
-  padding-bottom: 1em;
+
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -464,6 +478,33 @@ body {
   font-size: 1.3rem;
 }
 
+.filter-search {
+  display: flex;
+  gap: 0.5em;
+  width: 15vw;
+}
+
+.filter-search .search {
+  background: #f1f1f1;
+  border: none;
+  width: 70%;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.filter-search .search-field {
+  display: flex;
+  gap: 0.7em;
+  border: #f1f1f1;
+  background: #f1f1f1;
+  width: 70%;
+  padding: 0.8em 1em;
+  border-radius: 3em;
+}
+.filter-search .search-field img {
+  object-fit: contain;
+}
+
 .upcommingCars-active {
   display: flex;
   align-items: center;
@@ -476,6 +517,7 @@ body {
   padding-left: 2.5em;
   font-weight: 600;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .car-detail-container .car-detail h4 {
