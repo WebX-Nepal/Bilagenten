@@ -152,11 +152,9 @@ body {
 }
 /* nav css end  */
 
-
-#bil_layout{
+#bil_layout {
   margin: 0 12rem;
   max-width: 1400px;
-
 }
 .sellDash-container {
   max-width: 1400px;
@@ -165,7 +163,7 @@ body {
 
 .head h2 {
   font-size: 1.5em;
-  
+
   color: #909090;
 }
 .sellDash-container .head {
@@ -175,7 +173,7 @@ body {
   align-items: center;
 }
 .sellDash-container .head .left {
-   width: 15%;
+  width: 15%;
   padding-left: 5em;
 }
 .sellDash-container .head .mid {
@@ -190,7 +188,7 @@ body {
   align-items: center;
 }
 
-.user-dashboard{
+.user-dashboard {
   display: flex;
   align-items: center;
 }
@@ -875,6 +873,11 @@ Media Query
 
   /* nav res ends  */
 
+  #bil_layout {
+    margin: 0rem;
+    max-width: 1400px;
+  }
+
   .sellDash-container {
     padding: 0 2rem;
   }
@@ -901,6 +904,7 @@ Media Query
     width: 100%;
     text-align: center;
     margin-bottom: 2em;
+    padding-left: 0;
   }
   .sellDash-container .head .mid {
     border-bottom: 1px solid #cfcfcf;
@@ -1330,18 +1334,18 @@ Media Query
   }
 
   .sellDash-container .head .left {
-    width: 100%;
+    width: 25%;
     text-align: center;
     margin-bottom: 2em;
   }
   .sellDash-container .head .mid {
     border-bottom: 1px solid #cfcfcf;
-    width: 100%;
+    width: 50%;
     margin-bottom: 2em;
     margin-left: 2em;
   }
   .sellDash-container .head .right {
-    width: 100%;
+    width: 6%;
     display: flex;
     gap: 3em;
     align-items: center;
@@ -1381,8 +1385,7 @@ Media Query
   }
 
   .menu-container .menu {
-    padding: 4em 5em;
-    width: fit-content;
+    width: 100%;
     height: 100%;
     margin: auto;
   }
@@ -1392,7 +1395,12 @@ Media Query
     flex-direction: row;
     gap: 2em;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: 1rem;
+  }
+
+  .sellDash-container .head .left {
+    width: 15%;
+    padding-left: 0;
   }
 
   #my-cars .addcars h1 {
@@ -1421,7 +1429,6 @@ Media Query
     justify-content: space-between;
     align-items: center;
     padding: 4em 0;
-    
   }
 
   .content .container-sold {
@@ -1506,7 +1513,7 @@ Media Query
   /* ######## current bidding ######### */
 
   #current-biddings .container-bid {
-        border: 1px solid #cfcfcf;
+    border: 1px solid #cfcfcf;
     border-radius: 20px;
     padding: 2em;
     display: flex;
@@ -1535,13 +1542,13 @@ Media Query
     height: 165px;
     object-fit: contain;
   }
-  #current-biddings .container-bid .imgsec  {
+  #current-biddings .container-bid .imgsec {
     width: 40%;
   }
-  #current-biddings .container-bid .biddingDate  {
+  #current-biddings .container-bid .biddingDate {
     width: 50%;
   }
-  #current-biddings .container-bid .status  {
+  #current-biddings .container-bid .status {
     width: 10%;
   }
 
@@ -1667,9 +1674,7 @@ Media Query
   }
 }
 
-
 @media (min-width: 560px) and (max-width: 750px) {
-
   .sellDash-container {
     padding: 0;
   }
@@ -1718,15 +1723,15 @@ Media Query
   .sellDash-container .head .right img {
     padding-left: 0;
   }
-  #current-biddings .container-bid .imgsec  {
+  #current-biddings .container-bid .imgsec {
     width: 100%;
   }
-  #current-biddings .container-bid .biddingDate  {
+  #current-biddings .container-bid .biddingDate {
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
   }
-  #current-biddings .container-bid .status  {
+  #current-biddings .container-bid .status {
     width: 100%;
   }
 
@@ -1752,7 +1757,7 @@ Media Query
     width: 100%;
     height: 100%;
   }
-  .menu-container .menu a{
+  .menu-container .menu a {
     font-size: 2rem;
   }
   .menu-list {
@@ -1977,5 +1982,104 @@ Media Query
     width: 50%;
     font-size: 1.3em;
   }
-  
+}
+
+/* for laptops  */
+
+@media (min-width: 980px) and (max-width: 1350px) {
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  #bil_layout {
+    margin: 0 5rem;
+    max-width: 1400px;
+  }
+
+  .sellDash-container .head .left {
+    width: 15%;
+    padding-left: 0;
+  }
+
+  .sellDash-container .head {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10em;
+    align-items: center;
+  }
+  .sellDash-container .head .mid {
+    border-bottom: 1px solid #cfcfcf;
+    width: 60%;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+  }
+
+  .container .car-details {
+    font-size: 0.8rem;
+  }
+  .menu-container .menu {
+    padding: 4em 2em;
+    width: 17%;
+    height: 40em;
+  }
+
+  .container .imgsec img {
+    height: 100px;
+    object-fit: cover;
+  }
+
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgray;
+    padding: 0 5em 6.4rem 5em;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+  }
 }

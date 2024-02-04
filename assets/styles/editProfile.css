@@ -343,6 +343,14 @@ body {
   font-size: 1.5em;
 }
 
+.menu-container .details-user .name input {
+  width: 48%;
+}
+
+.menu-container .details-user .cityCode input {
+  width: 48%;
+}
+
 /* ====================================
 Footer Area CSS Part Starts
 ==================================== */
@@ -571,21 +579,101 @@ Footer Area CSS Part ends
 
   /* nav res ends  */
 
-  .editProfile-container {
-    margin-top: 0;
-    margin-bottom: 8em;
+  .sellDash-container {
+    padding: 0 2em;
   }
 
-  .profile-edit-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px 10em;
-    background-color: #fff;
-    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
-    border-radius: 20px;
-    border: 2px solid #ececec;
+  .sellDash-container .head {
+    display: flex;
+    padding-top: 10em;
+    flex-direction: row;
+    align-items: center;
+  }
+  .head h2 {
+    font-size: 1.5rem;
+    color: #909090;
+    white-space: nowrap;
   }
 
+  .sellDash-container .head .left {
+    width: 15%;
+    padding-left: 0;
+  }
+
+  .sellDash-container .head .left {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .sellDash-container .head .mid {
+    border-bottom: 1px solid #cfcfcf;
+    width: 35%;
+    margin-bottom: 2em;
+    margin-left: -2.5em;
+  }
+  .sellDash-container .head .right {
+    width: 6%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2em;
+  }
+  .sellDash-container .head .right h2 {
+    display: none;
+  }
+  .sellDash-container .head .right img {
+    padding-left: 0;
+    /* height: 5em; */
+  }
+  .sellDash-container .head .right .userImg {
+    height: 5em;
+  }
+  .notificationIcon {
+    height: 4em;
+  }
+
+  .menu-container {
+    display: flex;
+    gap: 5em;
+    flex-direction: column;
+  }
+
+  .menu-container .menu {
+    margin-top: -2em;
+    width: 100%;
+  }
+
+  .menu-container .details-user {
+    width: 100%;
+  }
+  .menu-container .details-user {
+    padding: 3em 2em 4em 2em;
+  }
+
+  .menu-container .details-user .name {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2.5em;
+  }
+  .menu-container .details-user .name input {
+    width: 100%;
+  }
+
+  .menu-container .details-user .cityCode {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2.5em;
+  }
+  .menu-container .details-user .cityCode input {
+    width: 100%;
+  }
+
+  #updateBtn {
+    width: 100%;
+  }
   /* footer responsive  */
 
   .footer_container {
