@@ -46,12 +46,20 @@ body {
   background-color: var(--white);
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Align the container to the center */
   align-items: center;
-  padding: 1.6rem 12rem;
   width: 100%;
   position: fixed;
   z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 10rem;
+  max-width: 1500px; /* Set the maximum width of the container */
+  width: 100%;
 }
 
 .nav_list .nav_list_item {
@@ -258,7 +266,7 @@ Footer Area CSS Part Starts
   margin: 0 auto;
 }
 .footer_container .footer_content {
-  max-width: 1400px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -381,18 +389,25 @@ Footer Area CSS Part Starts
 
 @media (max-width: 560px) {
   /* nav res start  */
-  .navbar {
+ .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Align the container to the center */
     align-items: center;
-    padding: 1rem 2rem;
     width: 100%;
     position: fixed;
     z-index: 999;
   }
 
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 1rem;
+    max-width: 1500px; /* Set the maximum width of the container */
+    width: 100%;
+  }
   .responsive_navbar_btn {
     display: block;
     z-index: 999;
@@ -584,16 +599,24 @@ Footer Area CSS Part Starts
     max-width: 1400px;
   }
   /* nav res start  */
-  .navbar {
+.navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Align the container to the center */
     align-items: center;
-    padding: 1rem 4rem;
     width: 100%;
     position: fixed;
     z-index: 999;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 4rem;
+    max-width: 1500px; /* Set the maximum width of the container */
+    width: 100%;
   }
 
   .responsive_navbar_btn {
@@ -836,12 +859,20 @@ Footer Area CSS Part Starts
     background-color: var(--white);
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Align the container to the center */
     align-items: center;
-    padding: 1.6rem 5rem;
     width: 100%;
     position: fixed;
     z-index: 999;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 5rem;
+    max-width: 1500px; /* Set the maximum width of the container */
+    width: 100%;
   }
 
   /* footer responsive  */
