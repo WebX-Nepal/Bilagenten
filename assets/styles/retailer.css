@@ -214,10 +214,13 @@ html {
 }
 
 /* herosec of retailers starts from here  */
+
 .retailer-mainContainer {
   padding: 15em 12em;
   display: flex;
   align-items: center;
+  max-width: 1400px;
+  margin: auto;
 }
 .retailer-mainContainer .retailer1 {
   width: 40%;
@@ -318,6 +321,8 @@ Blog Card Carousel Styles Start from here:
   justify-content: space-around;
   align-items: center;
   padding: 0 2em 10em 2em;
+  max-width: 1300px;
+  margin: auto;
 }
 .contact-flex .inputs {
   width: 30%;
@@ -395,6 +400,7 @@ Blog Card Carousel Styles Start from here:
   justify-content: space-between;
   text-align: center;
   padding-bottom: 10em;
+  max-width: 1200px;
 }
 .users-container .item img {
   height: 70px;
@@ -412,7 +418,9 @@ Blog Card Carousel Styles Start from here:
 /* .......................... */
 
 .moreCars-container {
+  max-width: 1900px;
   padding-bottom: 10em;
+  margin: auto;
 }
 .moreCars-container .title {
   text-align: center;
@@ -485,7 +493,7 @@ Footer Area CSS Part Starts
 ====================================
 ------------------------------------*/
 .footer_container {
-  height: 80vh;
+  height: fit-content;
   width: 100%;
   /* background: url(/assets/images/dark-car.gif); */
   background: url(../images/dark-car.gif);
@@ -493,11 +501,13 @@ Footer Area CSS Part Starts
   background-size: cover;
   background-repeat: no-repeat;
 
-  padding: 6.4rem 12rem;
+  padding: 6.4rem 12rem 0 12rem;
   margin: 0 auto;
 }
 
-.footer_container {
+.footer_container .footer_content{
+  max-width: 1400px;
+  margin: auto;
 }
 
 .footer_container .footer_content .footer_details {
@@ -1083,7 +1093,7 @@ Footer Area CSS Part Starts
     font-weight: bold;
     font-size: 3rem;
     color: #51585a;
-}
+  }
   .user-card-item {
     width: 70%;
     object-fit: cover;
@@ -1290,7 +1300,6 @@ Footer Area CSS Part Starts
 /* For laptops  */
 
 @media (min-width: 980px) and (max-width: 1350px) {
-
   .navbar {
     background-color: var(--white);
     overflow: hidden;
@@ -1301,43 +1310,42 @@ Footer Area CSS Part Starts
     width: 100%;
     position: fixed;
     z-index: 999;
-}
+  }
 
-  
-.retailer-mainContainer {
+  .retailer-mainContainer {
     padding: 13em 5em 10em 5em;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 0;
-}
-.user-persona {
+  }
+  .user-persona {
     display: flex;
     justify-content: center;
     align-items: stretch;
     gap: 0.5em;
     padding: 0 0 5em 0;
     margin: 4rem 0;
-}
-.retailer-mainContainer .retailer1 h1 {
+  }
+  .retailer-mainContainer .retailer1 h1 {
     font-size: 3em;
     line-height: 1.2em;
     width: 90%;
-}
+  }
 
-.buttons {
+  .buttons {
     display: flex;
     gap: 10px;
     flex-direction: column;
     width: fit-content;
-}
+  }
 
-.signin {
-  width: fit-content;
-}
+  .signin {
+    width: fit-content;
+  }
 
-.moreCars .container {
+  .moreCars .container {
     border: 2px solid #cfcfcf;
     border-radius: 20px;
     padding: 2em;
@@ -1347,7 +1355,7 @@ Footer Area CSS Part Starts
     justify-content: space-between;
     margin-bottom: 3em;
     gap: 5em;
-}
+  }
 
   /* footer responsive  */
 

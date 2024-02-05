@@ -41,13 +41,22 @@ html {
   background-color: var(--white);
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Align the container to the center */
   align-items: center;
-  padding: 1.6rem 12rem;
   width: 100%;
   position: fixed;
   z-index: 999;
 }
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 12rem;
+  max-width: 1500px; /* Set the maximum width of the container */
+  width: 100%;
+}
+
 
 .nav_list .nav_list_item {
   width: 50vw;
@@ -145,6 +154,14 @@ html {
   font-size: 1.6rem;
 }
 
+ /* nav end  */
+
+ #bil-layout{
+  padding: 0 12rem;
+  max-width: 1400px;
+  margin: auto;
+ }
+
 .car-bg {
   width: 100%;
   background-image: url(../images/carBg.png);
@@ -153,10 +170,12 @@ html {
   background-size: cover;
 }
 .content {
-  font-size: 2em;
-  padding-top: 6em;
-  padding-left: 6em;
-  padding-bottom: 6em;
+ max-width: 1400px;
+    font-size: 2em;
+    padding-top: 6em;
+    padding-left: 3em;
+    padding-bottom: 6em;
+    margin: auto;
 }
 .content h2 {
   width: 42%;
@@ -207,6 +226,7 @@ html {
   align-items: center;
   width: 80%;
   margin: auto;
+  max-width: 1200px;
 }
 
 .car-brand .size {
@@ -402,7 +422,7 @@ Footer Area CSS Part Starts
 ====================================
 ------------------------------------*/
 .footer_container {
-  height: 80vh;
+  height: fit-content;
   width: 100%;
   /* background: url(/assets/images/dark-car.gif); */
   background: url(../images/dark-car.gif);
@@ -410,11 +430,13 @@ Footer Area CSS Part Starts
   background-size: cover;
   background-repeat: no-repeat;
 
-  padding: 6.4rem 12rem;
+  padding: 6.4rem 12rem 0 12rem;
   margin: 0 auto;
 }
 
-.footer_container {
+.footer_container .footer_content{
+  max-width: 1400px;
+  margin: auto;
 }
 
 .footer_container .footer_content .footer_details {
@@ -541,17 +563,26 @@ Footer Area CSS Part Starts
 ==================================================*/
 
 @media (max-width: 560px) {
-  .navbar {
-    background-color: var(--white);
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-  }
+ .navbar {
+  background-color: var(--white);
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Align the container to the center */
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 1rem;
+  max-width: 1500px; /* Set the maximum width of the container */
+  width: 100%;
+}
+
 
   .responsive_navbar_btn {
     display: block;
@@ -628,6 +659,10 @@ Footer Area CSS Part Starts
     display: none;
   }
 
+
+  #bil-layout{
+  padding: 0;
+ }
   .car-bg {
     height: 100%;
     width: 100%;
@@ -805,22 +840,29 @@ Footer Area CSS Part Starts
 
 /* For tabs  */
 @media (min-width: 560px) and (max-width: 980px) {
-  #bil_layout {
-    margin: 0 4rem;
-    max-width: 1400px;
-  }
+ #bil-layout{
+  padding: 0;
+ }
   /* nav res start  */
-  .navbar {
-    background-color: var(--white);
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4rem;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-  }
+   .navbar {
+  background-color: var(--white);
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Align the container to the center */
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 4rem;
+  max-width: 1500px; /* Set the maximum width of the container */
+  width: 100%;
+}
 
   .responsive_navbar_btn {
     display: block;
@@ -1112,16 +1154,27 @@ Footer Area CSS Part Starts
 
 @media (min-width: 980px) and (max-width: 1350px) {
 
-  .navbar {
-    background-color: var(--white);
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.6rem 5rem;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
+   #bil-layout{
+  padding: 0;
+ }
+   .navbar {
+  background-color: var(--white);
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Align the container to the center */
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 5rem;
+  max-width: 1500px; /* Set the maximum width of the container */
+  width: 100%;
 }
 
 .content {

@@ -280,7 +280,7 @@ Footer Area CSS Part Starts
 ==================================== */
 
 .footer_container {
-  height: 80vh;
+  height: fit-content;
   width: 100%;
   /* background: url(/assets/images/dark-car.gif); */
   background: url(../images/dark-car.gif);
@@ -288,13 +288,14 @@ Footer Area CSS Part Starts
   background-size: cover;
   background-repeat: no-repeat;
 
-  padding: 6.4rem 12rem;
+  padding: 6.4rem 12rem 0 12rem;
   margin: 0 auto;
 }
 
-.footer_container {
+.footer_container .footer_content{
+  max-width: 1400px;
+  margin: auto;
 }
-
 .footer_container .footer_content .footer_details {
   display: flex;
   justify-content: space-between;
@@ -412,142 +413,6 @@ Footer Area CSS Part Starts
   text-decoration: underline;
 }
 
-/*----------------------------------
-====================================
-Footer Area CSS Part Starts
-====================================
-------------------------------------*/
-.footer_container {
-  height: 80vh;
-  width: 100%;
-  /* background: url(/assets/images/dark-car.gif); */
-  background: url(../images/dark-car.gif);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  padding: 6.4rem 12rem;
-  margin: 0 auto;
-}
-
-.footer_container {
-}
-
-.footer_container .footer_content .footer_details {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 6.4rem;
-}
-
-.footer_container .footer_content .footer_details .fast_t_list_item {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-
-.footer_details .fast_t_list_item .fast_travel_links {
-  font-size: 1.6rem;
-}
-
-.footer_container .footer_content .footer_details .footer_company_details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 3.2rem;
-  padding-bottom: 6.4rem;
-  width: 23%;
-}
-
-.footer_container .footer_content .footer_para,
-.footer_timing_para {
-  color: white;
-  font-size: 1.6rem;
-}
-
-.footer_container .footer_content .copyright_para {
-  color: white;
-}
-
-.footer_fast_travel {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
-}
-
-.footer_fast_travel .fast_t_title {
-  color: white;
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-
-.timing_color {
-  color: orange;
-  font-size: 1.6rem;
-}
-
-.footer_container
-  .footer_content
-  .footer_details
-  .fast_t_list_item
-  .fast_travel_links {
-  text-decoration: none;
-  color: white;
-  font-weight: 400;
-}
-
-.footer_container
-  .footer_content
-  .footer_details
-  .fast_t_list_item
-  .fast_travel_links:hover {
-  color: orange;
-}
-
-.social_media_icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.social_media_icons .social_icons {
-  height: 4rem;
-  width: 4rem;
-  font-size: 2.4rem;
-  background: orange;
-  color: white;
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social_media_icons .social_icons:hover {
-  background: var(--white);
-  color: orange;
-}
-
-.footer_copyright {
-  padding: 4rem 0;
-}
-
-.footer_copyright .copyright_para {
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-.webx {
-  color: orange;
-  font-size: 1.6rem;
-  text-decoration: none;
-}
-
-.webx:hover {
-  text-decoration: underline;
-}
 
 @media (max-width: 560px) {
   /* nav res start  */

@@ -270,13 +270,11 @@ body {
   gap: 1em;
 }
 
-/*----------------------------------
-====================================
+/* ====================================
 Footer Area CSS Part Starts
-====================================
-------------------------------------*/
+==================================== */
 .footer_container {
-  height: 80vh;
+  height: fit-content;
   width: 100%;
   /* background: url(/assets/images/dark-car.gif); */
   background: url(../images/dark-car.gif);
@@ -284,11 +282,13 @@ Footer Area CSS Part Starts
   background-size: cover;
   background-repeat: no-repeat;
 
-  padding: 6.4rem 12rem;
+  padding: 6.4rem 12rem 0 12rem;
   margin: 0 auto;
 }
 
-.footer_container {
+.footer_container .footer_content {
+  max-width: 1400px;
+  margin: auto;
 }
 
 .footer_container .footer_content .footer_details {
@@ -377,7 +377,6 @@ Footer Area CSS Part Starts
   background: orange;
   color: white;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,7 +405,6 @@ Footer Area CSS Part Starts
 .webx:hover {
   text-decoration: underline;
 }
-
 @media (max-width: 560px) {
   /* nav res start  */
   .navbar {
@@ -803,7 +801,7 @@ Footer Area CSS Part Starts
 
   .aboutCar-heading {
     font-size: 3rem;
-}
+  }
 
   /* footer responsive  */
 
