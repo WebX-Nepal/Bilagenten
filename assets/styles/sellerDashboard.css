@@ -152,11 +152,13 @@ body {
 }
 /* nav css end  */
 
-#bil_layout {
-  margin: 0 12rem;
+/* #bil_layout {
+  padding: 0 12rem;
   max-width: 1400px;
-}
+  margin: auto;
+} */
 .sellDash-container {
+   padding: 0 6rem;
   max-width: 1400px;
   margin: auto;
 }
@@ -873,10 +875,7 @@ Media Query
 
   /* nav res ends  */
 
-  #bil_layout {
-    margin: 0rem;
-    max-width: 1400px;
-  }
+
 
   .sellDash-container {
     padding: 0 2rem;
@@ -1217,9 +1216,9 @@ Media Query
 }
 
 @media (min-width: 560px) and (max-width: 980px) {
-  #bil_layout {
+  .sellDash-container {
     margin: 0 4rem;
-    max-width: 1400px;
+   
   }
   /* nav res start  */
   .navbar {
@@ -1999,9 +1998,8 @@ Media Query
     z-index: 999;
   }
 
-  #bil_layout {
-    margin: 0 5rem;
-    max-width: 1400px;
+  .sellDash-container {
+    padding: 0 5rem;
   }
 
   .sellDash-container .head .left {
@@ -2032,8 +2030,10 @@ Media Query
   .menu-container .menu {
     padding: 4em 2em;
     width: 17%;
-    height: 40em;
+    height: fit-content;
   }
+
+
 
   .container .imgsec img {
     height: 100px;

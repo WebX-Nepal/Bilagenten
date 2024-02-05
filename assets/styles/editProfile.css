@@ -155,7 +155,9 @@ body {
 /* main css start  */
 
 .sellDash-container {
-  padding: 0 12rem;
+  max-width: 1400px;
+  padding: 0 6rem;
+  margin: auto;
 }
 
 .head h2 {
@@ -305,7 +307,7 @@ body {
 .menu-container .menu {
   padding: 2em 2em 5em 2em;
   width: 20%;
-  /* height: 40em; */
+  height: fit-content;
 }
 .menu-list {
   display: flex;
@@ -700,6 +702,380 @@ Footer Area CSS Part ends
     justify-content: center;
     border-bottom: 1px solid lightgray;
     padding-bottom: 6.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+  }
+}
+
+/* For tabs  */
+
+@media (min-width: 560px) and (max-width: 980px) {
+  #bil_layout {
+    margin: 0 4rem;
+    max-width: 1400px;
+  }
+  /* nav res start  */
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .responsive_navbar_btn {
+    display: block;
+    z-index: 999;
+  }
+  .nav_list,
+  .nav_buttons {
+    display: none;
+  }
+
+  .responsive_menu_popup {
+    background: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: #000;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 1;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 9;
+  }
+
+  .active {
+    margin: 0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid black;
+  }
+
+  .active_res_nav {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .res_nav_list,
+  .res_nav_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .res_nav_list_item {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .res_navbar_btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-menu"] {
+    display: block;
+  }
+
+  .active_res_nav .responsive_navbar_btn .menu_icon[name="maki-cross"] {
+    display: none;
+  }
+
+  /* nav res ends  */
+
+  .sellDash-container {
+    padding: 0 4em;
+  }
+
+  .sellDash-container .head {
+    display: flex;
+    padding-top: 10em;
+    flex-direction: row;
+    align-items: center;
+  }
+  .head h2 {
+    font-size: 2.5rem;
+    color: #909090;
+    white-space: nowrap;
+  }
+
+  .sellDash-container .head .left {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 2em;
+    padding-left: 0;
+  }
+  .sellDash-container .head .mid {
+    border-bottom: 1px solid #cfcfcf;
+    width: 50%;
+    margin-bottom: 2em;
+    margin-left: -9em;
+  }
+  .sellDash-container .head .right {
+    width: 6%;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2em;
+  }
+  .sellDash-container .head .right h2 {
+    display: none;
+  }
+  .sellDash-container .head .right img {
+    padding-left: 0;
+    height: 5em;
+  }
+  .sellDash-container .head .right .userImg {
+    height: 5em;
+  }
+  .notificationIcon {
+    height: 4em;
+  }
+
+  .menu-container {
+    display: flex;
+    gap: 5em;
+    flex-direction: column;
+  }
+
+  .menu-container .menu {
+    margin-top: -2em;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .menu-container .details-user {
+    width: 100%;
+  }
+  .menu-container .details-user {
+    padding: 3em 2em 4em 2em;
+  }
+
+  .menu-container .details-user .name {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2.5em;
+  }
+  .menu-container .details-user .name input {
+    width: 100%;
+  }
+
+  .menu-container .details-user .cityCode {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2.5em;
+  }
+  .menu-container .details-user .cityCode input {
+    width: 100%;
+  }
+
+  #updateBtn {
+    width: 30%;
+    margin: auto;
+  }
+
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 6.4rem;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 750px) {
+  .contact-container {
+    border: 2px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 4em 0;
+    border-radius: 3em;
+    width: 92%;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2em;
+  }
+  .contact-subtitle {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #666;
+  }
+  .contact-validations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3.2rem 0;
+    margin: auto;
+    width: 70%;
+  }
+
+  .contact-heading {
+    font-size: 2.5rem;
+  }
+
+  .terms {
+    font-size: 1.3em;
+  }
+  #name,
+  #orgNo,
+  #dealerName,
+  #phone,
+  #address,
+  #postal,
+  #city {
+    width: 70%;
+  }
+  .uploadDoc {
+    width: 70%;
+    padding: 3em 3em;
+  }
+}
+/* for laptops  */
+
+@media (min-width: 980px) and (max-width: 1350px) {
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .sellDash-container {
+    padding: 0 5rem;
+  }
+  .sellDash-container .head {
+    width: 98%;
+  }
+
+  .sellDash-container .head .left {
+    width: 15%;
+    padding-left: 0;
+  }
+
+  .menu-container .menu {
+    padding: 2em 2em 5em 2em;
+    width: 20%;
+    height: fit-content;
+  }
+
+  .user-immg img {
+    height: 140px;
+  }
+  .menu .userName {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1.9rem;
+    color: #ff872c;
+  }
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgray;
+    padding: 0 5em 6.4rem 5em;
     flex-wrap: wrap;
     text-align: center;
     gap: 3em;

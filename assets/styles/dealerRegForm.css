@@ -163,6 +163,7 @@ body {
   border: 2px solid #ececec;
   padding: 5em 10em 8em 10em;
   border-radius: 3em;
+  width: fit-content;
 }
 
 .contact-heading {

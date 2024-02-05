@@ -166,10 +166,12 @@ body {
   border: 2px solid #ececec;
   padding: 4em 14em;
   border-radius: 3em;
+  width: fit-content;
 }
 
 .contact-heading {
   font-size: 4rem;
+  white-space: nowrap;
 }
 
 .contact-subtitle {
@@ -910,8 +912,8 @@ Footer Area CSS Part Starts
   }
 }
 
- @media (min-width: 560px) and (max-width: 750px) {
-     .contact-container {
+@media (min-width: 560px) and (max-width: 750px) {
+  .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -947,4 +949,82 @@ Footer Area CSS Part Starts
     width: 70%;
     justify-content: space-between;
   }
-} 
+}
+
+/* for laptops  */
+
+@media (min-width: 980px) and (max-width: 1350px) {
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 5rem;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    border: 2px solid #ececec;
+    padding: 4em 14em;
+    border-radius: 3em;
+    width: 60%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .contact-heading {
+    font-size: 3rem;
+}
+
+  /* footer responsive  */
+
+  .footer_container {
+    height: 100%;
+    width: 100%;
+    /* background: url(/assets/images/dark-car.gif); */
+    background: url(../images/dark-car.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0 0 0;
+    margin: 0 auto;
+  }
+
+  .footer_container .footer_content {
+    padding: 0 4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .footer_container .footer_content .footer_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgray;
+    padding: 0 5em 6.4rem 5em;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+  }
+  .footer_container .footer_content .footer_details .footer_company_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    padding-bottom: 3.2rem;
+    width: 100%;
+  }
+  .footer_container .footer_content .copyright_para {
+    text-align: center;
+  }
+}
