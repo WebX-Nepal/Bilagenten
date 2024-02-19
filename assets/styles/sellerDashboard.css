@@ -564,10 +564,19 @@ body {
   border-radius: 20px;
   padding: 2em;
   display: flex;
+  flex-direction: column;
   width: 100%;
   margin: auto;
   margin-bottom: 3em;
   margin-left: 4.6em;
+}
+.container-bid-inner {
+  display: flex;
+}
+.bid-start-end {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem;
 }
 
 .car-details-container {
@@ -799,7 +808,7 @@ Media Query
 
 @media (max-width: 560px) {
   /* nav res start  */
- .navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
@@ -818,7 +827,6 @@ Media Query
     max-width: 1500px; /* Set the maximum width of the container */
     width: 100%;
   }
-
 
   .responsive_navbar_btn {
     display: block;
@@ -1240,7 +1248,7 @@ Media Query
     margin: 0 4rem;
   }
   /* nav res start  */
- .navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
@@ -2013,7 +2021,7 @@ Media Query
 /* for laptops  */
 
 @media (min-width: 980px) and (max-width: 1350px) {
-   .navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;

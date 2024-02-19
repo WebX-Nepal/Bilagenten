@@ -8,39 +8,39 @@
   </head>
   <body>
     <!-- Navigation bar ---------------------------------------->
-   <nav class="navbar">
-    <div class="container">
+    <nav class="navbar">
+      <div class="container">
         <div class="brand_logo">
-        <a href="../index.html">
-          <img src="../assets/images/logo.png" alt="logo" height="40" />
-        </a>
-      </div>
+          <a href="../index.html">
+            <img src="../assets/images/logo.png" alt="logo" height="40" />
+          </a>
+        </div>
 
-      <div class="nav_list">
-        <a href="../index.html" class="nav_list_item">Sell the Car</a>
-        <a href="./company.html" class="nav_list_item">Company</a>
-        <a href="./retailer.html" class="nav_list_item">Retailer</a>
+        <div class="nav_list">
+          <a href="../index.html" class="nav_list_item">Sell the Car</a>
+          <a href="./company.html" class="nav_list_item">Company</a>
+          <a href="./retailer.html" class="nav_list_item">Retailer</a>
+        </div>
+        <div class="nav_buttons">
+          <a href="./login.html" class="navbar_btn main_button">My Page</a>
+          <a href="./dealerPortal.html" class="navbar_btn button_outline"
+            >Dealer Portal</a
+          >
+        </div>
+        <!-- Responsive Navbar start from here --------------------->
+        <div class="responsive_navbar_btn">
+          <iconify-icon
+            icon="pepicons-pop:menu"
+            name="maki-menu"
+            class="menu_icon"
+          ></iconify-icon>
+          <iconify-icon
+            icon="maki:cross"
+            name="maki-cross"
+            class="menu_icon"
+          ></iconify-icon>
+        </div>
       </div>
-      <div class="nav_buttons">
-        <a href="./login.html" class="navbar_btn main_button">My Page</a>
-        <a href="./dealerPortal.html" class="navbar_btn button_outline"
-          >Dealer Portal</a
-        >
-      </div>
-      <!-- Responsive Navbar start from here --------------------->
-      <div class="responsive_navbar_btn">
-        <iconify-icon
-          icon="pepicons-pop:menu"
-          name="maki-menu"
-          class="menu_icon"
-        ></iconify-icon>
-        <iconify-icon
-          icon="maki:cross"
-          name="maki-cross"
-          class="menu_icon"
-        ></iconify-icon>
-      </div>
-    </div>
     </nav>
     <div class="responsive_menu_popup">
       <div class="res_nav_list">
@@ -57,21 +57,20 @@
     </div>
     <!--************* Responsive Navbar close here *********--------------------->
 
- 
-      <div class="sellDash-container">
-        <div class="head">
-          <div class="left">
-            <h2>Seller Dashboard</h2>
-          </div>
-          <div class="mid"></div>
-          <div class="right">
-            <img
-              src="../assets/images/icons/notificationIcon.png"
-              alt=""
-              class="notificationIcon"
-            />
+    <div class="sellDash-container">
+      <div class="head">
+        <div class="left">
+          <h2>Seller Dashboard</h2>
+        </div>
+        <div class="mid"></div>
+        <div class="right">
+          <img
+            src="../assets/images/icons/notificationIcon.png"
+            alt=""
+            class="notificationIcon"
+          />
           <div class="user-dashboard">
-              <h2>Yamu</h2>
+            <h2>Yamu</h2>
             <div class="dropdown">
               <img
                 src="../assets/images/yamu.png"
@@ -91,958 +90,966 @@
               </div>
             </div>
           </div>
-          </div>
         </div>
-        <div class="menu-container">
-          <div class="menu">
-            <div class="menu-list">
-              <a href="#" class="menu-link" data-content="my-cars">My Cars</a>
-              <a href="#" class="menu-link" data-content="current-biddings"
-                >Current Biddings</a
-              >
-              <a href="#" class="menu-link" data-content="my-sold-cars"
-                >My Sold Cars</a
-              >
-            </div>
-            <!-- <div class="logout">
+      </div>
+      <div class="menu-container">
+        <div class="menu">
+          <div class="menu-list">
+            <a href="#" class="menu-link" data-content="my-cars">My Cars</a>
+            <a href="#" class="menu-link" data-content="current-biddings"
+              >Current Biddings</a
+            >
+            <a href="#" class="menu-link" data-content="my-sold-cars"
+              >My Sold Cars</a
+            >
+          </div>
+          <!-- <div class="logout">
             <a href="/index.html" class="logout">Logout</a>
             <img src="/assets/images/logOuticon.png" alt="" />
           </div> -->
+        </div>
+        <div class="details">
+          <div id="my-cars" class="content">
+            <div class="addcars" style="width: fit-content">
+              <img
+                src="../assets/images/plusIcon.png"
+                alt="addIconErr"
+                style="cursor: pointer"
+              />
+              <h1 style="cursor: pointer">Add Car</h1>
+            </div>
+            <div class="border"></div>
+            <div class="container" style="background: var(--gradientGrey)">
+              <div class="imgsec">
+                <img src="../assets/images/car4.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Maybach S 650 Sedan</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <div class="highest-amount">
+                  <h2>Highest Bid</h2>
+                  <p class="amount">$50,000</p>
+                </div>
+                <div class="view-flex">
+                  <div class="view" style="cursor: pointer">
+                    <img
+                      src="../assets/images/icons/viewIcon.png"
+                      alt="imgErr"
+                      style="object-fit: contain"
+                    />
+                    <h5 style="font-size: 1.2em">view</h5>
+                  </div>
+                  <div class="edit" style="cursor: pointer">
+                    <img
+                      src="../assets/images/icons/editIcon.png"
+                      alt="imgErr"
+                      style="object-fit: contain"
+                    />
+                    <h5 style="font-size: 1.2em">edit</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container" style="background: var(--gradientGrey)">
+              <div class="imgsec">
+                <img src="../assets/images/car2.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Orange Audi Q3</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <div class="highest-amount">
+                  <h2>Highest Bid</h2>
+                  <p class="amount">$50,000</p>
+                </div>
+                <div class="view-flex">
+                  <div class="view" style="cursor: pointer">
+                    <img
+                      src="../assets/images/icons/viewIcon.png"
+                      alt="imgErr"
+                      style="object-fit: contain"
+                    />
+                    <h5 style="font-size: 1.2em">view</h5>
+                  </div>
+                  <div class="edit" style="cursor: pointer">
+                    <img
+                      src="../assets/images/icons/editIcon.png"
+                      alt="imgErr"
+                      style="object-fit: contain"
+                    />
+                    <h5 style="font-size: 1.2em">edit</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container" style="background: var(--gradientGrey)">
+              <div class="imgsec">
+                <img src="../assets/images/blue.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>2017 Ford Mustang EcoBoost</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <div class="highest-amount">
+                  <h2>Highest Bid</h2>
+                  <p class="amount">$50,000</p>
+                </div>
+                <div class="view-flex">
+                  <div class="view" style="cursor: pointer">
+                    <img
+                      src="../assets/images/icons/viewIcon.png"
+                      alt="imgErr"
+                      style="object-fit: contain"
+                    />
+                    <h5 style="font-size: 1.2em">view</h5>
+                  </div>
+                  <div class="edit" style="cursor: pointer">
+                    <img
+                      src="../assets/images/icons/editIcon.png"
+                      alt="imgErr"
+                      style="object-fit: contain"
+                    />
+                    <h5 style="font-size: 1.2em">edit</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container" style="background: var(--gradientGrey)">
+              <div class="imgsec">
+                <img src="../assets/images/mercedes.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Mercedies Benz GLE</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid">
+                <div class="highest-amount">
+                  <h2>Highest Bid</h2>
+                  <p class="amount">$50,000</p>
+                </div>
+                <div class="view-flex">
+                  <div class="view" style="cursor: pointer">
+                    <img
+                      src="../assets/images/icons/viewIcon.png"
+                      alt="imgErr"
+                      style="object-fit: contain"
+                    />
+                    <h5 style="font-size: 1.2em">view</h5>
+                  </div>
+                  <div class="edit" style="cursor: pointer">
+                    <img
+                      src="../assets/images/icons/editIcon.png"
+                      alt="imgErr"
+                      style="object-fit: contain"
+                    />
+                    <h5 style="font-size: 1.2em">edit</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="details">
-            <div id="my-cars" class="content">
-              <div class="addcars" style="width: fit-content">
-                <img
-                  src="../assets/images/plusIcon.png"
-                  alt="addIconErr"
-                  style="cursor: pointer"
-                />
-                <h1 style="cursor: pointer">Add Car</h1>
-              </div>
-              <div class="border"></div>
-              <div class="container" style="background: var(--gradientGrey)">
-                <div class="imgsec">
-                  <img src="../assets/images/car4.png" alt="" />
-                </div>
-                <div class="car-details">
-                  <h3>Maybach S 650 Sedan</h3>
-                  <div class="features">
-                    <div class="left">
-                      <p>Leather</p>
-                      <p>ACC</p>
-                      <p>Navi</p>
-                      <p>R.Cam</p>
-                    </div>
-                    <div class="right">
-                      <p>DAB</p>
-                      <p>Active Info Display</p>
-                      <p>V.Pump</p>
-                    </div>
-                  </div>
-                  <h5>2020 . 18,000 km . Automatic . Electricity</h5>
-                </div>
-                <div class="bid">
-                  <div class="highest-amount">
-                    <h2>Highest Bid</h2>
-                    <p class="amount">$50,000</p>
-                  </div>
-                  <div class="view-flex">
-                    <div class="view" style="cursor: pointer">
-                      <img
-                        src="../assets/images/icons/viewIcon.png"
-                        alt="imgErr"
-                        style="object-fit: contain"
-                      />
-                      <h5 style="font-size: 1.2em">view</h5>
-                    </div>
-                    <div class="edit" style="cursor: pointer">
-                      <img
-                        src="../assets/images/icons/editIcon.png"
-                        alt="imgErr"
-                        style="object-fit: contain"
-                      />
-                      <h5 style="font-size: 1.2em">edit</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container" style="background: var(--gradientGrey)">
-                <div class="imgsec">
-                  <img src="../assets/images/car2.png" alt="" />
-                </div>
-                <div class="car-details">
-                  <h3>Orange Audi Q3</h3>
-                  <div class="features">
-                    <div class="left">
-                      <p>Leather</p>
-                      <p>ACC</p>
-                      <p>Navi</p>
-                      <p>R.Cam</p>
-                    </div>
-                    <div class="right">
-                      <p>DAB</p>
-                      <p>Active Info Display</p>
-                      <p>V.Pump</p>
-                    </div>
-                  </div>
-                  <h5>2020 . 18,000 km . Automatic . Electricity</h5>
-                </div>
-                <div class="bid">
-                  <div class="highest-amount">
-                    <h2>Highest Bid</h2>
-                    <p class="amount">$50,000</p>
-                  </div>
-                  <div class="view-flex">
-                    <div class="view" style="cursor: pointer">
-                      <img
-                        src="../assets/images/icons/viewIcon.png"
-                        alt="imgErr"
-                        style="object-fit: contain"
-                      />
-                      <h5 style="font-size: 1.2em">view</h5>
-                    </div>
-                    <div class="edit" style="cursor: pointer">
-                      <img
-                        src="../assets/images/icons/editIcon.png"
-                        alt="imgErr"
-                        style="object-fit: contain"
-                      />
-                      <h5 style="font-size: 1.2em">edit</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container" style="background: var(--gradientGrey)">
-                <div class="imgsec">
-                  <img src="../assets/images/blue.png" alt="" />
-                </div>
-                <div class="car-details">
-                  <h3>2017 Ford Mustang EcoBoost</h3>
-                  <div class="features">
-                    <div class="left">
-                      <p>Leather</p>
-                      <p>ACC</p>
-                      <p>Navi</p>
-                      <p>R.Cam</p>
-                    </div>
-                    <div class="right">
-                      <p>DAB</p>
-                      <p>Active Info Display</p>
-                      <p>V.Pump</p>
-                    </div>
-                  </div>
-                  <h5>2020 . 18,000 km . Automatic . Electricity</h5>
-                </div>
-                <div class="bid">
-                  <div class="highest-amount">
-                    <h2>Highest Bid</h2>
-                    <p class="amount">$50,000</p>
-                  </div>
-                  <div class="view-flex">
-                    <div class="view" style="cursor: pointer">
-                      <img
-                        src="../assets/images/icons/viewIcon.png"
-                        alt="imgErr"
-                        style="object-fit: contain"
-                      />
-                      <h5 style="font-size: 1.2em">view</h5>
-                    </div>
-                    <div class="edit" style="cursor: pointer">
-                      <img
-                        src="../assets/images/icons/editIcon.png"
-                        alt="imgErr"
-                        style="object-fit: contain"
-                      />
-                      <h5 style="font-size: 1.2em">edit</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container" style="background: var(--gradientGrey)">
-                <div class="imgsec">
-                  <img src="../assets/images/mercedes.png" alt="" />
-                </div>
-                <div class="car-details">
-                  <h3>Mercedies Benz GLE</h3>
-                  <div class="features">
-                    <div class="left">
-                      <p>Leather</p>
-                      <p>ACC</p>
-                      <p>Navi</p>
-                      <p>R.Cam</p>
-                    </div>
-                    <div class="right">
-                      <p>DAB</p>
-                      <p>Active Info Display</p>
-                      <p>V.Pump</p>
-                    </div>
-                  </div>
-                  <h5>2020 . 18,000 km . Automatic . Electricity</h5>
-                </div>
-                <div class="bid">
-                  <div class="highest-amount">
-                    <h2>Highest Bid</h2>
-                    <p class="amount">$50,000</p>
-                  </div>
-                  <div class="view-flex">
-                    <div class="view" style="cursor: pointer">
-                      <img
-                        src="../assets/images/icons/viewIcon.png"
-                        alt="imgErr"
-                        style="object-fit: contain"
-                      />
-                      <h5 style="font-size: 1.2em">view</h5>
-                    </div>
-                    <div class="edit" style="cursor: pointer">
-                      <img
-                        src="../assets/images/icons/editIcon.png"
-                        alt="imgErr"
-                        style="object-fit: contain"
-                      />
-                      <h5 style="font-size: 1.2em">edit</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <!--view side bar starts from here  -->
+          <!--view side bar starts from here  -->
 
-            <div
-              id="myContainer"
+          <div
+            id="myContainer"
+            style="
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              right: 0;
+              background-color: white;
+              overflow-x: hidden;
+              transition: 0.5s;
+            "
+          >
+            <a
+              href="javascript:void(0)"
+              id="closebtn"
               style="
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                right: 0;
-                background-color: white;
-                overflow-x: hidden;
-                transition: 0.5s;
+                position: absolute;
+                top: 100px;
+                left: 15px;
+                font-size: 36px;
+                color: #f4793d;
               "
+              >&times;</a
             >
-              <a
-                href="javascript:void(0)"
-                id="closebtn"
-                style="
-                  position: absolute;
-                  top: 100px;
-                  left: 15px;
-                  font-size: 36px;
-                  color: #f4793d;
-                "
-                >&times;</a
-              >
-              <div style="padding-top: 13em">
-                <div class="view-content">
-                  <div style="display: flex" class="details-view">
-                    <h3>Car Name:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Car name"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Registration Number:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="12XXXXXXXXXX"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Kilometer:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="100XXXXXXXXX"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Fuel type:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Gas"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Wheel drive:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Front"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Uses-imported no:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="NO"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Color</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Orange"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Types:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Auto/Manual (drop down)"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Next EU Control:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="30/05/2024"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Price:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="26,000"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Description:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="There jnfsdn fgksndf"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3 style="width: 50%; color: #000; font-size: 1.7em">
-                      Brand:
-                    </h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Mercedies Benz"
-                    />
-                  </div>
-                  <div class="importImg">
-                    <img src="../assets/images/importImage.png" alt="" />
-                  </div>
-                  <div
-                    class="sendbtn"
-                    style="display: flex; justify-content: center"
+            <div style="padding-top: 13em">
+              <div class="view-content">
+                <div style="display: flex" class="details-view">
+                  <h3>Car Name:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Car name"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Registration Number:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="12XXXXXXXXXX"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Kilometer:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="100XXXXXXXXX"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Fuel type:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Gas"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Wheel drive:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Front"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Uses-imported no:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="NO"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Color</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Orange"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Types:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Auto/Manual (drop down)"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Next EU Control:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="30/05/2024"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Price:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="26,000"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Description:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="There jnfsdn fgksndf"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; color: #000; font-size: 1.7em">
+                    Brand:
+                  </h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Mercedies Benz"
+                  />
+                </div>
+                <div class="importImg">
+                  <img src="../assets/images/importImage.png" alt="" />
+                </div>
+                <div
+                  class="sendbtn"
+                  style="display: flex; justify-content: center"
+                >
+                  <button
+                    type="button"
+                    id="saveBtn"
+                    onclick="window.location.href='/index.html'"
                   >
-                    <button
-                      type="button"
-                      id="saveBtn"
-                      onclick="window.location.href='/index.html'"
-                    >
-                      Send
-                    </button>
-                  </div>
+                    Send
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--view side bar ends from here  -->
+          <!--view side bar ends from here  -->
 
-            <!--edit side bar starts from here  -->
+          <!--edit side bar starts from here  -->
 
-            <div
-              id="myContainer2"
+          <div
+            id="myContainer2"
+            style="
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              right: 0;
+              background-color: white;
+              overflow-x: hidden;
+              transition: 0.5s;
+            "
+          >
+            <a
+              href="javascript:void(0)"
+              id="closebtn2"
               style="
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                right: 0;
-                background-color: white;
-                overflow-x: hidden;
-                transition: 0.5s;
+                position: absolute;
+                top: 100px;
+                left: 15px;
+                font-size: 36px;
+                color: #f4793d;
               "
+              >&times;</a
             >
-              <a
-                href="javascript:void(0)"
-                id="closebtn2"
-                style="
-                  position: absolute;
-                  top: 100px;
-                  left: 15px;
-                  font-size: 36px;
-                  color: #f4793d;
-                "
-                >&times;</a
-              >
-              <div style="padding-top: 13em">
-                <div class="view-content">
-                  <div style="display: flex" class="details-view">
-                    <h3>Car Name:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Car name"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Registration Number:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="12XXXXXXXXXX"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Kilometer:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="100XXXXXXXXX"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Fuel type:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Gas"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Wheel drive:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Front"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Uses-imported no:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="NO"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Color</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Orange"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Types:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Auto/Manual (drop down)"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Next EU Control:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="30/05/2024"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Price:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="26,000"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Description:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="There jnfsdn fgksndf"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3 style="width: 50%; color: #000; font-size: 1.7em">
-                      Brand:
-                    </h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Mercedies Benz"
-                    />
-                  </div>
-                  <div class="importImg">
-                    <img src="../assets/images/importImage.png" alt="" />
-                  </div>
-                  <div
-                    class="sendbtn"
-                    style="display: flex; justify-content: center"
+            <div style="padding-top: 13em">
+              <div class="view-content">
+                <div style="display: flex" class="details-view">
+                  <h3>Car Name:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Car name"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Registration Number:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="12XXXXXXXXXX"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Kilometer:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="100XXXXXXXXX"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Fuel type:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Gas"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Wheel drive:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Front"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Uses-imported no:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="NO"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Color</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Orange"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Types:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Auto/Manual (drop down)"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Next EU Control:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="30/05/2024"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Price:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="26,000"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Description:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="There jnfsdn fgksndf"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3 style="width: 50%; color: #000; font-size: 1.7em">
+                    Brand:
+                  </h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Mercedies Benz"
+                  />
+                </div>
+                <div class="importImg">
+                  <img src="../assets/images/importImage.png" alt="" />
+                </div>
+                <div
+                  class="sendbtn"
+                  style="display: flex; justify-content: center"
+                >
+                  <button
+                    type="button"
+                    id="saveBtn"
+                    onclick="window.location.href='/index.html'"
                   >
-                    <button
-                      type="button"
-                      id="saveBtn"
-                      onclick="window.location.href='/index.html'"
-                    >
-                      Send
-                    </button>
-                  </div>
+                    Send
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--edit side bar ends here  -->
-            <!--Add car side bar starts from here  -->
+          <!--edit side bar ends here  -->
+          <!--Add car side bar starts from here  -->
 
-            <div
-              id="myContainer3"
+          <div
+            id="myContainer3"
+            style="
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              right: 0;
+              background-color: white;
+              overflow-x: hidden;
+              transition: 0.5s;
+            "
+          >
+            <a
+              href="javascript:void(0)"
+              id="closebtn3"
               style="
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                right: 0;
-                background-color: white;
-                overflow-x: hidden;
-                transition: 0.5s;
+                position: absolute;
+                top: 100px;
+                left: 15px;
+                font-size: 36px;
+                color: #f4793d;
               "
+              >&times;</a
             >
-              <a
-                href="javascript:void(0)"
-                id="closebtn3"
-                style="
-                  position: absolute;
-                  top: 100px;
-                  left: 15px;
-                  font-size: 36px;
-                  color: #f4793d;
-                "
-                >&times;</a
-              >
-              <div style="padding-top: 13em">
-                <div class="view-content">
-                  <div style="display: flex" class="details-view">
-                    <h3>Car Name:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Car name"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Registration Number:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="12XXXXXXXXXX"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Kilometer:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="100XXXXXXXXX"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Fuel type:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Gas"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Wheel drive:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Front"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Uses-imported no:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="NO"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Color</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Orange"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Types:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Auto/Manual (drop down)"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Next EU Control:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="30/05/2024"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Price:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="26,000"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Description:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="There jnfsdn fgksndf"
-                    />
-                  </div>
-                  <div style="display: flex" class="details-view">
-                    <h3>Brand:</h3>
-                    <input
-                      style="
-                        width: 50%;
-                        border: 2px solid #ececec;
-                        padding: 0.6em 2em;
-                        border-radius: 1em;
-                        font-size: 1.5em;
-                      "
-                      type="name"
-                      name="name"
-                      id="carname"
-                      placeholder="Mercedies Benz"
-                    />
-                  </div>
-                  <div class="importImg">
-                    <img src="../assets/images/importImage.png" alt="" />
-                  </div>
-                  <div
-                    class="sendbtn"
-                    style="display: flex; justify-content: center"
+            <div style="padding-top: 13em">
+              <div class="view-content">
+                <div style="display: flex" class="details-view">
+                  <h3>Car Name:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Car name"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Registration Number:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="12XXXXXXXXXX"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Kilometer:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="100XXXXXXXXX"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Fuel type:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Gas"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Wheel drive:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Front"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Uses-imported no:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="NO"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Color</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Orange"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Types:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Auto/Manual (drop down)"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Next EU Control:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="30/05/2024"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Price:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="26,000"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Description:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="There jnfsdn fgksndf"
+                  />
+                </div>
+                <div style="display: flex" class="details-view">
+                  <h3>Brand:</h3>
+                  <input
+                    style="
+                      width: 50%;
+                      border: 2px solid #ececec;
+                      padding: 0.6em 2em;
+                      border-radius: 1em;
+                      font-size: 1.5em;
+                    "
+                    type="name"
+                    name="name"
+                    id="carname"
+                    placeholder="Mercedies Benz"
+                  />
+                </div>
+                <div class="importImg">
+                  <img src="../assets/images/importImage.png" alt="" />
+                </div>
+                <div
+                  class="sendbtn"
+                  style="display: flex; justify-content: center"
+                >
+                  <button
+                    type="button"
+                    id="saveBtn"
+                    onclick="window.location.href='/index.html'"
                   >
-                    <button
-                      type="button"
-                      id="saveBtn"
-                      onclick="window.location.href='/index.html'"
-                    >
-                      Send
-                    </button>
-                  </div>
+                    Send
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!--Add car side bar ends here  -->
+          <!--Add car side bar ends here  -->
 
-            <div id="current-biddings" class="content">
-              <div
-                class="container-bid"
-                style="background: var(--gradientGrey)"
-              >
+          <div id="current-biddings" class="content">
+            <div class="container-bid" style="background: var(--gradientGrey)">
+              <div class="bid-start-end">
+                <div>
+                  <h3 class="start">Bidding Starting Date</h3>
+                  <p class="startDate">30/01/2024</p>
+                </div>
+                <div>
+                  <h3>Bidding End Date</h3>
+                  <p class="endDate">29/2/2024</p>
+                </div>
+              </div>
+              <div class="container-bid-inner">
                 <div class="imgsec">
                   <div class="details">
                     <img src="../assets/images/mercedes.png" alt="imgErr" />
@@ -1072,18 +1079,13 @@
                 </div>
 
                 <div class="biddingDate">
-                  <div class="timer">
-                    <h2 id="timer-display">16</h2>
-                    <button id="start-button">+</button>
-                  </div>
                   <div class="bid">
                     <h2>Highest Bidding Price</h2>
                     <strong class="bidPrice">$89.000</strong>
-
-                    <h3 class="start">Bidding Starting Date</h3>
-                    <p class="startDate">30/01/2024</p>
-                    <h3>Bidding End Date</h3>
-                    <p class="endDate">29/2/2024</p>
+                  </div>
+                  <div class="timer">
+                    <h2 id="timer-display">16</h2>
+                    <button id="start-button">+</button>
                   </div>
                 </div>
                 <div class="status">
@@ -1091,171 +1093,172 @@
                   <h2 class="active-state">Inactive</h2>
                 </div>
               </div>
-              <div
-                class="bidders-list-container"
-                style="background: var(--gradientGrey)"
-              >
-                <h1>Bidders List</h1>
-                <div class="bidders-list">
-                  <div class="bidder">
-                    <div class="names">
-                      <h3>Ramesh Dai</h3>
-                    </div>
-                    <div class="amount">
-                      <p>$55,000</p>
-                    </div>
+            </div>
+            <div
+              class="bidders-list-container"
+              style="background: var(--gradientGrey)"
+            >
+              <h1>Bidders List</h1>
+              <div class="bidders-list">
+                <div class="bidder">
+                  <div class="names">
+                    <h3>Ramesh Dai</h3>
                   </div>
-                  <div class="bidder">
-                    <div class="names">
-                      <h3>Ramesh Dai</h3>
-                    </div>
-                    <div class="amount">
-                      <p>$55,000</p>
-                    </div>
+                  <div class="amount">
+                    <p>$55,000</p>
                   </div>
-                  <div class="bidder">
-                    <div class="names">
-                      <h3>Ramesh Dai</h3>
-                    </div>
-                    <div class="amount">
-                      <p>$55,000</p>
-                    </div>
+                </div>
+                <div class="bidder">
+                  <div class="names">
+                    <h3>Ramesh Dai</h3>
                   </div>
-                  <div class="bidder">
-                    <div class="names">
-                      <h3>Ramesh Dai</h3>
-                    </div>
-                    <div class="amount">
-                      <p>$55,000</p>
-                    </div>
+                  <div class="amount">
+                    <p>$55,000</p>
+                  </div>
+                </div>
+                <div class="bidder">
+                  <div class="names">
+                    <h3>Ramesh Dai</h3>
+                  </div>
+                  <div class="amount">
+                    <p>$55,000</p>
+                  </div>
+                </div>
+                <div class="bidder">
+                  <div class="names">
+                    <h3>Ramesh Dai</h3>
+                  </div>
+                  <div class="amount">
+                    <p>$55,000</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div id="my-sold-cars" class="content">
-              <div class="soldcars">
-                <h1>My sold cars list</h1>
+          </div>
+          <div id="my-sold-cars" class="content">
+            <div class="soldcars">
+              <h1>My sold cars list</h1>
+            </div>
+            <div
+              style="margin-top: 2em; background: var(--gradientGrey)"
+              class="container container-sold"
+            >
+              <div class="imgsec">
+                <img src="../assets/images/car4.png" alt="" />
               </div>
-              <div
-                style="margin-top: 2em; background: var(--gradientGrey)"
-                class="container container-sold"
-              >
-                <div class="imgsec">
-                  <img src="../assets/images/car4.png" alt="" />
-                </div>
-                <div class="car-details">
-                  <h3>Maybach S 650 Sedan</h3>
-                  <div class="features">
-                    <div class="left">
-                      <p>Leather</p>
-                      <p>ACC</p>
-                      <p>Navi</p>
-                      <p>R.Cam</p>
-                    </div>
-                    <div class="right">
-                      <p>DAB</p>
-                      <p>Active Info Display</p>
-                      <p>V.Pump</p>
-                    </div>
+              <div class="car-details">
+                <h3>Maybach S 650 Sedan</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
                   </div>
-                  <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
                 </div>
-                <div class="bid bid-sold" style="gap: 0">
-                  <h2>Highest Bid</h2>
-                  <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
-                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
               </div>
-              <div
-                class="container container-sold"
-                style="background: var(--gradientGrey)"
-              >
-                <div class="imgsec">
-                  <img src="../assets/images/car2.png" alt="" />
-                </div>
-                <div class="car-details">
-                  <h3>Orange Audi Q3</h3>
-                  <div class="features">
-                    <div class="left">
-                      <p>Leather</p>
-                      <p>ACC</p>
-                      <p>Navi</p>
-                      <p>R.Cam</p>
-                    </div>
-                    <div class="right">
-                      <p>DAB</p>
-                      <p>Active Info Display</p>
-                      <p>V.Pump</p>
-                    </div>
-                  </div>
-                  <h5>2020 . 18,000 km . Automatic . Electricity</h5>
-                </div>
-                <div class="bid bid-sold" style="gap: 0">
-                  <h2>Highest Bid</h2>
-                  <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
-                </div>
+              <div class="bid bid-sold" style="gap: 0">
+                <h2>Highest Bid</h2>
+                <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
               </div>
-              <div
-                class="container container-sold"
-                style="background: var(--gradientGrey)"
-              >
-                <div class="imgsec">
-                  <img src="../assets/images/blue.png" alt="" />
-                </div>
-                <div class="car-details">
-                  <h3>2017 Ford Mustang EcoBoost</h3>
-                  <div class="features">
-                    <div class="left">
-                      <p>Leather</p>
-                      <p>ACC</p>
-                      <p>Navi</p>
-                      <p>R.Cam</p>
-                    </div>
-                    <div class="right">
-                      <p>DAB</p>
-                      <p>Active Info Display</p>
-                      <p>V.Pump</p>
-                    </div>
-                  </div>
-                  <h5>2020 . 18,000 km . Automatic . Electricity</h5>
-                </div>
-                <div class="bid bid-sold" style="gap: 0">
-                  <h2>Highest Bid</h2>
-                  <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
-                </div>
+            </div>
+            <div
+              class="container container-sold"
+              style="background: var(--gradientGrey)"
+            >
+              <div class="imgsec">
+                <img src="../assets/images/car2.png" alt="" />
               </div>
-              <div
-                class="container container-sold"
-                style="background: var(--gradientGrey)"
-              >
-                <div class="imgsec">
-                  <img src="../assets/images/mercedes.png" alt="" />
-                </div>
-                <div class="car-details">
-                  <h3>Mercedies Benz GLE</h3>
-                  <div class="features">
-                    <div class="left">
-                      <p>Leather</p>
-                      <p>ACC</p>
-                      <p>Navi</p>
-                      <p>R.Cam</p>
-                    </div>
-                    <div class="right">
-                      <p>DAB</p>
-                      <p>Active Info Display</p>
-                      <p>V.Pump</p>
-                    </div>
+              <div class="car-details">
+                <h3>Orange Audi Q3</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
                   </div>
-                  <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
                 </div>
-                <div class="bid" style="gap: 0">
-                  <h2>Highest Bid</h2>
-                  <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid bid-sold" style="gap: 0">
+                <h2>Highest Bid</h2>
+                <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
+              </div>
+            </div>
+            <div
+              class="container container-sold"
+              style="background: var(--gradientGrey)"
+            >
+              <div class="imgsec">
+                <img src="../assets/images/blue.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>2017 Ford Mustang EcoBoost</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
                 </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid bid-sold" style="gap: 0">
+                <h2>Highest Bid</h2>
+                <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
+              </div>
+            </div>
+            <div
+              class="container container-sold"
+              style="background: var(--gradientGrey)"
+            >
+              <div class="imgsec">
+                <img src="../assets/images/mercedes.png" alt="" />
+              </div>
+              <div class="car-details">
+                <h3>Mercedies Benz GLE</h3>
+                <div class="features">
+                  <div class="left">
+                    <p>Leather</p>
+                    <p>ACC</p>
+                    <p>Navi</p>
+                    <p>R.Cam</p>
+                  </div>
+                  <div class="right">
+                    <p>DAB</p>
+                    <p>Active Info Display</p>
+                    <p>V.Pump</p>
+                  </div>
+                </div>
+                <h5>2020 . 18,000 km . Automatic . Electricity</h5>
+              </div>
+              <div class="bid" style="gap: 0">
+                <h2>Highest Bid</h2>
+                <p style="font-size: 1.8em; font-weight: bold">$50,000</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     <!-- Footer Area starts fron this line: Please explore it. -->
     <footer>
@@ -1330,7 +1333,7 @@
           </div>
           <div class="footer_copyright">
             <p class="copyright_para">
-              &copy;Copyright2024 | All Right Reserved 
+              &copy;Copyright2024 | All Right Reserved
             </p>
           </div>
         </div>

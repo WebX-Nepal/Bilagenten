@@ -198,7 +198,7 @@ html {
   padding: 1.5rem 3rem;
   border-radius: 3rem;
   color: white;
-  border: 2px solid var(--primary_color);
+  border: 2px solid transparent;
 }
 .submit:hover {
   background: transparent;
@@ -232,7 +232,7 @@ html {
   margin: auto;
 }
 .retailer-mainContainer .retailer1 {
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   gap: 5em;
@@ -248,7 +248,7 @@ html {
   color: #51585a;
 }
 .retailer-mainContainer .retailer2 {
-  width: 60%;
+  width: 55%;
 }
 
 .retailer-mainContainer .retailer1 .tick .item {
@@ -514,7 +514,7 @@ Footer Area CSS Part Starts
   margin: 0 auto;
 }
 
-.footer_container .footer_content{
+.footer_container .footer_content {
   max-width: 1400px;
   margin: auto;
 }
@@ -661,7 +661,6 @@ Footer Area CSS Part Starts
     max-width: 1500px; /* Set the maximum width of the container */
     width: 100%;
   }
-
 
   .responsive_navbar_btn {
     display: block;
@@ -1325,7 +1324,7 @@ Footer Area CSS Part Starts
 /* For laptops  */
 
 @media (min-width: 980px) and (max-width: 1350px) {
-.navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
