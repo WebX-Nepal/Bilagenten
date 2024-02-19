@@ -203,6 +203,7 @@ html {
   border-radius: 3rem;
   color: var(--primary_color);
   border: 2px solid var(--primary_color);
+  transition-duration: 0.3s;
 }
 .submit_btn {
   margin-top: 3rem;
