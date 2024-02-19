@@ -444,6 +444,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 3.5rem;
+  width: 100%;
 }
 .container-bid-inner {
   display: flex;
@@ -1643,6 +1644,10 @@ Media Query
     justify-content: center;
     gap: 1rem;
   }
+  .container-bid-inner {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 560px) and (max-width: 980px) {
@@ -1889,7 +1894,7 @@ Media Query
   }
   .endDate {
     margin: 1em auto;
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
   .bid-img img {
     height: 300px;
@@ -2135,6 +2140,10 @@ Media Query
   }
   .footer_container .footer_content .copyright_para {
     text-align: center;
+  }
+  .container-bid-inner {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -2442,6 +2451,10 @@ Media Query
     padding-right: 1em;
     width: 50%;
     font-size: 1.3em;
+  }
+  .container-bid-inner {
+    display: flex;
+    flex-direction: column;
   }
 }
 

@@ -577,6 +577,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 3.5rem;
+  width: 100%;
 }
 
 .car-details-container {
@@ -1273,6 +1274,13 @@ Media Query
     justify-content: center;
     gap: 1rem;
   }
+  .bid-start-end {
+    padding: 1rem;
+  }
+  .container-bid-inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media (min-width: 560px) and (max-width: 980px) {
@@ -1587,7 +1595,7 @@ Media Query
     margin: auto;
     margin-bottom: 3em;
     /* margin-left: 4.6em; */
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -2047,6 +2055,10 @@ Media Query
     padding-right: 1em;
     width: 50%;
     font-size: 1.3em;
+  }
+  .container-bid-inner {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
