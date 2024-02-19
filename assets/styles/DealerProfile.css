@@ -162,7 +162,7 @@ body {
 /* main css start  */
 
 .sellDash-container {
-   padding: 0 6rem;
+  padding: 0 6rem;
   max-width: 1300px;
   margin: auto;
 }
@@ -364,14 +364,14 @@ body {
   font-size: 1.4rem;
   cursor: pointer;
   background: var(--gradient);
-  border: 2px solid var(--primary_color);
+  border: 2px solid transparent;
   color: white;
   width: 20%;
 }
 .menu-container .menu {
   padding: 2em 2em 5em 2em;
   width: 20vw;
-  height: fit-content
+  height: fit-content;
 }
 .menu-list {
   display: flex;
@@ -434,7 +434,7 @@ Footer Area CSS Part Starts
   margin: 0 auto;
 }
 
-.footer_container .footer_content{
+.footer_container .footer_content {
   max-width: 1400px;
   margin: auto;
 }
@@ -562,7 +562,7 @@ Footer Area CSS Part ends
 
 @media (max-width: 560px) {
   /* nav res start  */
-.navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
@@ -814,7 +814,6 @@ Footer Area CSS Part ends
     max-width: 1500px; /* Set the maximum width of the container */
     width: 100%;
   }
-
 
   .responsive_navbar_btn {
     display: block;
@@ -1084,7 +1083,7 @@ Footer Area CSS Part ends
 /* for laptops  */
 
 @media (min-width: 980px) and (max-width: 1350px) {
- .navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
@@ -1174,4 +1173,3 @@ Footer Area CSS Part ends
     text-align: center;
   }
 }
-
