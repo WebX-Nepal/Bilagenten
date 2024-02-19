@@ -128,8 +128,6 @@ body {
   display: none;
 }
 
-
-
 .review_title {
   text-align: center;
   font-size: 4rem;
@@ -233,7 +231,7 @@ body {
   font-size: 1.4rem;
   cursor: pointer;
   background: var(--gradient);
-  border: 2px solid var(--primary_color);
+  border: 2px solid transparent;
   color: white;
   width: 60%;
 }
@@ -258,7 +256,7 @@ body {
   font-size: 1.4rem;
   cursor: pointer;
   background: var(--gradient);
-  border: 2px solid var(--primary_color);
+  border: 2px solid transparent;
   color: white;
   width: 30%;
 }
@@ -284,7 +282,7 @@ Footer Area CSS Part Starts
   margin: 0 auto;
 }
 
-.footer_container .footer_content{
+.footer_container .footer_content {
   max-width: 1300px;
   margin: auto;
 }
@@ -406,11 +404,26 @@ Footer Area CSS Part Starts
   text-decoration: underline;
 }
 
-
+.footer-nav {
+  display: none;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+.footer-nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
 @media (max-width: 560px) {
   /* nav res start  */
-   .navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
@@ -524,16 +537,16 @@ Footer Area CSS Part Starts
     width: 100%;
   }
 
-  #email{
+  #email {
     width: 85%;
   }
-  #password{
+  #password {
     width: 85%;
   }
-  #conf-password{
+  #conf-password {
     width: 85%;
   }
-  .terms{
+  .terms {
     width: 85%;
   }
 
@@ -593,8 +606,23 @@ Footer Area CSS Part Starts
   .footer_container .footer_content .copyright_para {
     text-align: center;
   }
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
-
 
 /* For tabs  */
 
@@ -701,9 +729,8 @@ Footer Area CSS Part Starts
 
   /* nav res ends  */
 
- 
   .contact-container {
-    border: 2px solid #ECECEC;
+    border: 2px solid #ececec;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -711,7 +738,7 @@ Footer Area CSS Part Starts
     padding: 4em 0;
     border-radius: 3em;
     width: 70%;
-}
+  }
 
   .contact {
     display: flex;
@@ -740,16 +767,16 @@ Footer Area CSS Part Starts
   .terms {
     font-size: 1.3em;
   }
-  #email{
+  #email {
     width: 60%;
   }
-  #password{
+  #password {
     width: 60%;
   }
-  #conf-password{
+  #conf-password {
     width: 60%;
   }
-  .terms{
+  .terms {
     width: 60%;
   }
 
@@ -801,9 +828,9 @@ Footer Area CSS Part Starts
   }
 }
 
- @media (min-width: 560px) and (max-width: 750px) {
-    .contact-container {
-    border: 2px solid #ECECEC;
+@media (min-width: 560px) and (max-width: 750px) {
+  .contact-container {
+    border: 2px solid #ececec;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -811,7 +838,7 @@ Footer Area CSS Part Starts
     padding: 4em 0;
     border-radius: 3em;
     width: 92%;
-}
+  }
 
   .contact {
     display: flex;
@@ -840,24 +867,23 @@ Footer Area CSS Part Starts
   .terms {
     font-size: 1.3em;
   }
-  #email{
+  #email {
     width: 70%;
   }
-  #password{
+  #password {
     width: 70%;
   }
-  #conf-password{
+  #conf-password {
     width: 70%;
   }
-  .terms{
+  .terms {
     width: 70%;
   }
 
   .button {
     width: 70%;
   }
-} 
-
+}
 
 /* for laptops  */
 

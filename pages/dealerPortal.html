@@ -7,40 +7,40 @@
     <title>Dealer Registration Form</title>
   </head>
   <body>
-     <!-- Navigation bar ---------------------------------------->
+    <!-- Navigation bar ---------------------------------------->
     <nav class="navbar">
-    <div class="container">
+      <div class="container">
         <div class="brand_logo">
-        <a href="../index.html">
-          <img src="../assets/images/logo.png" alt="logo" height="40" />
-        </a>
-      </div>
+          <a href="../index.html">
+            <img src="../assets/images/logo.png" alt="logo" height="40" />
+          </a>
+        </div>
 
-      <div class="nav_list">
-        <a href="../index.html" class="nav_list_item">Sell the Car</a>
-        <a href="./company.html" class="nav_list_item">Company</a>
-        <a href="./retailer.html" class="nav_list_item">Retailer</a>
+        <div class="nav_list">
+          <a href="../index.html" class="nav_list_item">Sell the Car</a>
+          <a href="./company.html" class="nav_list_item">Company</a>
+          <a href="./retailer.html" class="nav_list_item">Retailer</a>
+        </div>
+        <div class="nav_buttons">
+          <a href="./login.html" class="navbar_btn main_button">My Page</a>
+          <a href="./dealerPortal.html" class="navbar_btn button_outline"
+            >Dealer Portal</a
+          >
+        </div>
+        <!-- Responsive Navbar start from here --------------------->
+        <div class="responsive_navbar_btn">
+          <iconify-icon
+            icon="pepicons-pop:menu"
+            name="maki-menu"
+            class="menu_icon"
+          ></iconify-icon>
+          <iconify-icon
+            icon="maki:cross"
+            name="maki-cross"
+            class="menu_icon"
+          ></iconify-icon>
+        </div>
       </div>
-      <div class="nav_buttons">
-        <a href="./login.html" class="navbar_btn main_button">My Page</a>
-        <a href="./dealerPortal.html" class="navbar_btn button_outline"
-          >Dealer Portal</a
-        >
-      </div>
-      <!-- Responsive Navbar start from here --------------------->
-      <div class="responsive_navbar_btn">
-        <iconify-icon
-          icon="pepicons-pop:menu"
-          name="maki-menu"
-          class="menu_icon"
-        ></iconify-icon>
-        <iconify-icon
-          icon="maki:cross"
-          name="maki-cross"
-          class="menu_icon"
-        ></iconify-icon>
-      </div>
-    </div>
     </nav>
     <div class="responsive_menu_popup">
       <div class="res_nav_list">
@@ -62,12 +62,23 @@
         <h1 class="contact-heading">Dealer Registration Form</h1>
         <p class="contact-subtitle">Enter Your details</p>
         <img src="../assets/images/contactInfo.png" alt="login" />
-       <input type="email" name="email" id="email" placeholder="Email" />
-        <input type="password" name="password" id="password" placeholder="Password" />
-        <input type="password" name="conf-password" id="conf-password" placeholder="Confirm Password" />
+        <input type="email" name="email" id="email" placeholder="Email" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <input
+          type="password"
+          name="conf-password"
+          id="conf-password"
+          placeholder="Confirm Password"
+        />
         <label for="terms" class="terms">
           <input type="radio" name="term" id="term" />
-          I accept<span style="color: #F4793D; font-size: 1em">the terms</span> of use of the service
+          I accept<span style="color: #f4793d; font-size: 1em">the terms</span>
+          of use of the service
         </label>
         <div class="button">
           <button
@@ -161,15 +172,29 @@
           </div>
           <div class="footer_copyright">
             <p class="copyright_para">
-              &copy;Copyright2024 | All Right Reserved | Designed By
-              <a href="https://webxnep.com" target="_blank" class="webx"
-                >WebX</a
-              >
+              &copy;Copyright2024 | All Right Reserved
             </p>
           </div>
         </div>
       </div>
     </footer>
+    <!-- Footer Nav Start -->
+    <div class="footer-nav">
+      <div class="footer-nav-items">
+        <img src="../assets/images/icons/footernav1.svg" alt="nav icon" />
+        <div>Company</div>
+      </div>
+      <div class="footer-nav-items">
+        <img src="../assets/images/icons/footernav2.svg" alt="nav icon" />
+        <div>Seller</div>
+      </div>
+      <div class="footer-nav-items">
+        <img src="../assets/images/icons/footernav3.svg" alt="nav icon" />
+        <div>Dealer</div>
+      </div>
+    </div>
+    <!-- Footer Nav Ends -->
+
     <script src="../scripts/main.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </body>

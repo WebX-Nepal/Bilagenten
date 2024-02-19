@@ -244,7 +244,7 @@ body {
   margin-bottom: 2em;
 }
 .menu-container .details {
-  padding: 0 5em 0 0;
+  /* padding: 0 5em 0 0; */
   width: 100%;
 }
 .menu-container .menu {
@@ -285,7 +285,7 @@ body {
 .content {
   display: none;
   /* padding: 20px; */
-  width: 100%;
+  width: 89%;
   height: auto;
 }
 .content.active {
@@ -435,10 +435,21 @@ body {
   border: 1px solid #0fa958;
   border-radius: 20px;
   display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 0 0 3em 4.5em;
+  padding: 3rem;
+}
+.bid-start-end {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem;
+  width: 100%;
+}
+.container-bid-inner {
+  display: flex;
   align-items: center;
-  padding: 4em 3em;
+  /* padding: 4em 3em; */
   justify-content: space-around;
   gap: 3em;
 }
@@ -576,6 +587,7 @@ body {
   border-radius: 3rem;
   color: var(--primary_color);
   border: 2px solid var(--primary_color);
+  transition-duration: 0.3s;
 }
 .submit_btn {
   margin-top: 3rem;
@@ -585,7 +597,7 @@ body {
   padding: 1.5rem 3rem;
   border-radius: 3rem;
   color: white;
-  border: 2px solid var(--primary_color);
+  border: 2px solid transparent;
 }
 .signin {
   background: transparent;
@@ -605,7 +617,7 @@ body {
   padding: 1.5rem 3rem;
   border-radius: 3rem;
   color: white;
-  border: 2px solid var(--primary_color);
+  border: 2px solid transparent;
 }
 
 .container {
@@ -813,9 +825,22 @@ body {
 }
 .status .frame {
   margin-top: 3em;
+  display: flex;
+  gap: 1rem;
 }
-.status .frame img {
-  width: 100%;
+.frame .first-btn {
+  color: white;
+  background-color: #8a8a8a;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+.frame .second-btn {
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
 }
 
 #current-biddings .container-bid .imgsec img {
@@ -825,7 +850,7 @@ body {
 #current-biddings .container-bid {
   border: 1px solid #cfcfcf;
   border-radius: 20px;
-  padding: 5em 2em;
+  /* padding: 5em 2em; */
   display: flex;
   width: 100%;
   margin: auto;
@@ -973,7 +998,7 @@ Footer Area CSS Part Starts
   margin: 0 auto;
 }
 
-.footer_container .footer_content{
+.footer_container .footer_content {
   max-width: 1400px;
   margin: auto;
 }
@@ -1092,6 +1117,22 @@ Footer Area CSS Part Starts
 .webx:hover {
   text-decoration: underline;
 }
+.footer-nav {
+  display: none;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+.footer-nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
 /*----------------------------------
 ====================================
@@ -1107,7 +1148,7 @@ Media Query
 
 @media (max-width: 560px) {
   /* nav res start  */
-   .navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
@@ -1587,6 +1628,26 @@ Media Query
   .footer_container .footer_content .copyright_para {
     text-align: center;
   }
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .container-bid-inner {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 560px) and (max-width: 980px) {
@@ -1594,7 +1655,7 @@ Media Query
     margin: 0 4rem;
   }
   /* nav res start  */
- .navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
@@ -1822,8 +1883,6 @@ Media Query
     padding: 4em;
   }
 
- 
-
   .content .container-bid .bid-date h3 {
     text-align: center;
     /* font-size: 2rem; */
@@ -1835,7 +1894,7 @@ Media Query
   }
   .endDate {
     margin: 1em auto;
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
   .bid-img img {
     height: 300px;
@@ -2081,6 +2140,10 @@ Media Query
   }
   .footer_container .footer_content .copyright_para {
     text-align: center;
+  }
+  .container-bid-inner {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -2388,6 +2451,10 @@ Media Query
     padding-right: 1em;
     width: 50%;
     font-size: 1.3em;
+  }
+  .container-bid-inner {
+    display: flex;
+    flex-direction: column;
   }
 }
 
