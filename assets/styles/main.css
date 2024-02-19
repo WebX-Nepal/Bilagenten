@@ -848,6 +848,23 @@ Blog Card Carousel Styles Start from here:
 .contactBtn:hover {
   color: orange;
 }
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+.footer-nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
 /* ================================================
 ...................................................
@@ -971,6 +988,22 @@ Blog Card Carousel Styles Start from here:
     width: 100%;
     position: fixed;
     z-index: 999;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
 
   .navbar .container {

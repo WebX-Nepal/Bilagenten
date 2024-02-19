@@ -9,38 +9,40 @@
   <body>
     <!-- Navigation bar ---------------------------------------->
     <nav class="navbar">
-    <div class="container">
+      <div class="container">
         <div class="brand_logo">
-        <a href="./index.html">
-          <img src="./assets/images/logo.png" alt="logo" height="40" />
-        </a>
-      </div>
+          <a href="./index.html">
+            <img src="./assets/images/logo.png" alt="logo" height="40" />
+          </a>
+        </div>
 
-      <div class="nav_list">
-        <a href="./index.html" class="nav_list_item active">Sell the Car</a>
-        <a href="./pages/company.html" class="nav_list_item">Company</a>
-        <a href="./pages/retailer.html" class="nav_list_item">Retailer</a>
+        <div class="nav_list">
+          <a href="./index.html" class="nav_list_item active">Sell the Car</a>
+          <a href="./pages/company.html" class="nav_list_item">Company</a>
+          <a href="./pages/retailer.html" class="nav_list_item">Retailer</a>
+        </div>
+        <div class="nav_buttons">
+          <a href="./pages/login.html" class="navbar_btn main_button"
+            >My Page</a
+          >
+          <a href="./pages/dealerPortal.html" class="navbar_btn button_outline"
+            >Dealer Portal</a
+          >
+        </div>
+        <!-- Responsive Navbar start from here --------------------->
+        <div class="responsive_navbar_btn">
+          <iconify-icon
+            icon="pepicons-pop:menu"
+            name="maki-menu"
+            class="menu_icon"
+          ></iconify-icon>
+          <iconify-icon
+            icon="maki:cross"
+            name="maki-cross"
+            class="menu_icon"
+          ></iconify-icon>
+        </div>
       </div>
-      <div class="nav_buttons">
-        <a href="./pages/login.html" class="navbar_btn main_button">My Page</a>
-        <a href="./pages/dealerPortal.html" class="navbar_btn button_outline"
-          >Dealer Portal</a
-        >
-      </div>
-      <!-- Responsive Navbar start from here --------------------->
-      <div class="responsive_navbar_btn">
-        <iconify-icon
-          icon="pepicons-pop:menu"
-          name="maki-menu"
-          class="menu_icon"
-        ></iconify-icon>
-        <iconify-icon
-          icon="maki:cross"
-          name="maki-cross"
-          class="menu_icon"
-        ></iconify-icon>
-      </div>
-    </div>
     </nav>
     <div class="responsive_menu_popup">
       <div class="res_nav_list">
@@ -735,7 +737,7 @@
           <div class="footer_details">
             <div class="footer_company_details">
               <img src="./assets/images/whiteLogo.png" alt="footerLogo" />
-              <p class="footer_para">
+              <p class="footer_para" id="aboutus">
                 We collect all the cars, evaluate the valuations. Making them
                 ready so everyone can buy it in reasonable costs.
               </p>
@@ -750,8 +752,9 @@
               <h1 class="fast_t_title">Fast Travel</h1>
               <div class="fast_t_list_item">
                 <a href="#" class="fast_travel_links">Car Tips</a
-                ><a href="#faqs" class="fast_travel_links">Question and answers</a
-                ><a href="#" class="fast_travel_links">About Us</a
+                ><a href="#faqs" class="fast_travel_links"
+                  >Question and answers</a
+                ><a href="#aboutus" class="fast_travel_links">About Us</a
                 ><a href="#" class="fast_travel_links">Valuation</a
                 ><a href="#" class="fast_travel_links">Career with us</a
                 ><a href="#" class="fast_travel_links">For dealer</a>
@@ -801,13 +804,28 @@
           </div>
           <div class="footer_copyright">
             <p class="copyright_para">
-              &copy;Copyright2024 | All Right Reserved 
+              &copy;Copyright2024 | All Right Reserved
             </p>
           </div>
         </div>
       </div>
     </footer>
-
+    <!-- Footer Nav Start -->
+    <div class="footer-nav">
+      <div class="footer-nav-items">
+        <img src="./assets/images/icons/footernav1.svg" alt="nav icon" />
+        <div>Company</div>
+      </div>
+      <div class="footer-nav-items">
+        <img src="./assets/images/icons/footernav2.svg" alt="nav icon" />
+        <div>Seller</div>
+      </div>
+      <div class="footer-nav-items">
+        <img src="./assets/images/icons/footernav3.svg" alt="nav icon" />
+        <div>Dealer</div>
+      </div>
+    </div>
+    <!-- Footer Nav Ends -->
 
     <!-- Libraries Links -->
     <script src="./scripts/main.js"></script>

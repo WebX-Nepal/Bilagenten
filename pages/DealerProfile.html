@@ -10,39 +10,39 @@
   </head>
   <body>
     <!-- Navigation bar ---------------------------------------->
-     <nav class="navbar">
-    <div class="container">
+    <nav class="navbar">
+      <div class="container">
         <div class="brand_logo">
-        <a href="../index.html">
-          <img src="../assets/images/logo.png" alt="logo" height="40" />
-        </a>
-      </div>
+          <a href="../index.html">
+            <img src="../assets/images/logo.png" alt="logo" height="40" />
+          </a>
+        </div>
 
-      <div class="nav_list">
-        <a href="../index.html" class="nav_list_item">Sell the Car</a>
-        <a href="./company.html" class="nav_list_item">Company</a>
-        <a href="./retailer.html" class="nav_list_item">Retailer</a>
+        <div class="nav_list">
+          <a href="../index.html" class="nav_list_item">Sell the Car</a>
+          <a href="./company.html" class="nav_list_item">Company</a>
+          <a href="./retailer.html" class="nav_list_item">Retailer</a>
+        </div>
+        <div class="nav_buttons">
+          <a href="./login.html" class="navbar_btn main_button">My Page</a>
+          <a href="./dealerPortal.html" class="navbar_btn button_outline"
+            >Dealer Portal</a
+          >
+        </div>
+        <!-- Responsive Navbar start from here --------------------->
+        <div class="responsive_navbar_btn">
+          <iconify-icon
+            icon="pepicons-pop:menu"
+            name="maki-menu"
+            class="menu_icon"
+          ></iconify-icon>
+          <iconify-icon
+            icon="maki:cross"
+            name="maki-cross"
+            class="menu_icon"
+          ></iconify-icon>
+        </div>
       </div>
-      <div class="nav_buttons">
-        <a href="./login.html" class="navbar_btn main_button">My Page</a>
-        <a href="./dealerPortal.html" class="navbar_btn button_outline"
-          >Dealer Portal</a
-        >
-      </div>
-      <!-- Responsive Navbar start from here --------------------->
-      <div class="responsive_navbar_btn">
-        <iconify-icon
-          icon="pepicons-pop:menu"
-          name="maki-menu"
-          class="menu_icon"
-        ></iconify-icon>
-        <iconify-icon
-          icon="maki:cross"
-          name="maki-cross"
-          class="menu_icon"
-        ></iconify-icon>
-      </div>
-    </div>
     </nav>
     <div class="responsive_menu_popup">
       <div class="res_nav_list">
@@ -72,34 +72,38 @@
           />
           <div class="user-dashboard">
             <h2>Harley</h2>
-          <div class="dropdown">
-            <div class="userImg">
-             <img
-              src="../assets/images/testi2.png"
-              alt="userImgErr"
-              onclick="toggleDropdown()"
-              style="cursor: pointer"
-            />
-           </div>
-            <div id="dropdownMenu" class="dropdown-content">
-              <a href="./DealerProfile.html" style="cursor: pointer"
-                >Settings</a
-              >
-              <div class="logout" style="cursor: pointer">
-                <a href="../index.html" class="logout">Logout</a>
-                <img src="../assets/images/logOuticon.png" alt="" />
+            <div class="dropdown">
+              <div class="userImg">
+                <img
+                  src="../assets/images/testi2.png"
+                  alt="userImgErr"
+                  onclick="toggleDropdown()"
+                  style="cursor: pointer"
+                />
+              </div>
+              <div id="dropdownMenu" class="dropdown-content">
+                <a href="./DealerProfile.html" style="cursor: pointer"
+                  >Settings</a
+                >
+                <div class="logout" style="cursor: pointer">
+                  <a href="../index.html" class="logout">Logout</a>
+                  <img src="../assets/images/logOuticon.png" alt="" />
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
       <div class="menu-container">
         <div class="menu">
-         <div class="hello">
-          <img src="../assets/images/icons/waving.png" alt="" style="height: 30px; width: 30px;">
-           <h1 class="profile">Hi, Harley Davis!</h1>
-         </div>
+          <div class="hello">
+            <img
+              src="../assets/images/icons/waving.png"
+              alt=""
+              style="height: 30px; width: 30px"
+            />
+            <h1 class="profile">Hi, Harley Davis!</h1>
+          </div>
           <div class="img-wrapper">
             <img src="../assets/images/testi2.png" alt="Your Image" />
           </div>
@@ -142,7 +146,6 @@
                 class="fname"
                 name="fname"
                 placeholder="First Name"
-             
               />
               <input
                 type="text"
@@ -150,7 +153,6 @@
                 class="lname"
                 name="fname"
                 placeholder="Last Name"
-             
               />
             </div>
             <div class="phone">
@@ -190,7 +192,6 @@
                 class="city"
                 name="city"
                 placeholder="City"
-            
               />
               <input
                 type="number"
@@ -198,7 +199,6 @@
                 class="postalCode"
                 name="postalCode"
                 placeholder="Postal Code"
-        
               />
             </div>
             <button
@@ -221,7 +221,6 @@
                 class="oldPassword"
                 name="oldPassword"
                 placeholder="Old Password"
-             
               />
               <input
                 type="password"
@@ -229,7 +228,6 @@
                 class="newPassword"
                 name="newPassword"
                 placeholder="New Password"
-               
               />
             </div>
             <div class="phone confpassword">
@@ -327,12 +325,28 @@
           </div>
           <div class="footer_copyright">
             <p class="copyright_para">
-              &copy;Copyright2024 | All Right Reserved 
+              &copy;Copyright2024 | All Right Reserved
             </p>
           </div>
         </div>
       </div>
     </footer>
+    <!-- Footer Nav Start -->
+    <div class="footer-nav">
+      <div class="footer-nav-items">
+        <img src="../assets/images/icons/footernav1.svg" alt="nav icon" />
+        <div>Company</div>
+      </div>
+      <div class="footer-nav-items">
+        <img src="../assets/images/icons/footernav2.svg" alt="nav icon" />
+        <div>Seller</div>
+      </div>
+      <div class="footer-nav-items">
+        <img src="../assets/images/icons/footernav3.svg" alt="nav icon" />
+        <div>Dealer</div>
+      </div>
+    </div>
+    <!-- Footer Nav Ends -->
     <script src="../scripts/main.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 

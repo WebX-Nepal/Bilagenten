@@ -57,7 +57,6 @@ html {
   width: 100%;
 }
 
-
 .nav_list .nav_list_item {
   width: 50vw;
   /* font-size: 3vw; */
@@ -154,13 +153,13 @@ html {
   font-size: 1.6rem;
 }
 
- /* nav end  */
+/* nav end  */
 
- #bil-layout{
+#bil-layout {
   padding: 0 12rem;
   max-width: 1400px;
   margin: auto;
- }
+}
 
 .car-bg {
   width: 100%;
@@ -170,12 +169,12 @@ html {
   background-size: cover;
 }
 .content {
- max-width: 1400px;
-    font-size: 2em;
-    padding-top: 6em;
-    padding-left: 3em;
-    padding-bottom: 6em;
-    margin: auto;
+  max-width: 1400px;
+  font-size: 2em;
+  padding-top: 6em;
+  padding-left: 3em;
+  padding-bottom: 6em;
+  margin: auto;
 }
 .content h2 {
   width: 42%;
@@ -435,7 +434,7 @@ Footer Area CSS Part Starts
   margin: 0 auto;
 }
 
-.footer_container .footer_content{
+.footer_container .footer_content {
   max-width: 1300px;
   margin: auto;
 }
@@ -556,6 +555,23 @@ Footer Area CSS Part Starts
 .webx:hover {
   text-decoration: underline;
 }
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: none;
+}
+.footer-nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
 /* ================================================
 ...................................................
@@ -564,26 +580,25 @@ Footer Area CSS Part Starts
 ==================================================*/
 
 @media (max-width: 560px) {
- .navbar {
-  background-color: var(--white);
-  overflow: hidden;
-  display: flex;
-  justify-content: center; /* Align the container to the center */
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-}
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Align the container to the center */
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
 
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.6rem 1rem;
-  max-width: 1500px; /* Set the maximum width of the container */
-  width: 100%;
-}
-
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 1rem;
+    max-width: 1500px; /* Set the maximum width of the container */
+    width: 100%;
+  }
 
   .responsive_navbar_btn {
     display: block;
@@ -660,10 +675,9 @@ Footer Area CSS Part Starts
     display: none;
   }
 
-
-  #bil-layout{
-  padding: 0;
- }
+  #bil-layout {
+    padding: 0;
+  }
   .car-bg {
     height: 100%;
     width: 100%;
@@ -837,33 +851,49 @@ Footer Area CSS Part Starts
   .footer_container .footer_content .copyright_para {
     text-align: center;
   }
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 
 /* For tabs  */
 @media (min-width: 560px) and (max-width: 980px) {
- #bil-layout{
-  padding: 0;
- }
+  #bil-layout {
+    padding: 0;
+  }
   /* nav res start  */
-   .navbar {
-  background-color: var(--white);
-  overflow: hidden;
-  display: flex;
-  justify-content: center; /* Align the container to the center */
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-}
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Align the container to the center */
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
 
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.6rem 4rem;
-  max-width: 1500px; /* Set the maximum width of the container */
-  width: 100%;
-}
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 4rem;
+    max-width: 1500px; /* Set the maximum width of the container */
+    width: 100%;
+  }
 
   .responsive_navbar_btn {
     display: block;
@@ -1086,7 +1116,7 @@ Footer Area CSS Part Starts
     margin-top: 10px;
     font-size: 2rem;
     font-weight: 600;
-}
+  }
   .contact-flex .inputs {
     width: 90%;
     margin: auto;
@@ -1146,7 +1176,6 @@ Footer Area CSS Part Starts
   }
 }
 
-
 /* @media (min-width: 560px) and (max-width: 750px) {
 
 } */
@@ -1154,59 +1183,58 @@ Footer Area CSS Part Starts
 /* for laptops  */
 
 @media (min-width: 980px) and (max-width: 1350px) {
+  #bil-layout {
+    padding: 0;
+  }
+  .navbar {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Align the container to the center */
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
 
-   #bil-layout{
-  padding: 0;
- }
-   .navbar {
-  background-color: var(--white);
-  overflow: hidden;
-  display: flex;
-  justify-content: center; /* Align the container to the center */
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-}
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 5rem;
+    max-width: 1500px; /* Set the maximum width of the container */
+    width: 100%;
+  }
 
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.6rem 5rem;
-  max-width: 1500px; /* Set the maximum width of the container */
-  width: 100%;
-}
-
-.content {
+  .content {
     font-size: 2em;
     padding-top: 6em;
     padding-left: 3em;
     padding-bottom: 5em;
-}
-  
-.content h2 {
+  }
+
+  .content h2 {
     width: 50%;
     font-size: 2em;
     color: white;
-}
+  }
 
-.content p {
+  .content p {
     margin-top: 3rem;
     width: 40%;
     font-size: 1.5rem;
     color: #e3e3e3;
-}
+  }
 
-.container-flex {
+  .container-flex {
     padding: 7em 0;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     width: 90%;
     margin: auto;
-}
-.container-flex .item {
+  }
+  .container-flex .item {
     border: 2px solid #f1f1f1;
     border-radius: 15px;
     display: flex;
@@ -1214,22 +1242,22 @@ Footer Area CSS Part Starts
     gap: 20px;
     width: 32%;
     padding: 1.5em 1.5em;
-}
+  }
 
-.bilagenten {
+  .bilagenten {
     font-size: 3.2em;
     width: 50%;
     margin: auto;
     padding-bottom: 3em;
-}
-.user-persona {
+  }
+  .user-persona {
     display: flex;
     justify-content: center;
     align-items: stretch;
     gap: 1.5rem;
     padding: 0px 0px 5em;
     margin: 4rem 5em;
-}
+  }
 
   /* footer responsive  */
 

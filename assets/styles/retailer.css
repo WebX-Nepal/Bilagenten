@@ -635,6 +635,23 @@ Footer Area CSS Part Starts
   text-decoration: underline;
 }
 
+.footer-nav {
+  display: none;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+.footer-nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 /* ================================================
 ...................................................
              Media Query Starts from here
@@ -929,6 +946,22 @@ Footer Area CSS Part Starts
   }
   .footer_container .footer_content .copyright_para {
     text-align: center;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 

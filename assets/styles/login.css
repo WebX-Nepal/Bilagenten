@@ -386,10 +386,26 @@ Footer Area CSS Part Starts
 .webx:hover {
   text-decoration: underline;
 }
+.footer-nav {
+  display: none;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+.footer-nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
 @media (max-width: 560px) {
   /* nav res start  */
- .navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
@@ -589,6 +605,22 @@ Footer Area CSS Part Starts
   .footer_container .footer_content .copyright_para {
     text-align: center;
   }
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 
 /* For tabs  */
@@ -599,7 +631,7 @@ Footer Area CSS Part Starts
     max-width: 1400px;
   }
   /* nav res start  */
-.navbar {
+  .navbar {
     background-color: var(--white);
     overflow: hidden;
     display: flex;
